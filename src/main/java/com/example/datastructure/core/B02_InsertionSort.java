@@ -9,7 +9,7 @@ public class B02_InsertionSort {
 	
 	public static void main(String[] args) {
 		int A[] = {38, 27, 43, 3, 9, 82, 10};
-		obj.insertionSort(A, A.length);
+		obj.insertionSort(A);
 	}
 	
 	
@@ -29,13 +29,13 @@ public class B02_InsertionSort {
 	 * .....
 	 * .....
 	 */
-	private void insertionSort(int[] A, int len) {
-		for(int i=1; i<len; i++) {		//Traverse from start+1 to end
+	private void insertionSort(int[] A) {
+		for(int i=1; i<A.length; i++) {		//Traverse from start+1 to end
 			int KEY = A[i];
 			int j = i-1;
 			
-			while(j>=0 && KEY<A[j]) {	//if KEY < current element
-				A[j+1] = A[j];			//right shift all smaller elements before it to create a slot for KEY
+			while(j>=0 && A[j]>KEY) {	//if current element > KEY
+				A[j+1] = A[j];			//right shift the elements
 				j--;
 			}
 			A[j+1] = KEY;				//place KEY at the slot

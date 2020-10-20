@@ -28,31 +28,32 @@ public class B03_MergeSort {
 	
 	
 	private void merge(int[] arr, int left, int mid, int right) {
-		int n1 = mid-(left-1);		//no of elements in left-sorted-half
+		int n1 = mid-left+1;		//no of elements in left-sorted-half
 		int n2 = right-mid; 		//no of elements in right-sorted-half
 		
 		int L[] = new int[n1];		//create L[] for left-sorted-half
 		int R[] = new int[n2];		//create R[] for right-sorted-half
 		
-		for(int i=0; i<n1; i++)
-			L[i] = arr[left+i];		//copy left-sorted-half to L[]
-		for(int i=0; i<n2; i++)
-			R[i] = arr[mid+1+i];	//copy right-sorted-half to R[]
+		for(int x=0; x<n1; x++)
+			L[x] = arr[left+x];			//copy left-sorted-half to L[]
+		for(int z=0; z<n2; z++)
+			R[z] = arr[(mid+1)+z];		//copy right-sorted-half to R[]
 		
-		//smallest from each of L[] and R[] is stored back to original array
-		int i=0;			//to traverse L[]
-		int j=0;			//to traverse R[]
-		int k = left;		//to track merged array
+		//smallest from each of L[] and R[] is placed in original array
+		int i=0;				//to traverse L[]
+		int j=0;				//to traverse R[]
+		int k = left;			//to track merged array
         while (i < n1 && j < n2) {
 			if (L[i] <= R[j]) {
 				arr[k] = L[i];
 				i++;
+				k++;
 			}
 			else {
 				arr[k] = R[j];
 				j++;
+				k++;
 			}
-			k++;
         }
 		
 		//copy remaining elements (if any) of L[] to original array
