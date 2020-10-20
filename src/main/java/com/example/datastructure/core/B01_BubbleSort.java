@@ -13,8 +13,18 @@ public class B01_BubbleSort {
 	}
 	
 	
-	/* In each traversal, shift largest element to extreme right & fix that position.
-	 * next time run loop from start to second-last as so on
+	/**
+	 * Traverse from start to end
+	 *  - Swap two adjacent elements, keeping the larger element at right & smaller element at left.
+	 *  - After one full iteration, the largest element will be at extreme right which is its final slot.
+	 * Traverse from start to end-1
+	 *  - repeat
+	 *  - repeat
+	 * Traverse from start to end-2
+	 *  - repeat
+	 *  - repeat
+	 * .....
+	 * .....
 	 */
 	private void bubbleSort(int[] A, int len) {
 		int temp;
