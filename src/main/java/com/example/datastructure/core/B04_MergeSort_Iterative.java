@@ -6,31 +6,30 @@ public class B04_MergeSort_Iterative {
 	private static B04_MergeSort_Iterative obj = new B04_MergeSort_Iterative();
 	
 	public static void main(String[] args) {
-		int arr[] = {38, 27, 43, 3, 9, 82, 10};
-		int len = arr.length;
-		obj.mergeSort(arr, len);
+		int A[] = {38, 27, 43, 3, 9, 82, 10};
+		obj.mergeSort(A);
 	}
 	
 	
-	private void mergeSort(int[] arr, int n) {
-		int currSize; 			// For current size of subarrays to be merged (curr_size varies from 1 to n/2)
-		int leftStart; 			// For picking starting index of left subarray to be merged
-
-		// Merge subarrays in bottom up manner.
-		// First merge subarrays of size 1 to create sorted subarrays of size 2.
-		// Then merge subarrays of size 2 to create sorted subarrays of size 4, and so on.
-		for (currSize = 1; currSize <= (n-1); currSize = 2*currSize) {
+	/**
+	 * Merge subarrays in bottom up manner.
+	 *  - merge subarrays of size 1 to create sorted sub-arrays of size 2
+	 *  - merge subarrays of size 2 to create sorted sub-arrays of size 4
+	 *  - .......
+	 *  - .......
+	 */
+	private void mergeSort(int[] A) {
+		for (int size=1; size<=A.length-1; size=2*size) {		//current size of subarrays to be merged
 			
-			// Pick starting point of different subarrays of current size
-			for (leftStart = 0; leftStart < (n-1); leftStart += 2*currSize) {
+			for (int left=0; left<A.length-1; left+=2*size) {		//starting index of different subarrays to be merged
 				
 				// Find ending point of left subarray. mid+1 is starting point of right
-				int mid = leftStart + currSize - 1;
+				int mid = left+size-1;
 
-				int rightEnd = findMin(leftStart + 2*currSize-1, n-1);
+				int right = findMin(left+(2*size-1), A.length-1);
 
-				// Merge Subarrays arr[left_start...mid] & arr[mid+1...right_end]
-				merge(arr, leftStart, mid, rightEnd);
+				// Merge Subarrays A[left_start...mid] & A[mid+1...right_end]
+				merge(A, left, mid, right);
 			}
 		}
 	}
