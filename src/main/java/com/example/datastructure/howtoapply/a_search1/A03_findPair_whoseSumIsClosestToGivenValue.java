@@ -2,7 +2,7 @@ package com.example.datastructure.howtoapply.a_search1;
 
 /**
  * *****************************************************************************
- * Given a sorted array and a number x, find the pair in array whose sum is closest to x
+ * Given a sorted array and a number X, find the pair in array whose sum is closest to X
  * *****************************************************************************
  * I/P: A[] = {10, 22, 28, 29, 30, 40}		X = 54
  * O/P: 22 and 30
@@ -17,16 +17,20 @@ public class A03_findPair_whoseSumIsClosestToGivenValue {
 	 * ----------------------------
 	 * ---SLIDING DOOR TECHNIQUE---
 	 * ----------------------------
-	 * DIFF = INFINITY		//to store the difference between pair and X
+	 * DIFF
+	 * res_l
+	 * res_r
+	 * 
 	 * l = 0
 	 * r = n-1
-	 * 
-	 * while(l < r){
-	 * 	 SUM = A[l]+A[r];
-	 * 
-	 * 	 if(abs(A[l]+A[r]-SUM) < DIFF)
-	 * 		//update DIFF and result
-	 * 	 else if(A[l]+A[r] < SUM)
+	 * while(l < r) {
+	 * 	 if( abs(A[l]+A[r]-X) < DIFF ) {
+	 * 		res_l = l;
+	 * 		res_r = r;
+	 * 		DIFF = Math.abs(A[l] + A[r] - X); 
+	 * 	 }
+	 *   
+	 *   if( A[l]+A[r] < X )
 	 * 		l++
 	 * 	 else
 	 * 		r++

@@ -49,7 +49,10 @@ public class A05_findQuadruplet_thatSumToGivenValue {
 	 * -----------------------------------
 	 * Create an auxiliary array AUX[], which stores sum of all possible pairs
 	 * If size of A[] is n, the size of AUX[] will be n*(n-1)/2
-	 * Sort AUX[]
+	 * 
+	 * Sort the array
+	 * {2, 3, 4, 5, 7, 8, 9, 10}
+	 * 
 	 * Now apply 'sliding door' technique
 	 * While picking two elements from AUX[],
 	 * 	we must ensure that the two elements doesn't have any element from A[] in common.

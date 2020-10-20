@@ -18,7 +18,7 @@ public class A04_findTriplet_thatSumToGivenValue {
 	 * for(i=0 to n-2)
 	 * 	 for(j=i+1 to n-1)
 	 * 		for(k=j+1 to n)
-	 * 			if (A[i] + A[j] + A[k] == sum)
+	 * 			if (A[i] + A[j] + A[k] == SUM)
 	 * 				return true
 	 * 
 	 * 
@@ -30,14 +30,14 @@ public class A04_findTriplet_thatSumToGivenValue {
 	 * {1, 3, 4, 6, 9, 12}
 	 * 
 	 * Now for each element of the array, apply 'sliding door' technique.
-	 * for(i=0 to n-2){
-	 * 	 l=i+1;
-	 * 	 r=n-1;
-	 * 	 while(l < r){
+	 * for(i=0 to n-2) {
+	 * 	 l = i+1;
+	 * 	 r = n-1;
+	 * 	 while(l < r) {
 	 * 	 	//apply 'sliding door' technique
 	 * 	 }
 	 * }
-	 * TIME -- O(n*log n)+O(n^2)~~O(n^2)
+	 * TIME -- O(n*log n) + O(n^2) ~ O(n^2)
 	 * SPACE -- O(1)
 	 * 
 	 */

@@ -17,9 +17,9 @@ public class A01_findPair_ofGivenSum {
 	 * Sort the array
 	 * {-8, 1, 4, 6, 10, 45}
 	 * 
-	 * l=0
-	 * r=n-1
-	 * while(l < r){
+	 * l = 0
+	 * r = n-1
+	 * while(l < r) {
 	 * 	 if(A[l]+A[r] == SUM)
 	 * 		return true;
 	 * 	 else if(A[l]+A[r] > SUM)
@@ -27,6 +27,7 @@ public class A01_findPair_ofGivenSum {
 	 * 	 else if(A[l]+A[r] < SUM)
 	 * 		l++;
 	 * }
+	 * 
 	 * TIME -- O(n*log n) + O(n) ~ O(n*log n)
 	 * SPACE -- O(1)
 	 * 
@@ -38,10 +39,11 @@ public class A01_findPair_ofGivenSum {
 	 * Take one HASHMAP
 	 * for(i=0 to n-1) {
 	 * 	 if(HASHMAP.contains(SUM-A[i]))
-	 * 		//print "found" A[i] and SUM-A[i]
+	 * 		//print "pair found" A[i] and SUM-A[i]
 	 * 	 else
 	 * 		HASHMAP.put(A[i], 999999)
 	 * }
+	 * 
 	 * TIME -- O(n)
 	 * SPACE -- O(n)
 	 * 
