@@ -19,18 +19,18 @@ public class A02_findTwoElements_occurringOddTimes {
 	 * ---------------
 	 * ::STEP-1::
 	 * X1 = XOR of array elements
-	 * As only two elements(P, Q) occurs odd number of times,
-	 * 	all even occurring elements will be canceled out (a^a=0 and 0^a=a)
+	 * As only two elements(P, Q) occurs odd number of times, all elements occurring even times will be canceled out
 	 * So the X1 will be P^Q
 	 * 
 	 * 
 	 * ::STEP-2::
-	 * We will pick rightmost 'set-bit' of X1 and divide the A[] in two groups.
-	 * -- One group will have corresponding bit as 1
-	 * -- Another group will have corresponding bit as 0
+	 * Pick rightmost 'set-bit' of X1 by calculating 'set_bit_no = X1 & ~(X-1)' 
+	 * Now divide elements in two sets:
+	 *   One group having the corresponding bit as 1
+	 *   Another group having the corresponding bit as 0
 	 * 
-	 * If we XOR the first group, we will get one odd occurring element
-	 * If we XOR the second group, we will get another odd occurring element
+	 * If we XOR the first group, we will get one odd occurring element			if((A[i] & set_bit_no)>0) 	x=x^A[i]; 
+	 * If we XOR the second group, we will get another odd occurring element	else						y=y^A[i];
 	 * 
 	 */
 }
