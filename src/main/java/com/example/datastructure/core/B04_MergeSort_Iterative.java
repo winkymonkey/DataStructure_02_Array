@@ -1,5 +1,6 @@
 package com.example.datastructure.core;
 
+import java.util.Arrays;
 
 
 public class B04_MergeSort_Iterative {
@@ -26,12 +27,13 @@ public class B04_MergeSort_Iterative {
 				// Find ending point of left subarray. mid+1 is starting point of right
 				int mid = left+size-1;
 
-				int right = findMin(left+(2*size-1), A.length-1);
+				int right = findMin(left+(2*size)-1, A.length-1);
 
 				// Merge Subarrays A[left_start...mid] & A[mid+1...right_end]
 				merge(A, left, mid, right);
 			}
 		}
+		System.out.println(Arrays.toString(A));
 	}
 	
 	
