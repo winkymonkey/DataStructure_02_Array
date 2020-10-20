@@ -14,13 +14,15 @@ public class A05_findQuadruplet_thatSumToGivenValue {
 	 * --------------------
 	 * ---NAIVE APPROACH---
 	 * --------------------
-	 * We run 4 nested loops which results in time of O(n^4)
 	 * for(i=0 to n-3)
 	 * 	 for(j=i+1 to n-2)
 	 * 		for(k=j+1 to n-1)
 	 * 			for(m=k+1 to n)
 	 * 				if (A[i] + A[j] + A[k] + A[m] == sum)
 	 * 					return true
+	 * 
+	 * TIME --- O(n^4)
+	 * SPACE -- O(1)
 	 * 
 	 * 
 	 * 
@@ -30,48 +32,49 @@ public class A05_findQuadruplet_thatSumToGivenValue {
 	 * Sort the array
 	 * {2, 3, 4, 5, 7, 8, 9, 10}
 	 * 
-	 * for(i=0 to n-3){
-	 * 	 for(j=i+1 to n-2){
+	 * for(i=0 to n-3) {
+	 * 	 for(j=i+1 to n-2) {
 	 * 		l=j+1;
 	 * 	 	r=n-1;
-	 * 	 	while(l < r){
+	 * 	 	while(l < r) {
 	 * 	 		//apply 'sliding door' technique
 	 * 	 	}
 	 * 	 }
 	 * }
-	 * TIME -- O(n*log n)+O(n^3)~~O(n^3)
+	 * TIME --- O(n*log n)+O(n^3) ~ O(n^3)
 	 * SPACE -- O(1)
 	 * 
 	 * 
 	 * 
-	 * -----------------------------------
-	 * ---SORT & SLIDING DOOR TECHNIQUE--- (efficient)
-	 * -----------------------------------
-	 * Create an auxiliary array AUX[], which stores sum of all possible pairs
-	 * If size of A[] is n, the size of AUX[] will be n*(n-1)/2
+	 * ------------------------------------------------------
+	 * ---CREATE SUM ARRAY & SORT & SLIDING DOOR TECHNIQUE---
+	 * ------------------------------------------------------
+	 * Create an auxiliary array AUX[] and store sum of all possible pairs in AUX[]
+	 *   If size of A[] is n, the size of AUX[] will be = (n-1)+(n-2)+(n-3)+...+1 = n*(n-1)/2
 	 * 
-	 * Sort the array
-	 * {2, 3, 4, 5, 7, 8, 9, 10}
+	 * Sort the auxiliary array AUX[]
 	 * 
-	 * Now apply 'sliding door' technique
-	 * While picking two elements from AUX[],
-	 * 	we must ensure that the two elements doesn't have any element from A[] in common.
+	 * Now the problem reduces to find two elements in AUX[] with sum equal to X
 	 * 
-	 * TIME -- O(n^2 * log n)	
-	 * SPACE -- O(n*(n-1)/2)~~O(n^2)
+	 * We can now apply 'sliding door' technique
+	 * 	 but while picking two elements from AUX[], then confirm that these two elements doesn't have an element of A[] in common
+	 *   E.G, if AUX[1]=A[1]+A[2] and AUX[2]=A[2]+A[4], then AUX[1] and AUX[2] don’t represent four distinct elements of A[] 
+	 * 
+	 * TIME --- O(n^2) + O(n^2 * log n^2) ~ O(n^2 log n) -------- (for creating AUX[])+(for sorting AUX[] of size O(n^2))
+	 * SPACE -- O(n*(n-1)/2) ~ O(n^2)
+	 * 
+	 * NOTE: easy to do in C using pointers but tough to do in java
 	 * 
 	 * 
 	 * 
 	 * -------------
 	 * ---HASHING---
 	 * -------------
-	 * Store sums of all pairs in a hash table
-	 * Traverse through all pairs again and search for 'X�(current pair sum)' in the hash table.
-	 * If a pair is found with the required sum,
-	 * 	then make sure that all elements are distinct array elements 
-	 * 	and an element is not considered more than once.
+	 * Store sums of all pairs in a HashTable [key=A[i]+A[j], value=new Pair(i,j)]
+	 * Traverse through all pairs again and search for 'X-(current pair sum)' in the HashTable
+	 * If found, then confirm that these two are not made up with any common element from A[]
 	 * 
-	 * TIME -- O(n^2)
+	 * TIME --- O(n^2)
 	 * SPACE -- O(n^2)
 	 * 
 	 */
