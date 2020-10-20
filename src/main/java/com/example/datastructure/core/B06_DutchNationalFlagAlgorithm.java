@@ -22,7 +22,7 @@ public class B06_DutchNationalFlagAlgorithm {
 	 * 		A[H+1...N] are all ONES
 	 * 
 	 * The unknown section is shrunk while maintaining these conditions:
-	 * 	L=1, H=1
+	 * 	L=1, H=N
 	 * 	while(L<=H){
 	 * 		if(A[L]==0)
 	 * 			L++
@@ -30,6 +30,8 @@ public class B06_DutchNationalFlagAlgorithm {
 	 * 			swap A[L], A[H]
 	 * 			H--
 	 * 	}
+	 * TIME -- O(n)
+	 * SPACE -- O(1)
 	 * 
 	 * 
 	 * 
@@ -48,12 +50,13 @@ public class B06_DutchNationalFlagAlgorithm {
 	 * 	while(M<=H){
 	 * 		if(A[M]==0)
 	 * 			swap A[L], A[M]
-	 * 			L++; M++;
+	 * 			L++
+	 * 			M++
 	 * 		if(A[M]==1)
-	 * 			M++;
+	 * 			M++
 	 * 		if(A[M]==2)
 	 * 			swap A[M], A[H]
-	 * 			H--;
+	 * 			H--
 	 * 	}
 	 * TIME -- O(n)
 	 * SPACE -- O(1)
