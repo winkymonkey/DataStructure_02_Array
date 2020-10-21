@@ -15,11 +15,11 @@ public class A05_findQuadruplet_thatSumToGivenValue {
 	 * ---NAIVE APPROACH---
 	 * --------------------
 	 * for(i=0 to n-3)
-	 * 	 for(j=i+1 to n-2)
-	 * 		for(k=j+1 to n-1)
-	 * 			for(m=k+1 to n)
-	 * 				if (A[i] + A[j] + A[k] + A[m] == sum)
-	 * 					return true
+	 *    for(j=i+1 to n-2)
+	 *       for(k=j+1 to n-1)
+	 *          for(m=k+1 to n)
+	 *             if (A[i] + A[j] + A[k] + A[m] == sum)
+	 *                return true
 	 * 
 	 * TIME --- O(n^4)
 	 * SPACE -- O(1)
@@ -33,14 +33,15 @@ public class A05_findQuadruplet_thatSumToGivenValue {
 	 * {2, 3, 4, 5, 7, 8, 9, 10}
 	 * 
 	 * for(i=0 to n-3) {
-	 * 	 for(j=i+1 to n-2) {
-	 * 		l=j+1;
-	 * 	 	r=n-1;
-	 * 	 	while(l < r) {
-	 * 	 		//apply 'sliding door' technique
-	 * 	 	}
-	 * 	 }
+	 *    for(j=i+1 to n-2) {
+	 *       l = j+1;
+	 *       r = n-1;
+	 *       while(l < r) {
+	 *          //apply 'sliding door' technique
+	 *       }
+	 *    }
 	 * }
+	 * 
 	 * TIME --- O(n*log n)+O(n^3) ~ O(n^3)
 	 * SPACE -- O(1)
 	 * 
@@ -60,10 +61,10 @@ public class A05_findQuadruplet_thatSumToGivenValue {
 	 * 	 but while picking two elements from AUX[], then confirm that these two elements doesn't have an element of A[] in common
 	 *   E.G, if AUX[1]=A[1]+A[2] and AUX[2]=A[2]+A[4], then AUX[1] and AUX[2] don’t represent four distinct elements of A[] 
 	 * 
+	 * NOTE: easy to do in C using pointers but tough to do in java
+	 * 
 	 * TIME --- O(n^2) + O(n^2 * log n^2) ~ O(n^2 log n) -------- (for creating AUX[])+(for sorting AUX[] of size O(n^2))
 	 * SPACE -- O(n*(n-1)/2) ~ O(n^2)
-	 * 
-	 * NOTE: easy to do in C using pointers but tough to do in java
 	 * 
 	 * 
 	 * 

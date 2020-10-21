@@ -27,17 +27,16 @@ public class A02_findPair_whoseSumIsClosestToZero {
 	 * l = 0
 	 * r = n-1
 	 * while(l < r) {
-	 * 	 if( abs(A[l]+A[r]) < abs(res_sum) ) {
-	 * 		min_sum = A[l]+A[r]
-	 *   	res_l = l
-	 *   	res_r = r
-	 *   }
-	 *   
-	 * 	 if( A[l]+A[r] > 0 )
-	 * 		r--
-	 * 	 else if(A[l]+A[r] < 0)
-	 * 		l++
-	 * 	 
+	 *    if( abs(A[l]+A[r]) < abs(res_sum) ) {
+	 *       min_sum = A[l]+A[r]
+	 *       res_l = l
+	 *       res_r = r
+	 *    }
+	 *    
+	 *    if( A[l]+A[r] > 0 )
+	 *       r--
+	 *    else if(A[l]+A[r] < 0)
+	 *       l++
 	 * }
 	 * 
 	 * TIME -- O(n*log n) + O(n) ~ O(n*log n)

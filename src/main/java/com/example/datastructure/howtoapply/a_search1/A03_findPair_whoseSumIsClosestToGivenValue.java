@@ -24,19 +24,19 @@ public class A03_findPair_whoseSumIsClosestToGivenValue {
 	 * l = 0
 	 * r = n-1
 	 * while(l < r) {
-	 * 	 if( abs(A[l]+A[r]-X) < DIFF ) {
-	 * 		res_l = l;
-	 * 		res_r = r;
-	 * 		DIFF = Math.abs(A[l] + A[r] - X); 
-	 * 	 }
-	 *   
-	 *   if( A[l]+A[r] < X )
-	 * 		l++
-	 * 	 else
-	 * 		r++
+	 * 	  if( abs(A[l]+A[r]-X) < DIFF ) {
+	 *       res_l = l;
+	 *       res_r = r;
+	 *       DIFF = Math.abs(A[l] + A[r] - X); 
+	 * 	  }
+	 *    
+	 *    if( A[l]+A[r] < X )
+	 *       l++
+	 *    else
+	 *       r++
 	 * }
 	 * 
-	 * TIME -- O(n)
+	 * TIME --- O(n)
 	 * SPACE -- O(1)
 	 * 
 	 */
