@@ -3,7 +3,6 @@ package com.example.datastructure.core;
 import java.util.Arrays;
 
 
-
 public class B03_MergeSort {
 	private static B03_MergeSort obj = new B03_MergeSort();
 	

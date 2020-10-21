@@ -3,7 +3,6 @@ package com.example.datastructure.core;
 import java.util.Arrays;
 
 
-
 public class B01_BubbleSort {
 	private static B01_BubbleSort obj = new B01_BubbleSort();
 	

@@ -30,8 +30,9 @@ public class B06_DutchNationalFlagAlgorithm {
 	 * 			swap A[L], A[H]
 	 * 			H--
 	 * 	}
-	 * TIME -- O(n)
+	 * TIME --- O(n)
 	 * SPACE -- O(1)
+	 * 
 	 * 
 	 * 
 	 * 
@@ -45,19 +46,23 @@ public class B06_DutchNationalFlagAlgorithm {
 	 * 		A[M.....H] are all UNKNOWN
 	 * 		A[H+1...N] are all TWOS (blue)
 	 * 
-	 * The unknown section is shrunk while maintaining these conditions:
-	 * 	L=1, M=1, H=N
-	 * 	while(M<=H){
-	 * 		if(A[M]==0)
-	 * 			swap A[L], A[M]
-	 * 			L++
-	 * 			M++
-	 * 		if(A[M]==1)
-	 * 			M++
-	 * 		if(A[M]==2)
-	 * 			swap A[M], A[H]
-	 * 			H--
-	 * 	}
+	 * The objective is to shrink the unknown section as the program propagates
+	 * 
+	 * ---------
+	 * L = 1
+	 * M = 1
+	 * H = N
+	 * while(M<=H) {
+	 *    if(A[M]==0)
+	 *       swap A[L], A[M]
+	 *       L++
+	 *       M++
+	 *    if(A[M]==1)
+	 *       M++
+	 *    if(A[M]==2)
+	 *       swap A[M], A[H]
+	 *       H--
+	 * }
 	 * TIME -- O(n)
 	 * SPACE -- O(1)
 	 * 

@@ -3,7 +3,6 @@ package com.example.datastructure.core;
 import java.util.Arrays;
 
 
-
 public class B05_QuickSort {
 	private static B05_QuickSort obj = new B05_QuickSort();	
 	

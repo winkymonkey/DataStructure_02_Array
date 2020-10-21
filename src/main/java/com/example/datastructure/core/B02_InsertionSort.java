@@ -3,7 +3,6 @@ package com.example.datastructure.core;
 import java.util.Arrays;
 
 
-
 public class B02_InsertionSort {
 	private static B02_InsertionSort obj = new B02_InsertionSort();
 	
