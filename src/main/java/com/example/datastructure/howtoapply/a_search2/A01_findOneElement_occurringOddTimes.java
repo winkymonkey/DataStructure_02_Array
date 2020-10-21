@@ -20,14 +20,17 @@ public class A01_findOneElement_occurringOddTimes {
 	 * Take one HASHMAP
 	 * for (i=0 to n-1) {
 	 * 	 if(HASHMAP.containsKey(A[i])) {
-	 * 		value = HASHMAP.get(A[i]);
-	 * 		HASHMAP.put(A[i], value++)
+	 * 		occurrence = HASHMAP.get(A[i]);
+	 * 		HASHMAP.put(A[i], occurrence++)
 	 * 	 }
 	 * 	 else {
-	 * 		HASHMAP.put(A[i], 0)
+	 * 		HASHMAP.put(A[i], 1)
 	 * 	 }
 	 * }
-	 * Traverse HASHMAP to find which key has a value of Odd number
+	 * Traverse HASHMAP to find which KEY's VALUE is a odd number
+	 * 
+	 * TIME --- O(n)
+	 * SPACE -- O(n)
 	 * 
 	 * 
 	 * 
@@ -36,6 +39,9 @@ public class A01_findOneElement_occurringOddTimes {
 	 * -----------------------
 	 * Perform a Bitwise XOR of all elements
 	 * It gives us odd occurring element
-	 *  
+	 * 
+	 * TIME --- O(n)
+	 * SPACE -- O(1)
+	 * 
 	 */
 }

@@ -14,23 +14,44 @@ package com.example.datastructure.howtoapply.a_search2;
  */
 public class A02_findTwoElements_occurringOddTimes {
 	/*
-	 * ---------------
-	 * ---USING XOR---
-	 * ---------------
-	 * ::STEP-1::
-	 * X1 = XOR of array elements
-	 * As only two elements(P, Q) occurs odd number of times, all elements occurring even times will be canceled out
-	 * So the X1 will be P^Q
+	 * -----------------------
+	 * ---USING BITWISE XOR---
+	 * -----------------------
+	 * X = XOR of all elements
+	 * As only P and Q appears odd number of times, XOR among all other elements results 0 
+	 * 
+	 * Hence [X = P ^ Q]
+	 *   -- if X is zero that means all elements are in pairs only
+	 *   -- if X is non-zero that means a few elements are not in pairs
+	 * 
+	 * Now we want to find out the rightmost 'set-bit'(1) in X 			['set_bit_num = X & ~(X-1)'] 
+	 *   -- because a XOR between two binary numbers can only produce 1 in any bit position if two bits are different at that position
+	 *   -- the rightmost 'set-bit' signifies that at that bit position P and Q have opposite value
+	 * 
+	 * So we have to divide elements in two groups in such a way that
+	 *   -- groupA has those elements who's corresponding bit is 1
+	 *   -- groupB has those elements who's corresponding bit is 0
+	 *   
+	 * To achieve it, we can traverse the array and perform 'A[i] & set_bit_num'	[A[i] & set_bit_num]
+	 *   -- if the result > 0 that means --> A[i] has corresponding bit as 1
+	 *   -- if the result < 0 that means --> A[i] has corresponding bit as 0
 	 * 
 	 * 
-	 * ::STEP-2::
-	 * Pick rightmost 'set-bit' of X1 by calculating 'set_bit_no = X1 & ~(X-1)' 
-	 * Now divide elements in two sets:
-	 *   One group having the corresponding bit as 1
-	 *   Another group having the corresponding bit as 0
 	 * 
-	 * If we XOR the first group, we will get one odd occurring element			if((A[i] & set_bit_no)>0) 	x=x^A[i]; 
-	 * If we XOR the second group, we will get another odd occurring element	else						y=y^A[i];
+	 * --------------
+	 * X = 0
+	 * for(i=0 to n-1) {
+	 *    X = X ^ A[i]
+	 * }
+	 * set_bit_num = X & ~(X-1)
+	 * 
+	 * for(i=0 to n-1) {
+	 *    if( (A[i] & set_bit_num) > 0 )
+	 *       P = P ^ A[i];
+	 *    else
+	 *       Q = Q ^ A[i]
+	 * }
+	 * print P and Q
 	 * 
 	 */
 }
