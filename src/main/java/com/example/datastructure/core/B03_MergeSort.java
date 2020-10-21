@@ -89,23 +89,24 @@ public class B03_MergeSort {
 	 *  size 1   size 1
 	 * 
 	 * 
+	 * -------------
+	 * Theoretically
+	 * ------------- 
 	 * In merge() method at each level we need to make 'n' comparisons and 'n' movements
-	 * Hence time taken by merge() is O(n)
+	 * Hence time taken by merge() is O(n)								----------------------(1)
 	 * 
-	 * So total work = (work done at each level) * (no of levels)
-	 *               = O(n) * ??
+	 * To reach from size 1 to size 2, number of crossings = 1 = log 1
+	 * To reach from size 1 to size 4, number of crossings = 2 = log 4
+	 * To reach from size 1 to size 8, number of crossings = 3 = log 8
+	 * To reach from size 1 to size n, number of crossings = log n      ----------------------(2)
 	 * 
-	 * To reach from size-1 to size-2, number of crossings ----- 1 -------- log 1
-	 * To reach from size-1 to size-4, number of crossings ----- 2 -------- log 4
-	 * To reach from size-1 to size-8, number of crossings ----- 3 -------- log 8
-	 * ....
-	 * ....
-	 * To reach from size-1 to size-n, number of crossings ----- log n
-	 * 
-	 * Hence total work = O(n) * O(log n)
+	 * Hence total work = (work done at each level) * (no of levels)
+	 *                  = O(n) * O(log n)
 	 *                  = O(n * log n)
 	 * 
-	 * ----------------
+	 * --------------
+	 * Mathematically
+	 * --------------
 	 * Recurrence relation
 	 * T(n) = T(n/2) + T(n/2) + O(n)
 	 *      = 2.T(n/2) + O(n)

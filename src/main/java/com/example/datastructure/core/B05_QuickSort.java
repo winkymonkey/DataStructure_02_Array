@@ -80,8 +80,13 @@ public class B05_QuickSort {
 	 * --------------------------
 	 * 		SPACE COMPLEXITY
 	 * --------------------------
-	 * In best case, the recursion tree is equally balanced. ==> hence total space is 'height of the tree' which is O(log n)
-	 * In worst case, the recursion tree is skewed ===> hence total space is 'O(n)'
+	 * In best case, the array is divided into two equal halves
+	 *    hence the recursion tree is balanced 
+	 * 	  hence total space is 'height of the tree' which is O(log n)
+	 * 
+	 * In worst case, one partition contains 0 elements, and another partition contains (n-1) elements
+	 *    hence the recursion tree is skewed
+	 *    hence total space is 'O(n)'
 	 * 
 	 */
 }
