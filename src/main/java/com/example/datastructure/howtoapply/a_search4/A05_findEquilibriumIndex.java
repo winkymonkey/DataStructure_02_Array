@@ -17,16 +17,21 @@ public class A05_findEquilibriumIndex {
 	 * ---------------
 	 * ---USING SUM---
 	 * ---------------
-	 * SUM = find sum of all elements in array in O(n) time
+	 * SUM = find sum of all elements
 	 * 
-	 * LEFTSUM=0
-	 * for(i=0 to n-1){
-	 * 	 LEFTSUM = LEFTSUM + A[i]
-	 * 	 RIGHTSUM = SUM - LEFTSUM
-	 * 	 
-	 * 	 if(LEFTSUM == RIGHTSUM)
-	 * 		print
+	 * LEFTSUM = 0
+	 * for(i=0 to n-1) {
+	 *    SUM = SUM - A[i]		//right sum for index i
+	 * 	  
+	 * 	  if(LEFTSUM == SUM)
+	 *       return i
+	 *    
+	 *    LEFTSUM = LEFTSUM + A[i]
 	 * }
+	 * return -1
+	 * 
+	 * TIME --- O(n)
+	 * SPACE -- O(1)
 	 * 
 	 */
 }
