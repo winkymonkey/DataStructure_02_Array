@@ -39,7 +39,7 @@ public class A02_findPair_whoseSumIsClosestToZero {
 	 *       l++
 	 * }
 	 * 
-	 * TIME -- O(n*log n) + O(n) ~ O(n*log n)
+	 * TIME -- O(nLogn) + O(n) = O(nLogn)
 	 * SPACE -- O(1)
 	 * 
 	 */

@@ -20,39 +20,37 @@ package com.example.datastructure.howtoapply.a_search4;
  * I/P: A[] = {2, 5, 3, 5, 4, 4, 2, 3}					X=3, Y=2
  * O/P: 1
  * 
+ * I/P: A[] = { 3, 5, 4, 2, 6, 3, 0, 0, 5, 4, 8, 3 }	X=3, Y=6
+ * O/P: 1
+ * 
  * *****************************************************************************
  */
 public class A10_findMinDistanceBetweenTwoNumbers {
 	/*
-	 * Traverse array from left side and stop if either A[i]==X or A[i]==Y
-	 * Store index of this in 'k'
-	 * Resume moving forward from index 'k'
-	 * If A[i] matches with either X or Y then check if it is different from A[k].
-	 * If it is different then update the minimum distance if needed.
-	 * If it is same then update k (i.e. make k=i)
-	 * -----------
-	 * -----------
-	 * min_dist = INFINITY;
+	 * Traverse the array
+	 * If A[i] matches with either X or Y and different from A[p], then update the 'min_dist', update p as i
+	 * If A[i] matches with either X or Y and same from A[p], update p as i
 	 * 
-	 * for(i = 0; i < n; i++) {
-	 * 	 if(A[i]==X || A[i]==Y) {
-	 * 		k = i;
-	 * 		break;
-	 * 	 }
+	 * -----------
+	 * p = -1
+	 * min_dist = INT_MAX
+	 * 
+	 * for(i=0 to n-1) {
+	 * 	  if(A[i] == X or Y) {
+	 *       if(p!=-1 && A[i]!=A[p]) {
+	 *          min_dist = min(min_dist, i-p)
+	 *       }
+	 *       p = i
+	 * 	  }
 	 * }
 	 * 
-	 * while(i<n) {
-	 * 	 if(A[i]==X || A[i]==Y) {
-	 * 		if (A[k]!=A[i] && (i-k)<min_dist) {
-	 * 			min_dist = i-k;
-	 * 			k=i;
-	 * 		}
-	 * 		else {
-	 * 			k=i;
-	 * 		}
-	 * 	 }
-	 * }
+	 * if(min_dist==INT_MAX)
+	 *    //print "not found"
+	 * else
+	 *    //print min_dist
 	 * 
-	 * TIME -- O(n)
+	 * TIME --- O(n)
+	 * SPACE -- O(1)
+	 * 
 	 */
 }

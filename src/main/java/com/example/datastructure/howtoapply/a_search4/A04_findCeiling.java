@@ -9,7 +9,6 @@ package com.example.datastructure.howtoapply.a_search4;
  * 		the floor of X is the greatest element in array <= X
  * *****************************************************************************
  * I/P: {1, 2, 8, 10, 10, 12, 19}
- * index 0  1  2  3   4   5   6
  * 
  * O/P: For X = 0:		FLOOR--n/a	CEILING--1
  * O/P: For X = 1:		FLOOR--1	CEILING--1
@@ -29,6 +28,9 @@ public class A04_findCeiling {
 	 * E.g,
 	 * for X=5 ---- 'i' is 2
 	 * so FLOOR=2, CEILING=8
+	 * 
+	 * TIME --- O(Log n)
+	 * SPACE -- O(1)
 	 * 
 	 */
 }

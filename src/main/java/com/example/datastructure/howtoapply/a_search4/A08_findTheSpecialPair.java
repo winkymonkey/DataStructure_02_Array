@@ -26,6 +26,8 @@ public class A08_findTheSpecialPair {
 	 * for each element in X[], traverse Y[]
 	 * and validate the condition
 	 * 
+	 * TIME --- O(n^2)
+	 * SPACE -- O(1)
 	 * 
 	 * 
 	 * 
@@ -43,8 +45,7 @@ public class A08_findTheSpecialPair {
 	 *  - If x=1, then count of possible y is 'the frequency of 0’s is the Y[]'
 	 *  - If x=2, then we cannot have a valid pair with y={2,3,4}... then the count of possible y is {0,1,5,6,......}
 	 *  - If x=3, then we cannot have a valid pair with y={3}... then the count of possible y is {0,1,2,4,5,.....}
-	 * 
-	 * 
+	 * ----------------
 	 * IMPLEMENTATION-1
 	 * ----------------
 	 * count = 0
@@ -54,14 +55,14 @@ public class A08_findTheSpecialPair {
 	 * 	  //now if Y[k] is greater than X[i], then Y[k+1],Y[k+2],.... all will be greater than X[i]
 	 * 	  //count = count + (Y.length-k)
 	 * }
-	 * 
-	 * TIME --- O(nLogn + mLogn)
-	 * SPACE -- O(1)
-	 * 
-	 * 
+	 * ----------------
 	 * IMPLEMENTATION-2
 	 * ----------------
 	 * SEE JAVA CODE
+	 * 
+	 * 
+	 * TIME --- O(nLogn + mLogn)
+	 * SPACE -- O(1)
 	 * 
 	 */
 }

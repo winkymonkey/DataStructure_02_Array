@@ -7,7 +7,7 @@ package com.example.datastructure.howtoapply.b_rotation;
  * I/P: {5, 6, 7, 8, 9, 10, 1, 2, 3};	O/P: 10
  * I/P: {40, 10, 20, 30};				O/P: 40
  * 
- * TIME - O(log n)
+ * TIME - O(Log n)
  * SPACE - O(1)
  * *************************************************************************
  */

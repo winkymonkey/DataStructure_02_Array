@@ -37,5 +37,8 @@ public class A01_findElement_whereAdjacentDiffersAtMostByK {
 	 * 	  }
 	 * }
 	 * 
+	 * TIME --- O(n)
+	 * SPACE -- O(1)
+	 * 
 	 */
 }

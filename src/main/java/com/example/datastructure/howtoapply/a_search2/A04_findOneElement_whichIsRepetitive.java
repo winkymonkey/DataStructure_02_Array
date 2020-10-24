@@ -25,7 +25,7 @@ public class A04_findOneElement_whichIsRepetitive {
 	 * Sort the input array
 	 * Traverse the array and check for missing
 	 * 
-	 * TIME --- O(n log n)
+	 * TIME --- O(nLogn)
 	 * SPACE -- O(1)
 	 * 
 	 * 

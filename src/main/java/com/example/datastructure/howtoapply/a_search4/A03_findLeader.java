@@ -8,7 +8,7 @@ package com.example.datastructure.howtoapply.a_search4;
  * Note that the rightmost element is always a leader. 
  * *****************************************************************************
  * I/P: {16, 17, 4, 3, 5, 2}
- * O/P: 17, 5 and 2
+ * O/P: 17, 5, 2
  * 
  * *****************************************************************************
  */
@@ -26,6 +26,9 @@ public class A03_findLeader {
 	 * 		print MAX;
 	 * 	 }
 	 * }
+	 * 
+	 * TIME --- O(n)
+	 * SPACE -- O(1)
 	 * 
 	 */
 }

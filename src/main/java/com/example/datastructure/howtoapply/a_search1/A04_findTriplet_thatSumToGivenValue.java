@@ -37,7 +37,7 @@ public class A04_findTriplet_thatSumToGivenValue {
 	 *       //apply 'sliding door' technique
 	 * 	  }
 	 * }
-	 * TIME --- O(n*log n) + O(n^2) ~ O(n^2)
+	 * TIME --- O(nLogn) + O(n^2) = O(n^2)
 	 * SPACE -- O(1)
 	 * 
 	 */

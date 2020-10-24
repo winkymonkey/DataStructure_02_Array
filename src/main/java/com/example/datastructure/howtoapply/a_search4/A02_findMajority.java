@@ -39,10 +39,10 @@ public class A02_findMajority {
 	 * -----------------
 	 * ---USE SORTING---
 	 * -----------------
-	 * Sort the array in O(n * log n) time
+	 * Sort the array in O(nLogn) time
 	 * Now traverse the array and keep track of each repeating element
 	 * 
-	 * TIME --- O(n * log n)
+	 * TIME --- O(nLogn)
 	 * SPACE -- O(1)
 	 * 
 	 * 
@@ -64,7 +64,7 @@ public class A02_findMajority {
 	 * }
 	 * 
 	 * TIME --- O(n^2) 			[if it's BST]
-	 * TIME --- O(n * log n)	[if it's Self Balancing Binary Tree]
+	 * TIME --- O(n Log n)		[if it's Self Balancing Binary Tree]
 	 * SPACE -- O(n)
 	 * 
 	 * 
@@ -86,7 +86,7 @@ public class A02_findMajority {
 	 * ALGORITHM
 	 * - Maintain 'a count of majority element'(count) & 'a majority index'(majIndex)
 	 *  
-	 * - Loop through each elements
+	 * - Traverse the array from i=1
 	 *   - If the next element is same then count++, else count--
 	 *   - If the count reaches 0 then make 'majIndex = i' and 'count = 1'
 	 *   - Finally A[majIndex] is considered as a candidate
@@ -99,39 +99,4 @@ public class A02_findMajority {
 	 * SPACE -- O(1)
 	 * 
 	 */
-	public static void main(String[] args) {
-		A02_findMajority majorelement = new A02_findMajority();
-		int A[] = { 1, 3, 3, 1, 2 };
-		//index     0  1  2  3  4
-		
-		majorelement.printMajority(A);
-	}
-	
-	
-	void printMajority(int A[]) {
-		int majIndex=0, count=1;			//maintains a 'count of majority element' & 'a majority index'
-		for (int i=1; i<A.length; i++) {
-			if (A[majIndex] == A[i])		//If the next element is same then count++, else count--
-				count++;
-			else
-				count--;
-			
-			if (count == 0) {
-				majIndex = i;
-				count = 1;
-			}
-		}
-		int candidate = A[majIndex];
-		
-		int countMajority = 0;
-		for (int i=0; i<A.length; i++) {
-			if (A[i] == candidate)
-				countMajority++;
-		}
-		if (countMajority > A.length/2)
-			System.out.println(candidate);
-		else
-			System.out.println("No Majority Element");
-		
-	}
 }

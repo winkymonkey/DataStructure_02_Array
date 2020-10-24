@@ -5,7 +5,7 @@ package com.example.datastructure.howtoapply.a_search4;
  * Find a peak element
  * *****************************************************************************
  * In an array, an element is a peak if it's NOT smaller than its neighbors.
- * For corner elements, we need to consider only one neighbor.
+ * NOTE: for corner elements, we need to consider only one neighbor.
  * *****************************************************************************
  * I/P: {5, 10, 20, 15}
  * O/P: 20
@@ -39,6 +39,7 @@ public class A07_findPeakElement {
 	 * SPACE -- O(1)
 	 * 
 	 * 
+	 * 
 	 * ---------------------
 	 * ---TRICKY APPROACH---
 	 * ---------------------
@@ -49,12 +50,13 @@ public class A07_findPeakElement {
 	 * 	  return;
 	 * if(A[mid] < left neighbor)
 	 * 	  //there is always a peak in left half
-	 * 	  //recursively call the function for left half
+	 * 	  //hence recursively call the function for left half
 	 * if(A[mid] < right neighbor)
 	 * 	  //there is always a peak in right half
-	 * 	  //recursively call the function for right half
+	 * 	  //hence recursively call the function for right half
 	 * 
-	 * TIME --- O(log n)
-	 * SPACE -- O(log n)
+	 * TIME --- O(Log n)
+	 * SPACE -- O(Log n)
+	 * 
 	 */
 }

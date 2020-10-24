@@ -42,7 +42,7 @@ public class A05_findQuadruplet_thatSumToGivenValue {
 	 *    }
 	 * }
 	 * 
-	 * TIME --- O(n*log n)+O(n^3) ~ O(n^3)
+	 * TIME --- O(nLogn)+O(n^3) = O(n^3)
 	 * SPACE -- O(1)
 	 * 
 	 * 
@@ -63,7 +63,7 @@ public class A05_findQuadruplet_thatSumToGivenValue {
 	 * 
 	 * NOTE: easy to do in C using pointers but tough to do in java
 	 * 
-	 * TIME --- O(n^2) + O(n^2 * log n^2) ~ O(n^2 log n) -------- (for creating AUX[])+(for sorting AUX[] of size O(n^2))
+	 * TIME --- O(n^2) + O(n^2 * Log n^2) = O(n^2 Log n) -------- (for creating AUX[])+(for sorting AUX[] of size O(n^2))
 	 * SPACE -- O(n*(n-1)/2) ~ O(n^2)
 	 * 
 	 * 

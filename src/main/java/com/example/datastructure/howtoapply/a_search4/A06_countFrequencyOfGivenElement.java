@@ -21,7 +21,8 @@ public class A06_countFrequencyOfGivenElement {
 	 * --------------------
 	 * linearly search X
 	 * 
-	 * TIME -- O(n)
+	 * TIME --- O(n)
+	 * SPACE -- O(1)
 	 * 
 	 * 
 	 * 
@@ -32,7 +33,8 @@ public class A06_countFrequencyOfGivenElement {
 	 * Search last index of X using binary search. Let the index be 'j'
 	 * Count = (j-1)+1
 	 * 
-	 * TIME -- O(log n)
+	 * TIME --- O(Log n)
+	 * SPACE -- O(1)
 	 * 
 	 */
 }

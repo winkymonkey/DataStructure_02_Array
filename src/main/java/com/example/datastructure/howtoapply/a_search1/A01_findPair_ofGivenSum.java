@@ -28,7 +28,7 @@ public class A01_findPair_ofGivenSum {
 	 *       l++;
 	 * }
 	 * 
-	 * TIME --- O(n*log n) + O(n) ~ O(n*log n)
+	 * TIME --- O(nLogn) + O(n) ~ O(nLogn)
 	 * SPACE -- O(1)
 	 * 
 	 * 
