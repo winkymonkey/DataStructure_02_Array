@@ -31,13 +31,13 @@ public class B02_InsertionSort {
 	private void insertionSort(int[] A) {
 		for(int i=1; i<A.length; i++) {		//Traverse from start+1 to end
 			int KEY = A[i];
-			int j = i-1;
+			int k = i-1;
 			
-			while(j>=0 && A[j]>KEY) {	//if current element > KEY
-				A[j+1] = A[j];			//right shift the elements
-				j--;
+			while(k>=0 && A[k]>KEY) {	//if current element > KEY
+				A[k+1] = A[k];			//right shift the elements
+				k--;
 			}
-			A[j+1] = KEY;				//place KEY at the slot
+			A[k+1] = KEY;				//place KEY at the slot
 		}
 		System.out.println(Arrays.toString(A));
 	}

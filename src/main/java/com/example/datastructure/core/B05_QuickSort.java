@@ -27,24 +27,24 @@ public class B05_QuickSort {
 	
 	private int partition(int A[], int left, int right) {
 		int pivot = A[right];
-		int i = left-1; 					//index of smaller element
+		int k = left-1; 					//index of smaller element
 		
-		for (int j=left; j<right; j++){
-			if (A[j] <= pivot){			//if current element is smaller than or equal to pivot
-				i++;
-				//swap A[i] and A[j]
-				int temp = A[i];
-				A[i] = A[j];
-				A[j] = temp;
+		for (int i=left; i<right; i++){
+			if (A[i] <= pivot){				//if current element is smaller than or equal to pivot
+				k++;
+				//swap A[i] and A[k]
+				int temp = A[k];
+				A[k] = A[i];
+				A[i] = temp;
 			}
 		}
-
-		//swap A[i+1] and A[right] (or pivot)
-		int temp = A[i+1];
-		A[i+1] = A[right];
+		
+		//swap A[k+1] and pivot
+		int temp = A[k+1];
+		A[k+1] = A[right];
 		A[right] = temp;
 
-		return i+1;
+		return k+1;
 	}
 	
 	
