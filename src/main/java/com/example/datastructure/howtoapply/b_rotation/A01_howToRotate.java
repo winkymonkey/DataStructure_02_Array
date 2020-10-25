@@ -14,7 +14,7 @@ public class A01_howToRotate {
 	 * --ROTATE ONE BY ONE--
 	 * ---------------------
 	 * d = d % n				[for example, rotating A of size 5 by 14 times is equivalent to rotating it by (14%5=)4 times]
-	 * for (i=0 to i<d) {
+	 * for (i=0 to d) {
 	 *    temp = A[0]
 	 *    for(j=0 to j<n) {
 	 *       A[j] = A[j+1]
@@ -50,10 +50,10 @@ public class A01_howToRotate {
 	 * ---DOUBLE ARRAY SOLUTION---
 	 * ---------------------------
 	 * for(i=0 to i<length) {					//Copy A[] twice in temp[0..2n-1] array
-	 *    temp[i] = temp[i+A.length] = A[i];
+	 *    temp[i] = temp[i+length] = A[i];
 	 * }
 	 * d = d % A.length							[for example, rotating A of size 5 by 14 times is equivalent to rotating it by (14%5=)4 times]
-	 * for(i=d to i<d+A.length) {
+	 * for(i=d to d+length) {
 	 *    print temp[i]
 	 * }
 	 * 
@@ -65,7 +65,7 @@ public class A01_howToRotate {
 	 * ---------------------------
 	 * ---SINGLE ARRAY SOLUTION---
 	 * ---------------------------
-	 * for (i=d to i<d+length) {
+	 * for (i=d to d+length) {
 	 *    //print A[i % length]
 	 * }
 	 * 
