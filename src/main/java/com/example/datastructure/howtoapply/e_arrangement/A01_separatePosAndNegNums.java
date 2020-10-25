@@ -17,17 +17,21 @@ public class A01_separatePosAndNegNums {
 	 * ---MODIFIED QUICK SORT---
 	 * -------------------------
 	 * Positive & Negative numbers are distributed around 0
-	 * So let us do "Partition Process Quick Sort" based on 'KEY'=0
+	 * So let us do "Partition Process Quick Sort" based on 'PIVOT=0'
 	 * After that all negative numbers will be left aligned, All positive numbers will be right aligned
 	 * 
-	 * i = -1;
-	 * for(j=0 to length) {
-	 *   if(A[j] < KEY) {
-	 * 		i++;
-	 * 		swap A[i] and A[j];
-	 * 	 }
-	 * 	 j++;
+	 * PIVOT = 0;
+	 * k = -1;
+	 * for(i=0 to length) {
+	 *    if(A[i] < PIVOT) {
+	 *       k++;
+	 *       swap A[i] and A[k];
+	 *    }
+	 *    i++;
 	 * }
+	 * 
+	 * TIME --- O(n)
+	 * SPACE -- O(1)
 	 * 
 	 * 
 	 * 
@@ -36,6 +40,6 @@ public class A01_separatePosAndNegNums {
 	 * -----------------------------
 	 * 	When encounter an Neg number, right-shift all the numbers left to it which will create a hole
 	 * 	Then place the current Neg number in the hole.
+	 * 
 	 */
 }
-

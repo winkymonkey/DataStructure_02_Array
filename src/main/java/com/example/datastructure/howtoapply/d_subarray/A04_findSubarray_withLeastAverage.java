@@ -5,10 +5,10 @@ package com.example.datastructure.howtoapply.d_subarray;
  * Find the subarray with least average
  * *****************************************************************************
  * I/P: A[] = {3, 7, 90, 20, 10, 50, 40}	k = 3
- * O/P: between indexes 3 and 5				//20,10,50
+ * O/P: between indexes 3 and 5	-- {20,10,50}
  * 
  * I/P: A[] = {3, 7, 5, 20, -10, 0, 12}		k = 2
- * O/P: between 4 and 5						//-10,0
+ * O/P: between indexes 4 and 5	-- {-10,0}
  * 
  * *****************************************************************************
  */

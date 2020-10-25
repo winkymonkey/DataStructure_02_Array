@@ -22,25 +22,27 @@ public class A02_alternatePosAndNegNums {
 	 * Positive & Negative numbers are distributed around 0
 	 * So let us do "Partition Process Quick Sort" based on 'KEY'=0
 	 * 
-	 * i = -1;
-	 * for(j=0 to length) {
-	 *   if(A[j] < KEY) {
-	 * 		i++;
-	 * 		swap A[i] and A[j];
-	 * 	 }
-	 * 	 j++;
+	 * PIVOT = 0;
+	 * k = -1;
+	 * for(i=0 to length) {
+	 *    if(A[i] < PIVOT) {
+	 *       k++;
+	 *       swap A[i] and A[k];
+	 *    }
+	 *    i++;
 	 * }
 	 * 
 	 * All negative numbers will be left aligned, All positive numbers will be right aligned
-	 * Now 'i' is pointing to the last negative number
+	 * Now 'k' is pointing to the last negative number
 	 * NEG = 0; 		//first negative number
-	 * POS = i+1;		//first positive number
+	 * POS = k+1;		//first positive number
 	 * 
 	 * Increment the NEG by 2 and POS by 1 and swap
 	 * (i.e. swap every alternate negative number with next positive number)
 	 * 
 	 * 
-	 * TIME -- O(n)
+	 * TIME --- O(n)
 	 * SPACE -- O(1)
+	 * 
 	 */
 }
