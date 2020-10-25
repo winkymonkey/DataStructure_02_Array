@@ -63,7 +63,7 @@ public class B06_DutchNationalFlagAlgorithm {
 	 *       swap A[M], A[H]
 	 *       H--
 	 * }
-	 * TIME -- O(n)
+	 * TIME --- O(n)
 	 * SPACE -- O(1)
 	 * 
 	 */
