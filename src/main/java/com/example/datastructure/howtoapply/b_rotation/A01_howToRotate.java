@@ -65,8 +65,8 @@ public class A01_howToRotate {
 	 * ---------------------------
 	 * ---SINGLE ARRAY SOLUTION---
 	 * ---------------------------
-	 * for (i=d to i<d+A.length) {
-	 *    //print A[i % A.length]
+	 * for (i=d to i<d+length) {
+	 *    //print A[i % length]
 	 * }
 	 * 
 	 * TIME --- O(n)
