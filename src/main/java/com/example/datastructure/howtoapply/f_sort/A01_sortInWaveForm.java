@@ -18,7 +18,8 @@ package com.example.datastructure.howtoapply.f_sort;
 public class A01_sortInWaveForm {
 	/*
 	 * Traverse all even positioned elements of input array
-	 * 		- If current element is smaller than previous odd element, swap previous and current.
-	 * 		- If current element is smaller than next odd element, swap next and current.
+	 *   - If current element is smaller than previous element, swap previous and current.
+	 *   - If current element is smaller than next element, swap next and current.
+	 *   
 	 */
 }

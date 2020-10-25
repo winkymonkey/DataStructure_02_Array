@@ -17,28 +17,67 @@ public class A03_sortByFrequency {
 	 * -----------------
 	 * ---USE SORTING---
 	 * -----------------
-	 * Use Modified Merge Sort
-	 * 	 Final array will store 'indexes of sorted elements' instead of 'sorted elements'.
-	 * 	 ARR--- {2 5 2 8 5 6 8 8}		SORTED ARR--{2 2 5 5 6 8 8 8}		FINAL ARRAY---{0 2 1 4 5 3 6 7}
-	 * 	 INDEX-- 0 1 2 3 4 5 6 7		OLD INDEX--- 0 2 1 4 5 3 6 7
+	 * Input,
+	 * A[] = {2, 5, 2, 8, 5, 6, 8, 8}
+	 * 
+	 * After sorting,
+	 * A[] = {2, 2, 5, 5, 6, 8, 8, 8}
+	 * 
+	 * Now construct a 2D array of 'elements VS their count'
+	 * ELEM  COUNT
+	 *   2    2
+	 *   5    2
+	 *   6    1
+	 *   8    3
+	 * 
+	 * Now sort by count
+	 * ELEM  COUNT
+	 *   8    3
+	 *   2    2
+	 *   5    2
+	 *   6    1
+	 * 
+	 * Final Array
+	 * {8, 8, 8, 2, 2, 5, 5, 6}
+	 * 
+	 * TIME --- O(nLogn)+O(n)+O(nLogn) = O(n)			[sorting + construct 2D array + sort 2D array]
+	 * SPACE -- O(n)
 	 * 
 	 * 
-	 * Now construct a 2D array from FINAL ARRAY
-	 * 	  Index	  Count
-	 * 		1		2
-	 * 		0		2
-	 * 		5		1
-	 * 		3		3
 	 * 
-	 * Sort by count (consider indexes in case of tie)
-	 * 	Index	Count
-	 * 	  3		  3
-	 *    0		  2
-	 *    1		  2
-	 *    5		  1
+	 * -----------------
+	 * ---USE SORTING---
+	 * -----------------
+	 * The above approach doesn’t make sure order of elements if the frequency is the same
+	 * To handle this, we should use indexes.
+	 * (i.e. if two counts are same then we should first print the element with a lower index).
 	 * 
-	 * Print the elements using indexes in the above 2D array.
-	 * TIME -- O(log n)
+	 * Input,
+	 * A[] =    {2, 5, 2, 8, 5, 6, 8, 8}
+	 * index     0  1  2  3  4  5  6  7
+	 * 
+	 * After sorting,
+	 * A[] =    {2, 2, 5, 5, 6, 8, 8, 8}
+	 * oldIndex  0  2  1  4  5  3  6  7
+	 * 
+	 * Now construct the 2D array of 'index VS their count'
+	 * INDEX  COUNT
+	 *   0      2
+	 *   1      2
+	 *   5      1
+	 *   3      3
+	 * 
+	 * Now sort by count (consider indexes in case of tie)
+	 * INDEX  COUNT
+	 *   3      3
+	 *   0      2
+	 *   1      2
+	 *   5      1
+	 * 
+	 * Final Array
+	 * {8, 8, 8, 2, 2, 5, 5, 6}
+	 * 
+	 * TIME --- O(nLogn)+O(n)+O(nLogn) = O(n)			[sorting + construct 2D array + sort 2D array]
 	 * SPACE -- O(n)
 	 * 
 	 * 
@@ -58,7 +97,7 @@ public class A03_sortByFrequency {
 	 * Now construct a 2D array to store original_index & count.
 	 * Sort the 2D array according to 'count'
 	 * 
-	 * TIME -- O(log n)
+	 * TIME --- O(log n)
 	 * SPACE -- O(log n)
 	 * 
 	 * 
@@ -66,9 +105,12 @@ public class A03_sortByFrequency {
 	 * -----------------
 	 * ---USE HASHING---
 	 * -----------------
-	 * 1.for each elements in array, store the element in HashMap.
-	 * 2.HashMap's key is the 'array element' & value is the 'frequency'.
-	 * 3.Sort the HashMap according to values.
+	 * for each elements in array, store the element in HashMap.
+	 * HashMap's key is the 'array element' & value is the 'frequency'.
+	 * Sort the HashMap according to values.
+	 * 
+	 * TIME --- O(logn)
+	 * SPACE -- O(n)
 	 * 
 	 */
 }

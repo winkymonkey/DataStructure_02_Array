@@ -22,6 +22,6 @@ package com.example.datastructure.howtoapply.f_sort;
 public class A02_sortAccordingToAbsoluteDiff {
 	/*
 	 * Modified Merge Sort
-	 * 		In its merge(A, l, m, r) method merge two arrays as per its difference with the given KEY
+	 * 		In its merge(A, l, m, r) method, merge two arrays as per its difference with the given KEY
 	 */
 }
