@@ -15,7 +15,7 @@ package com.example.datastructure.howtoapply.c_optimize;
  * 
  * *****************************************************************************
  */
-public class J04_findSubarray_withGivenSum {
+public class C04_findSubarray_withGivenSum {
 	/*
 	 * A[] --> 1, 4, 20, 3, 10, 5		SUM=33
 	 * 

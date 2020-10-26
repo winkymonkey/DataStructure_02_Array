@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.c_optimize;
  * 
  * *****************************************************************************
  */
-public class J03_findSubarray_withLeastAverage {
+public class C03_findSubarray_withLeastAverage {
 	/*
 	 * result_index = 0
 	 * curr_sum = 0;

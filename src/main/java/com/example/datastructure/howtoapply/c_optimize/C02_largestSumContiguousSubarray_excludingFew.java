@@ -14,7 +14,7 @@ package com.example.datastructure.howtoapply.c_optimize;
  * 
  * *****************************************************************************
  */
-public class J02_largestSumContiguousSubarray_excludingFew {
+public class C02_largestSumContiguousSubarray_excludingFew {
 	/*
 	 * ---------------------------------
 	 * ---MODIFIED KADANE'S ALGORITHM---
