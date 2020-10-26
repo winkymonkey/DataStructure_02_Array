@@ -2,9 +2,13 @@ package com.example.datastructure.howtoapply.f_sort;
 
 import java.util.Arrays;
 
-
-public class F06_sortInSingleLoop {
-	private static F06_sortInSingleLoop obj = new F06_sortInSingleLoop();
+/**
+ * *****************************************************************************
+ * How to sort an array in a single loop?
+ * *****************************************************************************
+ */
+public class F07_sortInSingleLoop {
+	private static F07_sortInSingleLoop obj = new F07_sortInSingleLoop();
 	
 	public static void main(String[] args) {
 		int A[] = {38, 27, 43, 3, 9, 82, 10};

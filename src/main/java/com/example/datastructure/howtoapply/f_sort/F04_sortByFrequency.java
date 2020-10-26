@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.f_sort;
  * 
  * *****************************************************************************
  */
-public class F03_sortByFrequency {
+public class F04_sortByFrequency {
 	/*
 	 * -----------------
 	 * ---USE SORTING---
