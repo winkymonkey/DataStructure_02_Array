@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.d_subarray;
  * 
  * *****************************************************************************
  */
-public class A99_findSmallestUnsortedSubarray_sortingWhichMakeArraySorted {
+public class A05_findSmallestUnsortedSubarray_sortingWhichMakeArraySorted {
 	/*
 	 * In an increasing sorted array, each element is greater than its previous & smaller than its next. 
 	 * for(i=0 to n-2)

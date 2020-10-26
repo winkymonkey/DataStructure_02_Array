@@ -11,7 +11,7 @@ package com.example.datastructure.howtoapply.b_rotation;
  * O/P: 40
  * *************************************************************************
  */
-public class A03_sortedRotated_findPivot {
+public class A02_sortedRotated_findPivot {
 	/*
 	 * ----------------------------
 	 * ---LINEAR SEARCH APPROACH---

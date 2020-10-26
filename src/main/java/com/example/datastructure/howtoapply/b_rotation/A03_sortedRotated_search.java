@@ -13,7 +13,7 @@ package com.example.datastructure.howtoapply.b_rotation;
  * 
  * *************************************************************************
  */
-public class A04_sortedRotated_search {
+public class A03_sortedRotated_search {
 	/*
 	 * ----------------------------
 	 * ---LINEAR SEARCH APPROACH---

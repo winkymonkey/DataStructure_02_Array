@@ -8,7 +8,7 @@ package com.example.datastructure.howtoapply.b_rotation;
  * O/P: 2
  * *****************************************************************************
  */
-public class A06_sortedRotated_findRotateCount {
+public class A05_sortedRotated_findRotateCount {
 	/*
 	 * Find the pivot element in O(log n) time
 	 * Next element of the Pivot is the smallest one (let it be k)

@@ -14,7 +14,7 @@ package com.example.datastructure.howtoapply.b_rotation;
  * SPACE -- O(1)
  * *****************************************************************************
  */
-public class A05_sortedRotated_findPairOfGivenSum {
+public class A04_sortedRotated_findPairOfGivenSum {
 	/*
 	 * Given an array A[] and a number SUM, check for pair in A[] having sum as SUM
 	 * -- we already solved this problem using sort & then sliding door technique
