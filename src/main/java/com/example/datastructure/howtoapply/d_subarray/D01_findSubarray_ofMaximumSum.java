@@ -20,8 +20,10 @@ public class D01_findSubarray_ofMaximumSum {
 	 * sum = 0;
 	 * for(i=0 to length) {
 	 * 	  sum = sum + A[i]
+	 *    
 	 *    if(sum < 0)
 	 *       sum = 0;
+	 *    
 	 *    if(sum > MAX)
 	 *       MAX = sum;
 	 * }
