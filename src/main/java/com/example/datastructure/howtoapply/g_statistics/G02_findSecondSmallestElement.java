@@ -1,7 +1,7 @@
 package com.example.datastructure.howtoapply.g_statistics;
 
 
-public class A02_findSecondSmallestElement {
+public class G02_findSecondSmallestElement {
 	public static void main(String[] args) {
 		int A[] = { 38, 27, 43, 3, 9, 82, 10 };
 		

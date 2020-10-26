@@ -11,7 +11,7 @@ package com.example.datastructure.howtoapply.g_statistics;
  * 
  * *****************************************************************************
  */
-public class A05_findMedian_ofTwoSortedArraysOfDifferentSize {
+public class G05_findMedian_ofTwoSortedArraysOfDifferentSize {
 	/*
 	 * same as 'Median of two sorted arrays of same size'
 	 */

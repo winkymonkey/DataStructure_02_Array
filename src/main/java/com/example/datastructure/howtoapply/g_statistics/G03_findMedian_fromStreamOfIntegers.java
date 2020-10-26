@@ -17,7 +17,7 @@ package com.example.datastructure.howtoapply.g_statistics;
  * 
  * *****************************************************************************
  */
-public class A03_findMedian_fromStreamOfIntegers {
+public class G03_findMedian_fromStreamOfIntegers {
 	/*
 	 * --------------------
 	 * ---INSERTION SORT---
