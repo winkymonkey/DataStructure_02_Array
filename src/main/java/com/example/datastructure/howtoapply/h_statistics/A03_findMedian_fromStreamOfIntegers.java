@@ -1,4 +1,4 @@
-package com.example.datastructure.howtoapply.a_search3;
+package com.example.datastructure.howtoapply.h_statistics;
 
 /**
  * *****************************************************************************
@@ -17,7 +17,7 @@ package com.example.datastructure.howtoapply.a_search3;
  * 
  * *****************************************************************************
  */
-public class A01_findMedian_fromStreamOfIntegers {
+public class A03_findMedian_fromStreamOfIntegers {
 	/*
 	 * --------------------
 	 * ---INSERTION SORT---

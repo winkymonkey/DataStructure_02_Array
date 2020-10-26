@@ -45,9 +45,10 @@ public class A03_sortByFrequency {
 	 * 
 	 * 
 	 * 
-	 * -----------------
-	 * ---USE SORTING---
-	 * -----------------
+	 * 
+	 * ---------------------------------------------
+	 * ---USE SORTING (KEEPING ORDER OF ELEMENTS)---
+	 * ---------------------------------------------
 	 * The above approach doesn’t make sure order of elements if the frequency is the same
 	 * To handle this, we should use indexes.
 	 * (i.e. if two counts are same then we should first print the element with a lower index).
@@ -82,6 +83,20 @@ public class A03_sortByFrequency {
 	 * 
 	 * 
 	 * 
+	 * 
+	 * -----------------
+	 * ---USE HASHING---
+	 * -----------------
+	 * for each elements in array, store the element in HashMap.
+	 * HashMap's key is the 'array element' & value is the 'frequency'.
+	 * Sort the HashMap according to values.
+	 * 
+	 * TIME --- O(logn)
+	 * SPACE -- O(n)
+	 * 
+	 * 
+	 * 
+	 * 
 	 * -----------------------
 	 * ---USE BST & SORTING---
 	 * -----------------------
@@ -99,18 +114,6 @@ public class A03_sortByFrequency {
 	 * 
 	 * TIME --- O(log n)
 	 * SPACE -- O(log n)
-	 * 
-	 * 
-	 * 
-	 * -----------------
-	 * ---USE HASHING---
-	 * -----------------
-	 * for each elements in array, store the element in HashMap.
-	 * HashMap's key is the 'array element' & value is the 'frequency'.
-	 * Sort the HashMap according to values.
-	 * 
-	 * TIME --- O(logn)
-	 * SPACE -- O(n)
 	 * 
 	 */
 }

@@ -1,4 +1,4 @@
-package com.example.datastructure.howtoapply.a_search3;
+package com.example.datastructure.howtoapply.h_statistics;
 
 /**
  * *****************************************************************************
@@ -11,7 +11,7 @@ package com.example.datastructure.howtoapply.a_search3;
  * 
  * *****************************************************************************
  */
-public class A02_findMedian_ofTwoSortedArraysOfSameSize {
+public class A04_findMedian_ofTwoSortedArraysOfSameSize {
 	/*
 	 * Use merge procedure of merge sort.
 	 */

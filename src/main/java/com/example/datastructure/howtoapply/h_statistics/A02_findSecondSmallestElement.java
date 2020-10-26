@@ -1,4 +1,4 @@
-package com.example.datastructure.howtoapply.a_search0;
+package com.example.datastructure.howtoapply.h_statistics;
 
 
 public class A02_findSecondSmallestElement {
