@@ -18,7 +18,7 @@ package com.example.datastructure.howtoapply.e_sort;
  * *****************************************************************************
  */
 
-public class F10_sortestUnorderedSubArray {
+public class E10_sortestUnorderedSubArray {
 	/*
 	 * The idea is based on the fact that size of shortest subarray would be either 0 or 3.
 	 * We have to check array element is either increasing or decreasing

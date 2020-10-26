@@ -11,7 +11,7 @@ package com.example.datastructure.howtoapply.f_merge;
  * 
  * *****************************************************************************
  */
-public class C04_commonInThreeSubArray {
+public class F04_commonInThreeSubArray {
 	/*
 	 * --------------------
 	 * ---NAIVE APPROACH---

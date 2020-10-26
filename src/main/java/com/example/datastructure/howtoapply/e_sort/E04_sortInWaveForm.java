@@ -15,7 +15,7 @@ package com.example.datastructure.howtoapply.e_sort;
  * 
  * ******************************************************************************************
  */
-public class F04_sortInWaveForm {
+public class E04_sortInWaveForm {
 	/*
 	 * Traverse all even positioned elements of input array
 	 *   - If current element is smaller than previous element, swap previous and current.

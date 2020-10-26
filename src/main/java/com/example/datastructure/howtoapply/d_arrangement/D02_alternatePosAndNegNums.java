@@ -14,7 +14,7 @@ package com.example.datastructure.howtoapply.d_arrangement;
  * O/P: A[] = [9, -7, 8, -3, 5, -1, 2, 4, 6]
  * ******************************************************************************************
  */
-public class E02_alternatePosAndNegNums {
+public class D02_alternatePosAndNegNums {
 	/*
 	 * -------------------------
 	 * ---MODIFIED QUICK SORT---

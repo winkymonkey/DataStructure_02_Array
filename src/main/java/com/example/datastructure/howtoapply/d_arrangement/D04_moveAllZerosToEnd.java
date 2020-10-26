@@ -16,7 +16,7 @@ package com.example.datastructure.howtoapply.d_arrangement;
  * *******************************************************************************************************
  */
 
-public class E04_moveAllZerosToEnd {
+public class D04_moveAllZerosToEnd {
 	/*
 	 * count = 0
 	 * for(int i=0 to n) {

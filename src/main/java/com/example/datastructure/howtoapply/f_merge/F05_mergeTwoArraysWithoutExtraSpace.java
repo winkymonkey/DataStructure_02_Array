@@ -17,7 +17,7 @@ package com.example.datastructure.howtoapply.f_merge;
  * *****************************************************************************
  */
 
-public class F08_mergeTwoArraysWithoutExtraSpace {
+public class F05_mergeTwoArraysWithoutExtraSpace {
 	/*
 	 * The idea is to begin from last element of B[] and search it in A[]
 	 * If there is a greater element in A[], then we move A[last] to correct place in B[]

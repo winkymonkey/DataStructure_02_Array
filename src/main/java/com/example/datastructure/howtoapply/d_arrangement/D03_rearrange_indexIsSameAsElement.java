@@ -18,7 +18,7 @@ package com.example.datastructure.howtoapply.d_arrangement;
  * 
  * *******************************************************************************************************
  */
-public class E03_rearrange_indexIsSameAsElement {
+public class D03_rearrange_indexIsSameAsElement {
 	/*
 	 * -------------------
 	 * ---ANOTHER ARRAY---

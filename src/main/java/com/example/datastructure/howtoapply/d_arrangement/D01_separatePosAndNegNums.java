@@ -11,7 +11,7 @@ package com.example.datastructure.howtoapply.d_arrangement;
  * O/P: [-13 -5 -7 -3 -6 12 11 6 5]
  * *******************************************************************************************************
  */
-public class E01_separatePosAndNegNums {
+public class D01_separatePosAndNegNums {
 	/*
 	 * -------------------------
 	 * ---MODIFIED QUICK SORT---

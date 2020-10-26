@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.e_sort;
  * 
  * *****************************************************************************
  */
-public class F09_sortArrayContaining1toN {
+public class E09_sortArrayContaining1toN {
 	/*
 	 * Replace every element with it’s position.
 	 * It takes O(n) efficient time and give you the sorted array.

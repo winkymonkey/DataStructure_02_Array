@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.f_merge;
  * 
  * *****************************************************************************
  */
-public class C02_merge_twoArraysIntoTwoArrays {
+public class F02_merge_twoArraysIntoTwoArrays {
 	/*
 	 * A[] --- pointer i
 	 * B[] --- pointer j

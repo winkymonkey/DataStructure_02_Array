@@ -19,7 +19,7 @@ package com.example.datastructure.howtoapply.e_sort;
  * 
  * ******************************************************************************************
  */
-public class F05_sortAccordingToAbsoluteDiff {
+public class E05_sortAccordingToAbsoluteDiff {
 	/*
 	 * Modified Merge Sort
 	 * 		In its merge(A, l, m, r) method, merge two arrays as per its difference with the given KEY

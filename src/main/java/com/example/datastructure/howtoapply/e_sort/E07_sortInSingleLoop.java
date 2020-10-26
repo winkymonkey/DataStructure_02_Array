@@ -7,8 +7,8 @@ import java.util.Arrays;
  * How to sort an array in a single loop?
  * *****************************************************************************
  */
-public class F07_sortInSingleLoop {
-	private static F07_sortInSingleLoop obj = new F07_sortInSingleLoop();
+public class E07_sortInSingleLoop {
+	private static E07_sortInSingleLoop obj = new E07_sortInSingleLoop();
 	
 	public static void main(String[] args) {
 		int A[] = {38, 27, 43, 3, 9, 82, 10};

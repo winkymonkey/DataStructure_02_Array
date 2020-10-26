@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.f_merge;
  * 
  * *****************************************************************************
  */
-public class C03_unionIntersection {
+public class F03_unionIntersection {
 	/*
 	 * i = 0;								//to traverse A[]
 	 * j = 0;								//to traverse B[]

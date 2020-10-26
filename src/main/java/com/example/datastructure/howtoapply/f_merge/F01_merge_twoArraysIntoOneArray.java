@@ -10,7 +10,7 @@ package com.example.datastructure.howtoapply.f_merge;
  * 
  * *****************************************************************************
  */
-public class C01_merge_twoArraysIntoOneArray {
+public class F01_merge_twoArraysIntoOneArray {
 	/*
 	 * -------------------------
 	 * ---USING ANOTHER ARRAY---

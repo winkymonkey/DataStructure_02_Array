@@ -15,7 +15,7 @@ package com.example.datastructure.howtoapply.e_sort;
  * 
  * ******************************************************************************************
  */
-public class F03_sortAlternatively {
+public class E03_sortAlternatively {
 	/*
 	 * Sort input array using a O(nLogn) algorithm
 	 * Maintain two pointers, one from beginning and one from end in sorted array
