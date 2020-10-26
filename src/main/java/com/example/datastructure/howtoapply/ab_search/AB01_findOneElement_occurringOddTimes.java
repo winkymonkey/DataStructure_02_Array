@@ -1,4 +1,4 @@
-package com.example.datastructure.howtoapply.a_search2;
+package com.example.datastructure.howtoapply.ab_search;
 
 /**
  * *****************************************************************************

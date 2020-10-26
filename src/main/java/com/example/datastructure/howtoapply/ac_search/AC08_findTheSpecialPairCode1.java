@@ -1,4 +1,4 @@
-package com.example.datastructure.howtoapply.a_search3;
+package com.example.datastructure.howtoapply.ac_search;
 
 import java.util.Arrays;
 
