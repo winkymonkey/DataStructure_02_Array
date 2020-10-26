@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.f_sort;
  * 
  * *****************************************************************************
  */
-public class F06_sort_0s1s2s {
+public class F01_sort_0s1s2s {
 	/*
 	 * Refer to DNF (Dutch National Flag problem)
 	 */

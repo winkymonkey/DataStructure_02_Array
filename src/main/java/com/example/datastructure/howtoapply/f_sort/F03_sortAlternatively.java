@@ -15,7 +15,7 @@ package com.example.datastructure.howtoapply.f_sort;
  * 
  * ******************************************************************************************
  */
-public class F01_sortAlternatively {
+public class F03_sortAlternatively {
 	/*
 	 * Sort input array using a O(nLogn) algorithm
 	 * Maintain two pointers, one from beginning and one from end in sorted array
