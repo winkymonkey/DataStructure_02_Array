@@ -19,7 +19,7 @@ import java.util.Arrays;
  * 
  * *****************************************************************************
  */
-public class A01_countNumberOfTriangles {
+public class H01_countNumberOfTriangles {
 	/*
 	 * First sort the array in ascending order
 	 * Then use two loops. The outer loop (i) to fix the first side & inner loop (j) to fix the second side

@@ -5,7 +5,7 @@ package com.example.datastructure.howtoapply.h_misc;
  * Find position of an element in a sorted array of infinite numbers
  * *****************************************************************************
  */
-public class A04_search_inSortedArray_infiniteLength {
+public class H04_search_inSortedArray_infiniteLength {
 	/*
 	 * Since array is sorted, the first thing clicks into mind is binary search.
 	 * But the problem here is that we don't know size of array.

@@ -1,4 +1,4 @@
-package com.example.datastructure.howtoapply.c_subarray;
+package com.example.datastructure.howtoapply.c_optimize;
 
 /**
  * *****************************************************************************
@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.c_subarray;
  * 
  * *****************************************************************************
  */
-public class D04_findSubarray_withLeastAverage {
+public class J03_findSubarray_withLeastAverage {
 	/*
 	 * result_index = 0
 	 * curr_sum = 0;

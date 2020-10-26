@@ -1,4 +1,4 @@
-package com.example.datastructure.howtoapply.c_subarray;
+package com.example.datastructure.howtoapply.c_optimize;
 
 /**
  * *****************************************************************************
@@ -11,7 +11,7 @@ package com.example.datastructure.howtoapply.c_subarray;
  * 
  * *****************************************************************************
  */
-public class D01_findSubarray_ofMaximumSum {
+public class J01_largestSumContiguousSubarray {
 	/*
 	 * ------------------------
 	 * ---KADANE'S ALGORITHM---

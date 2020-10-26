@@ -24,7 +24,7 @@ package com.example.datastructure.howtoapply.h_misc;
  * 
  * *****************************************************************************
  */
-public class A03_countFrequency_withoutExtraSpace {
+public class H03_countFrequency_withoutExtraSpace {
 	
 	public static void main(String[] args) {
 		int A[] = {2, 3, 3, 2, 5};

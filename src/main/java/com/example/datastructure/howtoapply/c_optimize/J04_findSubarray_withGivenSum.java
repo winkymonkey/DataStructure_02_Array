@@ -1,4 +1,4 @@
-package com.example.datastructure.howtoapply.c_subarray;
+package com.example.datastructure.howtoapply.c_optimize;
 
 /**
  * *****************************************************************************
@@ -15,7 +15,7 @@ package com.example.datastructure.howtoapply.c_subarray;
  * 
  * *****************************************************************************
  */
-public class D03_findSubarray_withGivenSum {
+public class J04_findSubarray_withGivenSum {
 	/*
 	 * A[] --> 1, 4, 20, 3, 10, 5		SUM=33
 	 * 

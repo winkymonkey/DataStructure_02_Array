@@ -19,7 +19,7 @@ package com.example.datastructure.howtoapply.h_misc;
  * 
  * *****************************************************************************
  */
-public class A02_constructArrayFromItsPairSumArray {
+public class H02_constructArrayFromItsPairSumArray {
 	/*
 	 * Let us take an example of 
 	 * A[] =    {6, 8, 3, 4}		n=4
