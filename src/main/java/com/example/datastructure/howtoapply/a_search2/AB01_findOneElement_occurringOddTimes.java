@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.a_search2;
  * 
  * *****************************************************************************
  */
-public class A01_findOneElement_occurringOddTimes {
+public class AB01_findOneElement_occurringOddTimes {
 	/*
 	 * -------------------
 	 * ---USING HASHING---

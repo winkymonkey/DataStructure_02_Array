@@ -15,7 +15,7 @@ package com.example.datastructure.howtoapply.a_search2;
  * 
  * *****************************************************************************
  */
-public class A03_findOneElement_whichIsMissing {
+public class AB03_findOneElement_whichIsMissing {
 	/*
 	 * -------------------
 	 * ---USING SORTING---

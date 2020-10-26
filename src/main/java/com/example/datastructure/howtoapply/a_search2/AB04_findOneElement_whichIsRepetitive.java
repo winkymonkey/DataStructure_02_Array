@@ -17,7 +17,7 @@ package com.example.datastructure.howtoapply.a_search2;
  * 
  * *****************************************************************************
  */
-public class A04_findOneElement_whichIsRepetitive {
+public class AB04_findOneElement_whichIsRepetitive {
 	/*
 	 * -------------------
 	 * ---USING SORTING---

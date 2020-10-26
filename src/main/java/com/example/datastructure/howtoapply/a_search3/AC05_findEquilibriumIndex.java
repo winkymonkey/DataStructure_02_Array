@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.a_search3;
  * 
  * *****************************************************************************
  */
-public class A05_findEquilibriumIndex {
+public class AC05_findEquilibriumIndex {
 	/*
 	 * ---------------
 	 * ---USING SUM---

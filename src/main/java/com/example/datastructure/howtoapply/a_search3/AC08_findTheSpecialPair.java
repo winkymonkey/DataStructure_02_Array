@@ -18,7 +18,7 @@ package com.example.datastructure.howtoapply.a_search3;
  * 
  * *****************************************************************************
  */
-public class A08_findTheSpecialPair {
+public class AC08_findTheSpecialPair {
 	/*
 	 * --------------------
 	 * ---NAIVE APPROACH---

@@ -10,7 +10,7 @@ package com.example.datastructure.howtoapply.a_search1;
  * 
  * *****************************************************************************
  */ 
-public class A01_findPair_ofGivenSum {
+public class AA01_findPair_ofGivenSum {
 	/*
 	 * -----------------------------------
 	 * ---SORT & SLIDING DOOR TECHNIQUE---

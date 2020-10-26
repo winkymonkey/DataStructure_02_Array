@@ -3,7 +3,7 @@ package com.example.datastructure.howtoapply.a_search3;
 import java.util.Arrays;
 
 
-public class A08_findTheSpecialPairCode1 {
+public class AC08_findTheSpecialPairCode1 {
 	
 	public static void main(String args[]) {
 		int X[] = { 10, 19, 18 };

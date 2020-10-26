@@ -27,7 +27,7 @@ package com.example.datastructure.howtoapply.a_search3;
  * 
  * *****************************************************************************
  */
-public class A07_findPeakElement {
+public class AC07_findPeakElement {
 	/*
 	 * --------------------
 	 * ---NAIVE APPROACH---

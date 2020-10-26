@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.a_search3;
  * 
  * *****************************************************************************
  */
-public class A03_findLeader {
+public class AC03_findLeader {
 	/*
 	 * Scan all the elements from right to left in array and keep track of maximum till now.
 	 * When maximum changes it's value, print it.

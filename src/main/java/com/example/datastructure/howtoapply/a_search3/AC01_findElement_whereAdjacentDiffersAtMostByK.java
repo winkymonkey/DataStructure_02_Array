@@ -16,7 +16,7 @@ package com.example.datastructure.howtoapply.a_search3;
  * 
  * *****************************************************************************
  */
-public class A01_findElement_whereAdjacentDiffersAtMostByK {
+public class AC01_findElement_whereAdjacentDiffersAtMostByK {
 	/*
 	 * ----------------------
 	 * ---OPTIMAL SOLUTION---

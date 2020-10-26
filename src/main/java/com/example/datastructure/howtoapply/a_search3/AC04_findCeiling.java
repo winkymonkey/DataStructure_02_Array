@@ -17,7 +17,7 @@ package com.example.datastructure.howtoapply.a_search3;
  * 
  * *****************************************************************************
  */
-public class A04_findCeiling {
+public class AC04_findCeiling {
 	/*
 	 * -------------------
 	 * ---BINARY SEARCH---

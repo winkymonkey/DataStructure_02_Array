@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.a_search2;
  * 
  * *****************************************************************************
  */
-public class A02_findTwoElements_occurringOddTimes {
+public class AB02_findTwoElements_occurringOddTimes {
 	/*
 	 * -----------------------
 	 * ---USING BITWISE XOR---

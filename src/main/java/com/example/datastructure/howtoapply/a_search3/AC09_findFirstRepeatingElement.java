@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.a_search3;
  * 
  * *****************************************************************************
  */
-public class A09_findFirstRepeatingElement {
+public class AC09_findFirstRepeatingElement {
 	/*
 	 * -------------
 	 * ---SORTING---

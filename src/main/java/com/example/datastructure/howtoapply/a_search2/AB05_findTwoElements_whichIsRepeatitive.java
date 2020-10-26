@@ -9,7 +9,7 @@ package com.example.datastructure.howtoapply.a_search2;
  * 
  * *****************************************************************************
  */
-public class A05_findTwoElements_whichIsRepeatitive {
+public class AB05_findTwoElements_whichIsRepeatitive {
 	/*
 	 * -------------------
 	 * ---USING HASHING---

@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.a_search1;
  * 
  * *****************************************************************************
  */
-public class A03_findPair_whoseSumIsClosestToGivenValue {
+public class AA03_findPair_whoseSumIsClosestToGivenValue {
 	/*
 	 * ----------------------------
 	 * ---SLIDING DOOR TECHNIQUE---

@@ -9,7 +9,7 @@ package com.example.datastructure.howtoapply.a_search1;
  * 
  * *****************************************************************************
  */
-public class A04_findTriplet_thatSumToGivenValue {
+public class AA04_findTriplet_thatSumToGivenValue {
 	/*
 	 * --------------------
 	 * ---NAIVE APPROACH---

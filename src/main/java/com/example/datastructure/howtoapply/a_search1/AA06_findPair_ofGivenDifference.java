@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.a_search1;
  * 
  * *****************************************************************************
  */
-public class A06_findPair_ofGivenDifference {
+public class AA06_findPair_ofGivenDifference {
 	/*
 	 * Traverse the array
 	 * Store A[i] in HASHTABLE

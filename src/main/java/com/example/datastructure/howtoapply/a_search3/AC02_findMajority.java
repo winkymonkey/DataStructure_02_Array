@@ -15,7 +15,7 @@ package com.example.datastructure.howtoapply.a_search3;
  * 
  * *****************************************************************************
  */
-public class A02_findMajority {
+public class AC02_findMajority {
 	/*
 	 * -----------------
 	 * ---USE HASHING---

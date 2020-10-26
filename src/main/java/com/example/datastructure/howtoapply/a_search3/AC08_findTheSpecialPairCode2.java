@@ -1,7 +1,7 @@
 package com.example.datastructure.howtoapply.a_search3;
 
 
-public class A08_findTheSpecialPairCode2 {
+public class AC08_findTheSpecialPairCode2 {
 	public static void main(String[] args) {
 		int X[] = { 0, 1, 2, 3, 10, 19, 18 };
 		int Y[] = { 11, 15, 9 };

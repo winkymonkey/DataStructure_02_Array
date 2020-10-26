@@ -14,7 +14,7 @@ package com.example.datastructure.howtoapply.a_search3;
  * 
  * *****************************************************************************
  */
-public class A06_countFrequencyOfGivenElement {
+public class AC06_countFrequencyOfGivenElement {
 	/*
 	 * --------------------
 	 * ---NAIVE APPROACH---

@@ -1,10 +1,10 @@
 package com.example.datastructure.howtoapply.a_search3;
 
 
-public class A02_findMajorityCode1 {
+public class AC02_findMajorityCode1 {
 	
 	public static void main(String[] args) {
-		A02_findMajorityCode1 obj = new A02_findMajorityCode1();
+		AC02_findMajorityCode1 obj = new AC02_findMajorityCode1();
 		int A[] = {3, 3, 4, 2, 4, 4, 2, 4, 4};
 		//index    0  1  2  3  4  5  6  7  8
 		

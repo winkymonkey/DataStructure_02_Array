@@ -12,7 +12,7 @@ package com.example.datastructure.howtoapply.a_search1;
  * 
  * *****************************************************************************
  */
-public class A02_findPair_whoseSumIsClosestToZero {
+public class AA02_findPair_whoseSumIsClosestToZero {
 	/*
 	 * -----------------------------------
 	 * ---SORT & SLIDING DOOR TECHNIQUE---
