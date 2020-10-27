@@ -110,7 +110,7 @@ public class B03_MergeSort {
 	 * Recurrence relation
 	 * T(n) = T(n/2) + T(n/2) + O(n)
 	 *      = 2.T(n/2) + O(n)
-	 *      = O(n * log n)
+	 *      = O(n * log n)				---using Master's Theorem
 	 * 
 	 * 
 	 * 

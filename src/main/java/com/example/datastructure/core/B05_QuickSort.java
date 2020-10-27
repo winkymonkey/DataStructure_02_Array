@@ -55,14 +55,23 @@ public class B05_QuickSort {
 	 * --------------------------
 	 * in case of merge sort, the array is divided in two equal halves
 	 * But in case of quick sort, the 'partitioning place' depends on the 'partitioning algorithm'
-	 * 
-	 * In best case, the array is divided into two equal halves.
-	 *     T(n) = T(n/2) + T(n/2) + O(n)
+	 * ---------
+	 * BEST CASE
+	 * --------- 
+	 * When the partition process picks the middle element as pivot.
+	 * Hence the array is divided into two equal halves.
+	 *     T(n) = [time taken to sort 1st part] + [time taken to sort 2nd part] + [partitioning process]
+	 *          = T(n/2) + T(n/2) + O(n)
 	 *          = 2.T(n/2) + O(n)
 	 *          = O(n log n)
-	 * 
-	 * In worst case, one partition contains 0 elements, and another partition contains (n-1) elements 
-	 *     T(n) = T(0) + T(n-1) + O(n)
+	 * ----------
+	 * WORST CASE
+	 * ----------
+	 * When the partition process picks greatest or smallest element as pivot.
+	 * It also happens when all elements are same.
+	 * Hence one partition contains 0 elements, and another partition contains (n-1) elements 
+	 *     T(n) = [time taken to sort 1st part] + [time taken to sort 2nd part] + [partitioning process]
+	 *          = T(0) + T(n-1) + O(n)
 	 *          = T(n-1) + O(n)
 	 *          = T(n-1) + c.n
 	 *          = T(n-2) + c(n-1) + c.n
@@ -76,15 +85,20 @@ public class B05_QuickSort {
 	 * 
 	 * 
 	 * 
-	 * 
 	 * --------------------------
 	 * 		SPACE COMPLEXITY
 	 * --------------------------
-	 * In best case, the array is divided into two equal halves
+	 * ---------
+	 * BEST CASE
+	 * --------- 
+	 * in this case, the array is divided into two equal halves
 	 *    hence the recursion tree is balanced 
 	 * 	  hence total space is 'height of the tree' which is O(log n)
 	 * 
-	 * In worst case, one partition contains 0 elements, and another partition contains (n-1) elements
+	 * ----------
+	 * WORST CASE
+	 * ----------
+	 * in this case, one partition contains 0 elements, and another partition contains (n-1) elements
 	 *    hence the recursion tree is skewed
 	 *    hence total space is 'O(n)'
 	 * 
