@@ -9,6 +9,9 @@ public class C07B_minimumJumpsToReachEnd_dynamicProg {
 	 * 
 	 * So we will now apply Dynamic Programming (tabulation method, bottom up)
 	 * 
+	 * TIME --- O(n^2)
+	 * SPACE -- O(n)
+	 * 
 	 */
 	
 	private static int table[][] = {};
