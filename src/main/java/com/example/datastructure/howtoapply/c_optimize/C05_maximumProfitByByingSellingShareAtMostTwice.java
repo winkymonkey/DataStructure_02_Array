@@ -32,7 +32,7 @@ package com.example.datastructure.howtoapply.c_optimize;
  * *****************************************************************************
  */
 
-public class C06_maximumProfitByByingSellingShareAtMostTwice {
+public class C05_maximumProfitByByingSellingShareAtMostTwice {
 	/*
 	 * profit1 = 0, profit2 = 0
 	 * 

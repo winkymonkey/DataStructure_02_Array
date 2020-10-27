@@ -48,7 +48,7 @@ import java.util.Arrays;
  * *****************************************************************************
  */
 
-public class C05_minimizeTheMaximumDifference {
+public class C06_minimizeTheMaximumDifference {
 	
 	public static void main(String[] args) {
 		int arr[] = {1, 5, 15, 10};
