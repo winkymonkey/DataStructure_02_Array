@@ -51,14 +51,12 @@ import java.util.Arrays;
 public class C05_minimizeTheMaximumDifference {
 	
 	public static void main(String[] args) {
-		int arr[] = {1, 10, 14, 14, 14, 15};
-		int k = 6;
+		int arr[] = {1, 5, 15, 10};
+		int k = 3;
 		System.out.println("Maximum difference is " + getMinDiff(arr, k));
 	}
 	
 	
-	// Modifies the array by subtracting/adding 'k' to every element 
-	// such that the difference between maximum and minimum is minimized
 	private static int getMinDiff(int A[], int k) {
 		int n = A.length;
 		if (n == 1)
