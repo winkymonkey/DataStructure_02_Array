@@ -16,6 +16,11 @@ public class C01_largestSumContiguousSubarray {
 	 * ------------------------
 	 * ---KADANE'S ALGORITHM---
 	 * ------------------------
+	 * The idea is to look for all positive contiguous segments of the array (using 'sum')
+	 * And keep track of maximum sum contiguous segment among all positive segments (using 'max')
+	 * Each time we get a positive sum compare it with 'max' and update 'max' if it is greater than 'max'
+	 * 
+	 * 
 	 * MAX = Integer.MIN;
 	 * sum = 0;
 	 * for(i=0 to length) {
