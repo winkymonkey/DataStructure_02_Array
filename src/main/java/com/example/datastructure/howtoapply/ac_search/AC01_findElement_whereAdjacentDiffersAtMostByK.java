@@ -16,6 +16,7 @@ package com.example.datastructure.howtoapply.ac_search;
  * 
  * *****************************************************************************
  */
+
 public class AC01_findElement_whereAdjacentDiffersAtMostByK {
 	/*
 	 * ----------------------

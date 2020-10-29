@@ -12,6 +12,7 @@ package com.example.datastructure.howtoapply.aa_search;
  * 
  * *****************************************************************************
  */
+
 public class AA02_findPair_whoseSumIsClosestToZero {
 	/*
 	 * -----------------------------------

@@ -12,6 +12,7 @@ package com.example.datastructure.howtoapply.ac_search;
  * 
  * *****************************************************************************
  */
+
 public class AC03_findLeader {
 	/*
 	 * Scan all the elements from right to left in array and keep track of maximum till now.

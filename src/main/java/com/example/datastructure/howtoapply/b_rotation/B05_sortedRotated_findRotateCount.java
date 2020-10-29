@@ -6,8 +6,10 @@ package com.example.datastructure.howtoapply.b_rotation;
  * *****************************************************************************
  * I/P: {15, 18, 2, 3, 6, 12}
  * O/P: 2
+ * 
  * *****************************************************************************
  */
+
 public class B05_sortedRotated_findRotateCount {
 	/*
 	 * Find the pivot element in O(log n) time

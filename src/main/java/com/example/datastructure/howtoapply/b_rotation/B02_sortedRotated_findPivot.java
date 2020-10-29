@@ -9,8 +9,10 @@ package com.example.datastructure.howtoapply.b_rotation;
  * 
  * I/P: {40, 10, 20, 30}
  * O/P: 40
+ * 
  * *************************************************************************
  */
+
 public class B02_sortedRotated_findPivot {
 	/*
 	 * ----------------------------

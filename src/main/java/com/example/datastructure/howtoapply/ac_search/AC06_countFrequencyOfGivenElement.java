@@ -14,6 +14,7 @@ package com.example.datastructure.howtoapply.ac_search;
  * 
  * *****************************************************************************
  */
+
 public class AC06_countFrequencyOfGivenElement {
 	/*
 	 * --------------------
