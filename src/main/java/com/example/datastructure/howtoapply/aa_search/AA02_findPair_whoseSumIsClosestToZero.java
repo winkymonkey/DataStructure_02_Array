@@ -18,29 +18,28 @@ public class AA02_findPair_whoseSumIsClosestToZero {
 	 * -----------------------------------
 	 * ---SORT & SLIDING DOOR TECHNIQUE---
 	 * -----------------------------------
-	 * Sort the array
-	 * {-80, -72, 10, 1, 60, 70, 85}
+	 * Sort the array		{-80, -72, 10, 1, 60, 70, 85}
 	 * 
-	 * res_sum
-	 * res_l
-	 * res_r
+	 * min_sum = Integer.MAX
+	 * min_l = 0
+	 * min_r = n-1
 	 * 
 	 * l = 0
 	 * r = n-1
-	 * while(l < r) {
-	 *    if( abs(A[l]+A[r]) < abs(res_sum) ) {
+	 * while (l < r) {
+	 *    if ( Math.abs(A[l]+A[r]) < Math.abs(min_sum) ) {
 	 *       min_sum = A[l]+A[r]
-	 *       res_l = l
-	 *       res_r = r
+	 *       min_l = l
+	 *       min_r = r
 	 *    }
 	 *    
-	 *    if( A[l]+A[r] > 0 )
-	 *       r--
-	 *    else if(A[l]+A[r] < 0)
+	 *    if ( A[l]+A[r] < 0 )
 	 *       l++
+	 *    else
+	 *       r--
 	 * }
 	 * 
-	 * TIME -- O(nLogn) + O(n) = O(nLogn)
+	 * TIME --- O(nLogn) + O(n) = O(nLogn)
 	 * SPACE -- O(1)
 	 * 
 	 */

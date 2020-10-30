@@ -15,11 +15,11 @@ public class AA05_findQuadruplet_ofGivenSum {
 	 * --------------------
 	 * ---NAIVE APPROACH---
 	 * --------------------
-	 * for(i=0 to n-3)
-	 *    for(j=i+1 to n-2)
-	 *       for(k=j+1 to n-1)
-	 *          for(m=k+1 to n)
-	 *             if (A[i] + A[j] + A[k] + A[m] == sum)
+	 * for (i=0 to n-3)
+	 *    for (j=i+1 to n-2)
+	 *       for (k=j+1 to n-1)
+	 *          for (m=k+1 to n)
+	 *             if ( A[i] + A[j] + A[k] + A[m] == SUM )
 	 *                return true
 	 * 
 	 * TIME --- O(n^4)
@@ -27,24 +27,30 @@ public class AA05_findQuadruplet_ofGivenSum {
 	 * 
 	 * 
 	 * 
+	 * 
 	 * -----------------------------------
 	 * ---SORT & SLIDING DOOR TECHNIQUE---
 	 * -----------------------------------
-	 * Sort the array
-	 * {2, 3, 4, 5, 7, 8, 9, 10}
+	 * Sort the array		{2, 3, 4, 5, 7, 8, 9, 10}
 	 * 
-	 * for(i=0 to n-3) {
-	 *    for(j=i+1 to n-2) {
+	 * for (i=0 to n-3) {
+	 *    for (j=i+1 to n-2) {
 	 *       l = j+1;
 	 *       r = n-1;
-	 *       while(l < r) {
-	 *          //apply 'sliding door' technique
+	 *       while (l < r) {
+	 *          if ( A[i] + A[j] + A[l] + A[r] == SUM )
+	 *             return true
+	 *          else if ( A[i] + A[j] + A[l] + A[r] < SUM )
+	 *             l++
+	 *          else if ( A[i] + A[j] + A[l] + A[r] > SUM )
+	 *             r--
 	 *       }
 	 *    }
 	 * }
 	 * 
-	 * TIME --- O(nLogn)+O(n^3) = O(n^3)
+	 * TIME --- O(nLogn) + O(n^3) = O(n^3)
 	 * SPACE -- O(1)
+	 * 
 	 * 
 	 * 
 	 * 
@@ -54,7 +60,7 @@ public class AA05_findQuadruplet_ofGivenSum {
 	 * Create an auxiliary array AUX[] and store sum of all possible pairs in AUX[]
 	 *   If size of A[] is n, the size of AUX[] will be = (n-1)+(n-2)+(n-3)+...+1 = n*(n-1)/2
 	 * 
-	 * Sort the auxiliary array AUX[]
+	 * Sort AUX[]
 	 * 
 	 * Now the problem reduces to find two elements in AUX[] with sum equal to X
 	 * 
@@ -64,19 +70,20 @@ public class AA05_findQuadruplet_ofGivenSum {
 	 * 
 	 * NOTE: easy to do in C using pointers but tough to do in java
 	 * 
-	 * TIME --- O(n^2) + O(n^2 * Log n^2) = O(n^2 Log n) -------- (for creating AUX[])+(for sorting AUX[] of size O(n^2))
-	 * SPACE -- O(n*(n-1)/2) ~ O(n^2)
+	 * TIME --- O(n^2) + O(n^2 * Log n^2) = O(n^2 Log n) -------- (to store sum of all pairs)+(to sort AUX[] of size O(n^2))
+	 * SPACE -- O(n*(n-1)/2) = O(n^2)
+	 * 
 	 * 
 	 * 
 	 * 
 	 * -------------
 	 * ---HASHING---
 	 * -------------
-	 * Store sums of all pairs in a HashTable [key=A[i]+A[j], value=new Pair(i,j)]
-	 * Traverse through all pairs again and search for 'X-(current pair sum)' in the HashTable
+	 * Store sums of all pairs in a HashTable [KEY=A[i]+A[j], value=new Pair(i,j)]
+	 * Traverse through all pairs again and search for 'SUM-KEY' in the HashTable
 	 * If found, then confirm that these two are not made up with any common element from A[]
 	 * 
-	 * TIME --- O(n^2)
+	 * TIME --- O(n^2) + O(n) = O(n^2) --------- (to store sum of all pairs)+(to traverse hashmap)
 	 * SPACE -- O(n^2)
 	 * 
 	 */
