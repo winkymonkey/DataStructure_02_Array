@@ -33,7 +33,7 @@ public class AC01_findElement_whereAdjacentDiffersAtMostByK {
 	 * 	  else {
 	 *       //From the special property of this array, we can say that ELEM must be at-least 'DIFF/K' away.
 	 *       //Hence, instead of searching one-by-one, we can jump 'DIFF/K'.
-	 *       DIFF = ELEM-A[i];
+	 *       DIFF = ELEM - A[i];
 	 *       i = i+(DIFF/K);
 	 * 	  }
 	 * }
