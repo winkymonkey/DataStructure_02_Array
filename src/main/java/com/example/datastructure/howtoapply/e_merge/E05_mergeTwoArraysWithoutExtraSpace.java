@@ -24,10 +24,10 @@ public class E05_mergeTwoArraysWithoutExtraSpace {
 	 * To keep A[] and B[] sorted, we need to place B[i] at correct place in A[] 
 	 * 
 	 * ----------------------
-	 * for(i=n-1 to 0) {
+	 * for (i=n-1 to 0) {
 	 *    search the suitable place 'k' for B[i] in A[] using binary search
 	 *    
-	 *    if(k <= n-1) {										---> it means that there is a greater element in A[]
+	 *    if (k <= n-1) {										---> it means that there is a greater element in A[]
 	 *       binary search a suitable place for A[n-1] in B[]
 	 *       place A[n-1] in its suitable place in B[]
 	 *       place B[i] in its suitable place in A[]

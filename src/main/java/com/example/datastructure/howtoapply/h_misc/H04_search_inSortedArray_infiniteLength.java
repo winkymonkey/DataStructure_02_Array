@@ -19,10 +19,10 @@ public class H04_search_inSortedArray_infiniteLength {
 	 * high = 1
 	 * 
 	 * FUNC(low, high) {
-	 *    if(X == A[high]) {
+	 *    if (X == A[high]) {
 	 * 	     //return
 	 *    }
-	 *    else if(X > A[high]) {
+	 *    else if (X > A[high]) {
 	 * 	     high = high*2
 	 * 	     low = high
 	 *       FUNC(low, high);

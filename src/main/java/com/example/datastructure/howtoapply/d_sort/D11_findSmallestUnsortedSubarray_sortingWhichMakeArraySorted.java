@@ -16,10 +16,10 @@ package com.example.datastructure.howtoapply.d_sort;
 public class D11_findSmallestUnsortedSubarray_sortingWhichMakeArraySorted {
 	/*
 	 * In an increasing sorted array, each element is greater than its previous & smaller than its next. 
-	 * for(i=0 to n-2)
+	 * for (i=0 to n-2)
 	 * 	 find the index where current element is NOT SMALLER than its next
 	 *   mark it as S
-	 * for(i=n-1 to 1)
+	 * for (i=n-1 to 1)
 	 *   find the index where current element is NOT GREATER than its previous
 	 *   mark it as E
 	 * 

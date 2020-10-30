@@ -17,7 +17,7 @@ public class B03_MergeSort {
 	
 	
 	private void mergeSort(int[] arr, int left, int right) {
-		if(left < right) {
+		if (left < right) {
 			int mid = (left+right)/2;
 			mergeSort(arr, left, mid);		//Call mergeSort for first half
 			mergeSort(arr, mid+1, right);	//Call mergeSort for second half
@@ -33,9 +33,9 @@ public class B03_MergeSort {
 		int L[] = new int[n1];		//create L[] for left-sorted-half
 		int R[] = new int[n2];		//create R[] for right-sorted-half
 		
-		for(int x=0; x<n1; x++)
+		for (int x=0; x<n1; x++)
 			L[x] = arr[left+x];			//copy left-sorted-half to L[]
-		for(int z=0; z<n2; z++)
+		for (int z=0; z<n2; z++)
 			R[z] = arr[(mid+1)+z];		//copy right-sorted-half to R[]
 		
 		//smallest from each of L[] and R[] is placed in original array

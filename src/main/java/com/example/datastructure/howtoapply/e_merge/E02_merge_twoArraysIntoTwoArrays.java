@@ -18,7 +18,7 @@ public class E02_merge_twoArraysIntoTwoArrays {
 	 * A[] --- pointer i
 	 * B[] --- pointer j
 	 * 
-	 * while(A[n-1] < B[0]){
+	 * while (A[n-1] < B[0]) {
 	 * 		t1 = A[n-1];				//{1, 5, 9, 10, 15, 20},	t1=20
 	 * 		t2 = B[0];					//{2, 3, 8, 13},			t2=2
 	 * 		

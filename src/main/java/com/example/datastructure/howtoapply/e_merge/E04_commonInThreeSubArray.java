@@ -33,15 +33,15 @@ public class E04_commonInThreeSubArray {
 	 * j will traverse B[]
 	 * k will traverse C[]
 	 * 
-	 * while(i<n1 && j<n2 && k<n3){
-	 * 	 if (A[i], B[j], C[k] are equal){
-	 * 		return;
-	 * 	 }
-	 * 	 else {
-	 * 		find smallest of A[i], B[j], C[k]
-	 * 		whichever is smallest, increase corresponding pointer.
-	 * 		(i.e. if A[i] is the smallest, then i++, if B[j] is smaller then j++)
-	 * 	 }
+	 * while (i<n1 && j<n2 && k<n3) {
+	 * 	  if (A[i], B[j], C[k] are equal) {
+	 * 	     return;
+	 *    }
+	 * 	  else {
+	 * 	     find smallest of A[i], B[j], C[k]
+	 *       whichever is smallest, increase corresponding pointer.
+	 * 	     (i.e. if A[i] is the smallest, then i++, if B[j] is smaller then j++)
+	 * 	  }
 	 * }
 	 * 
 	 * TIME --- O(n1+n2+n3)

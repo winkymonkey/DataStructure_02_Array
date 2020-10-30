@@ -23,7 +23,7 @@ public class AC02_findMajority {
 	 * -----------------
 	 * Take one HASHMAP
 	 * for (i=0 to n-1) {
-	 *    if(HASHMAP.containsKey(A[i])) {
+	 *    if (HASHMAP.containsKey(A[i])) {
 	 *       value = HASHMAP.get(A[i]);
 	 *       HASHMAP.put(A[i], value++)
 	 * 	  }
@@ -53,12 +53,12 @@ public class AC02_findMajority {
 	 * ---------------------------------------------
 	 * Each node will contain one extra field (count) along with existing fields -- key, left-child, right-child
 	 * for (i=0 to n-1) {
-	 * 	  if(A[i] exists in BST) {
+	 * 	  if (A[i] exists in BST) {
 	 *       currentNode.count++
 	 * 	  }
 	 * 	  else {
 	 *       //insert A[i] in proper place in the BST
-	 *       if(currentNode.count == n/2) {
+	 *       if (currentNode.count == n/2) {
 	 *          return;
 	 *       }
 	 * 	  }

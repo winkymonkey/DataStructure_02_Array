@@ -37,16 +37,16 @@ public class G05_maximumProfitByByingSellingShareAtMostTwice {
 	 * profit1 = 0, profit2 = 0
 	 * 
 	 * min = 0
-	 * for(i=0 to n) {
-	 *    if(A[i] > A[i+1])
+	 * for (i=0 to n) {
+	 *    if (A[i] > A[i+1])
 	 *       min = A[i+1]
 	 *    else
 	 *       break;
 	 * }
 	 * 
 	 * max = 0
-	 * for(j=i to n) {
-	 *    if(A[i] < A[i+1])
+	 * for (j=i to n) {
+	 *    if (A[i] < A[i+1])
 	 *       max = A[i+1]
 	 *    else
 	 *       break;

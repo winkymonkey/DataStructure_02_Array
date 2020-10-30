@@ -26,8 +26,8 @@ public class C02_alternatePosAndNegNums {
 	 * 
 	 * PIVOT = 0;
 	 * k = -1;
-	 * for(i=0 to length) {
-	 *    if(A[i] < PIVOT) {
+	 * for (i=0 to length) {
+	 *    if (A[i] < PIVOT) {
 	 *       k++;
 	 *       swap A[i] and A[k];
 	 *    }

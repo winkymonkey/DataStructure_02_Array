@@ -47,12 +47,12 @@ public class AC07_findPeakElement {
 	 * mid = (start+end)/2
 	 * Start from A[mid]
 	 * 
-	 * if(A[mid] >= neighbors)
+	 * if (A[mid] >= neighbors)
 	 * 	  return;
-	 * if(A[mid] < left neighbor)
+	 * if (A[mid] < left neighbor)
 	 * 	  //there is always a peak in left half
 	 * 	  //hence recursively call the function for left half
-	 * if(A[mid] < right neighbor)
+	 * if (A[mid] < right neighbor)
 	 * 	  //there is always a peak in right half
 	 * 	  //hence recursively call the function for right half
 	 * 

@@ -41,9 +41,9 @@ public class G07A_minimumJumpsToReachEnd_bruteForce {
 			return -1;
 
 		int min = Integer.MAX_VALUE;
-		for(int i=low+1; i<=high && i<=low+A[low]; i++) {
+		for (int i=low+1; i<=high && i<=low+A[low]; i++) {
 			int jumps = minJumps(A, i, high);
-			if(jumps < min) {
+			if (jumps < min) {
 				min = jumps;
 			}
 		}

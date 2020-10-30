@@ -36,16 +36,16 @@ public class AC10_findMinDistanceBetweenTwoNumbers {
 	 * p = -1
 	 * min_dist = INT_MAX
 	 * 
-	 * for(i=0 to n-1) {
-	 * 	  if(A[i] == X or Y) {
-	 *       if(p!=-1 && A[i]!=A[p]) {
+	 * for (i=0 to n-1) {
+	 * 	  if (A[i] == X or Y) {
+	 *       if (p!=-1 && A[i]!=A[p]) {
 	 *          min_dist = min(min_dist, i-p)
 	 *       }
 	 *       p = i
 	 * 	  }
 	 * }
 	 * 
-	 * if(min_dist==INT_MAX)
+	 * if (min_dist==INT_MAX)
 	 *    //print "not found"
 	 * else
 	 *    //print min_dist

@@ -41,7 +41,7 @@ public class H02_constructArrayFromItsPairSumArray {
 	 * 
 	 * -----------
 	 * A[0] = (PAIR[0] + PAIR[1] - PAIR[n-1]) / 2;
-	 * for(i=0 to n) {
+	 * for (i=0 to n) {
 	 *    A[i] = PAIR[i-1] - A[0]
 	 * }
 	 * 

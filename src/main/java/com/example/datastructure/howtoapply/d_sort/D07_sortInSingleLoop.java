@@ -18,8 +18,8 @@ public class D07_sortInSingleLoop {
 	
 	
 	private void sort(int A[]) {
-		for(int i=0, j=i+1; i<A.length && j<A.length; ) {
-			if(A[i] > A[j]) {
+		for (int i=0, j=i+1; i<A.length && j<A.length; ) {
+			if (A[i] > A[j]) {
 				int temp = A[i];
 				A[i] = A[j];
 				A[j] = temp;

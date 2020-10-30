@@ -18,20 +18,20 @@ public class AA03_findPair_whoseSumIsClosestToGivenValue {
 	 * ----------------------------
 	 * ---SLIDING DOOR TECHNIQUE---
 	 * ----------------------------
-	 * DIFF
-	 * res_l
-	 * res_r
+	 * DIFF = Integer.Max
+	 * min_l = 0
+	 * min_r = n-1
 	 * 
 	 * l = 0
 	 * r = n-1
-	 * while(l < r) {
-	 * 	  if( abs(A[l]+A[r]-X) < DIFF ) {
-	 *       res_l = l;
-	 *       res_r = r;
+	 * while (l < r) {
+	 * 	  if (Math.abs(A[l] + A[r] - X) < DIFF) {
+	 *       min_l = l;
+	 *       min_r = r;
 	 *       DIFF = Math.abs(A[l] + A[r] - X); 
 	 * 	  }
 	 *    
-	 *    if( A[l]+A[r] < X )
+	 *    if (A[l]+A[r] < X)
 	 *       l++
 	 *    else
 	 *       r++

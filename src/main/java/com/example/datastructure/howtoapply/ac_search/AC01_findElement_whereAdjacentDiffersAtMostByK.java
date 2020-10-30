@@ -26,8 +26,8 @@ public class AC01_findElement_whereAdjacentDiffersAtMostByK {
 	 * we can utilize the property which says the adjacent elements can differ at most by K
 	 *  
 	 * i = 0;
-	 * while(i<length) {
-	 *    if( A[i]==ELEM ) {
+	 * while (i<length) {
+	 *    if (A[i]==ELEM) {
 	 *       //return
 	 * 	  }
 	 * 	  else {

@@ -28,7 +28,7 @@ public class C03_rearrange_indexIsSameAsElement {
 	 * -------------------
 	 * B[] 							//same length as A[]
 	 * k = 0						//to traverse B[]
-	 * for(i=0 to length) {
+	 * for (i=0 to length) {
 	 *    B[A[i]] = A[i]
 	 * }
 	 * 
@@ -40,8 +40,8 @@ public class C03_rearrange_indexIsSameAsElement {
 	 * -----------------
 	 * ---SWAP METHOD---
 	 * -----------------
-	 * for(i=0 to length) {
-	 *    if(A[i]>=0  &&  A[i]!=i) {
+	 * for (i=0 to length) {
+	 *    if (A[i]>=0  &&  A[i]!=i) {
 	 *       //swap A[i] and A[A[i]]
 	 *    }
 	 *    else {

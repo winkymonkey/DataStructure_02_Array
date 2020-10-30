@@ -61,20 +61,20 @@ public class C05_minimumSwapsToBringElementsLessOrEqualsToK {
 	
 	private static void minSwaps(int A[], int K) {
 		int count = 0; 						//number of elements less than or equals to 'K'
-	    for(int i=0; i<A.length; ++i) 
+	    for (int i=0; i<A.length; ++i) 
 	    if (A[i] <= K) 
 	        count++;
 	    
 	    int bad = 0;						//unwanted elements in current window of size 'count' 
-	    for(int i=0; i<count; i++) 
+	    for (int i=0; i<count; i++) 
 	    	if (A[i] > K) 
 	    		bad++;
 	    
 	    int ans = bad;
-	    for(int i=0, j=count; j<A.length; ++i, ++j) {
-	        if(A[i] > K)
+	    for (int i=0, j=count; j<A.length; ++i, ++j) {
+	        if (A[i] > K)
 	            bad--;
-	        if(A[j] > K)
+	        if (A[j] > K)
 	            bad++;
 	        ans = Math.min(ans, bad);
 	    }

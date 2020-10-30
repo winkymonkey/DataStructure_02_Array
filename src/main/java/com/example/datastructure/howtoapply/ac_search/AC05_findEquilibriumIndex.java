@@ -21,10 +21,10 @@ public class AC05_findEquilibriumIndex {
 	 * SUM = find sum of all elements
 	 * 
 	 * LEFTSUM = 0
-	 * for(i=0 to n-1) {
+	 * for (i=0 to n-1) {
 	 *    SUM = SUM - A[i]		//right sum for index i
 	 * 	  
-	 * 	  if(LEFTSUM == SUM)
+	 * 	  if (LEFTSUM == SUM)
 	 *       return i
 	 *    
 	 *    LEFTSUM = LEFTSUM + A[i]

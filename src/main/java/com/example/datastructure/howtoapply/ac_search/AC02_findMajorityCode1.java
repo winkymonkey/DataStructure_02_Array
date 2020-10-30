@@ -15,7 +15,7 @@ public class AC02_findMajorityCode1 {
 		int majIndex = 0;
 		int count = 1;
 		
-		for(int i=1; i<A.length; i++) {
+		for (int i=1; i<A.length; i++) {
 			if (A[i] == A[majIndex])
 				count++;
 			else
@@ -29,7 +29,7 @@ public class AC02_findMajorityCode1 {
 		int candidate = A[majIndex];
 		
 		int countMajority = 0;
-		for(int i=0; i<A.length; i++) {
+		for (int i=0; i<A.length; i++) {
 			if (A[i] == candidate)
 				countMajority++;
 		}

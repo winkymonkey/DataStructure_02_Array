@@ -28,12 +28,12 @@ public class G02_largestSumContiguousSubarray_excludingFew {
 	 * 
 	 * MAX = 0;
 	 * sum = 0;
-	 * for(i=0 to length) {
+	 * for (i=0 to length) {
 	 * 	 sum = sum + A[i]
-	 *   if(sum < 0 || A[i] belongs to B[])	----> //only modification is in this line
+	 *   if (sum < 0 || A[i] belongs to B[])	----> //only modification is in this line
 	 *   	sum = 0;
 	 *   
-	 *   if(sum > MAX)
+	 *   if (sum > MAX)
 	 *   	MAX = sum;
 	 * }
 	 * return MAX;

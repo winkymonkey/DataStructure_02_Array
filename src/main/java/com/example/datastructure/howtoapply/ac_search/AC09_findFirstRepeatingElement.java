@@ -21,7 +21,7 @@ public class AC09_findFirstRepeatingElement {
 	 * A[] = {10, 5, 3, 4, 3, 5, 6}
 	 * TEMP[] = {3, 3, 4, 5, 5, 6, 10}	//sorted version 	//O(nLogn)
 	 * 
-	 * for(i=0 to length){
+	 * for (i=0 to length) {
 	 * 	 //find A[i] in TEMP[] using binary search	//O(Logn)
 	 * 	 //occurs more than once, return A[i]
 	 * }

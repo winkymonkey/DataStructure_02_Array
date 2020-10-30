@@ -9,11 +9,11 @@ public class F02_findSecondSmallestElement {
 		int secondSmallest = Integer.MAX_VALUE;
 		
 		for (int i=0; i<A.length; i++) {
-			if(A[i] < smallest) {				// If (A[i] < smallest) ==> update both smallest and secondSmallest
+			if (A[i] < smallest) {				// If (A[i] < smallest) ==> update both smallest and secondSmallest
 				secondSmallest = smallest;
 				smallest = A[i];
 			}
-			else if(smallest < A[i] && A[i] < secondSmallest) {		// If (A[i] is in between smallest & secondSmallest) ==> update secondSmallest
+			else if (smallest < A[i] && A[i] < secondSmallest) {		// If (A[i] is in between smallest & secondSmallest) ==> update secondSmallest
 				secondSmallest = A[i];
 			}
 		}

@@ -19,13 +19,13 @@ package com.example.datastructure.howtoapply.c_arrangement;
 public class C04_moveAllZerosToEnd {
 	/*
 	 * count = 0
-	 * for(int i=0 to n) {
-	 *    if(A[i] != 0) {
+	 * for (int i=0 to n) {
+	 *    if (A[i] != 0) {
 	 *       A[count] = A[i]
 	 *       count++
 	 *    }
 	 * }
-	 * while(count < n) {
+	 * while (count < n) {
 	 *    A[count] = 0
 	 *    count++
 	 * }

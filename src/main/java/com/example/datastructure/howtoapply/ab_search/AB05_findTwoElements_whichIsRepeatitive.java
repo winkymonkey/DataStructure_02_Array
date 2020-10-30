@@ -12,22 +12,23 @@ package com.example.datastructure.howtoapply.ab_search;
 
 public class AB05_findTwoElements_whichIsRepeatitive {
 	/*
-	 * -------------------
-	 * ---USING HASHING---
-	 * -------------------
-	 * Traverse the array
-	 * for(i=0 to n-1){
-	 * 	 value = HASHMAP.get(A[i]);
-	 * 	 
-	 * 	 if(value==null)
-	 * 		HASHMAP.put(A[i], 1);
-	 * 	 else if(value==2)
-	 * 		return A[i];
-	 * 	 else
-	 * 		HASHMAP.put(A[i], value++);
+	 * -----------------
+	 * ---USE HASHING---
+	 * -----------------
+	 * for (i=0 to n-1) {
+	 * 	  value = HASHMAP.get(A[i]);
+	 * 	  
+	 * 	  if (value == null)
+	 * 	     HASHMAP.put(A[i], 1);
+	 * 	  else if (value == 2)
+	 * 	     return A[i];
+	 * 	  else
+	 * 	     HASHMAP.put(A[i], value++);
 	 * }
+	 * 
 	 * TIME -- O(n)
 	 * SPACE -- O(n)
+	 * 
 	 * 
 	 * 
 	 * 
@@ -36,14 +37,18 @@ public class AB05_findTwoElements_whichIsRepeatitive {
 	 * --------------------
 	 * For every index visit a[index] index.
 	 * if it is positive change the sign of element at a[index] index, else print the element.
-	 * for(i=0 to n-1){
-	 *   if(A[Math.abs(A[i])] < 0){
-	 *   	print Math.abs(A[i]);
-	 *   }
-	 * 	 A[Math.abs(A[i])] = -A[Math.abs(A[i])];
+	 * 
+	 * ------------
+	 * for (i=0 to n-1) {
+	 *    if (A[Math.abs(A[i])] < 0) {
+	 *       print Math.abs(A[i]);
+	 *    }
+	 * 	  A[Math.abs(A[i])] = -A[Math.abs(A[i])];
 	 * }
+	 * 
 	 * TIME -- O(n)
 	 * SPACE -- O(1)
+	 * 
 	 * 
 	 * 
 	 * 

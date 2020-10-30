@@ -17,7 +17,7 @@ public class B05_QuickSort {
 	
 	
 	private void quickSort(int[] A, int left, int right) {
-		if(left < right){
+		if (left < right) {
 			int pi = partition(A, left, right);	//pi is partitioning index, A[pi] is now at right place
 			quickSort(A, left, pi-1);			//Call quickSort for first part
 			quickSort(A, pi+1, right);			//Call quickSort for second part
@@ -29,8 +29,8 @@ public class B05_QuickSort {
 		int pivot = A[right];
 		int k = left-1; 					//index of smaller element
 		
-		for (int i=left; i<right; i++){
-			if (A[i] <= pivot){				//if current element is smaller than or equal to pivot
+		for (int i=left; i<right; i++) {
+			if (A[i] <= pivot) {				//if current element is smaller than or equal to pivot
 				k++;
 				//swap A[i] and A[k]
 				int temp = A[k];

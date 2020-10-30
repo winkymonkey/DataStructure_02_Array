@@ -24,13 +24,13 @@ public class G01_largestSumContiguousSubarray {
 	 * 
 	 * MAX = Integer.MIN;
 	 * sum = 0;
-	 * for(i=0 to length) {
+	 * for (i=0 to length) {
 	 * 	  sum = sum + A[i]
 	 *    
-	 *    if(sum < 0)
+	 *    if (sum < 0)
 	 *       sum = 0;
 	 *    
-	 *    if(sum > MAX)
+	 *    if (sum > MAX)
 	 *       MAX = sum;
 	 * }
 	 * return MAX;

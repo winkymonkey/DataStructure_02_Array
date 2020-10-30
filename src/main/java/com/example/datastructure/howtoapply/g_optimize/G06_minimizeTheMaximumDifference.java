@@ -82,7 +82,7 @@ public class G06_minimizeTheMaximumDifference {
 			int add = A[i] + k;
 
 			// If 'small' is still smaller than 'A[i]-k' OR 'big' is still bigger than 'A[i]+k' --- nothing to do
-			if(small <= subtract || add <= big) 
+			if (small <= subtract || add <= big) 
 				continue;
 
 			// If the difference between ('big' & 'A[i]-k') is lesser then the difference between ('A[i]+k' and 'small')

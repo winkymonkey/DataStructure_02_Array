@@ -32,6 +32,7 @@ public class AC08_findTheSpecialPair {
 	 * 
 	 * 
 	 * 
+	 * 
 	 * ------------------------
 	 * ---EFFICIENT APPROACH---
 	 * ------------------------
@@ -46,16 +47,18 @@ public class AC08_findTheSpecialPair {
 	 *  - If x=1, then count of possible y is 'the frequency of 0’s is the Y[]'
 	 *  - If x=2, then we cannot have a valid pair with y={2,3,4}... then the count of possible y is {0,1,5,6,......}
 	 *  - If x=3, then we cannot have a valid pair with y={3}... then the count of possible y is {0,1,2,4,5,.....}
+	 * 
 	 * ----------------
 	 * IMPLEMENTATION-1
 	 * ----------------
 	 * count = 0
 	 * Sort Y[]
-	 * for(i=0 to X.length) {
+	 * for (i=0 to X.length) {
 	 * 	  //find the index 'k' of the first element in sorted Y[] which is greater than X[i]    (Use binary search)
 	 * 	  //now if Y[k] is greater than X[i], then Y[k+1],Y[k+2],.... all will be greater than X[i]
 	 * 	  //count = count + (Y.length-k)
 	 * }
+	 * 
 	 * ----------------
 	 * IMPLEMENTATION-2
 	 * ----------------

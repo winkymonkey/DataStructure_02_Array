@@ -26,8 +26,8 @@ public class AB02_findTwoElements_occurringOddTimes {
 	 *   -- if X is non-zero that means a few elements are not in pairs
 	 * 
 	 * Now we want to find out the rightmost 'set-bit'(1) in X 			['set_bit_num = X & ~(X-1)'] 
-	 *   -- because a XOR between two binary numbers can only produce 1 in any bit position if two bits are different at that position
-	 *   -- the rightmost 'set-bit' signifies that at that bit position P and Q have opposite value
+	 *   -- as a XOR between two binary numbers can produce 1 in any bit position ONLY IF two bits are different at that position
+	 *   -- the rightmost 'set-bit' signifies --> at that bit position P and Q have opposite value
 	 * 
 	 * So we have to divide elements in two groups in such a way that
 	 *   -- groupA has those elements who's corresponding bit is 1
@@ -41,13 +41,13 @@ public class AB02_findTwoElements_occurringOddTimes {
 	 * 
 	 * --------------
 	 * X = 0
-	 * for(i=0 to n-1) {
+	 * for (i=0 to n-1) {
 	 *    X = X ^ A[i]
 	 * }
 	 * set_bit_num = X & ~(X-1)
 	 * 
-	 * for(i=0 to n-1) {
-	 *    if( (A[i] & set_bit_num) > 0 )
+	 * for (i=0 to n-1) {
+	 *    if ((A[i] & set_bit_num) > 0)
 	 *       P = P ^ A[i];
 	 *    else
 	 *       Q = Q ^ A[i]

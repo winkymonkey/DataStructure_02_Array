@@ -60,7 +60,7 @@ public class B04_MergeSort_Iterative {
 	    /*traverse L[] & R[].. smallest from each is stored back to original array*/
 	    int i=0, j=0;
 	    int k = left;
-	    while(i < n1 && j < n2) {
+	    while (i < n1 && j < n2) {
 	        if (L[i] <= R[j]) {
 	            arr[k] = L[i];
 	            i++;

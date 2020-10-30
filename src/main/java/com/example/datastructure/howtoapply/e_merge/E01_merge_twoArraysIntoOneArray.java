@@ -21,17 +21,17 @@ public class E01_merge_twoArraysIntoOneArray {
 	 * i = 0;	//traverse MN[]
 	 * j = 0;	//traverse N[]
 	 * 
-	 * while(i<m+n || j<n){		//until both arrays are empty
-	 * 	 while(MN[i] == -1)
+	 * while (i<m+n || j<n) {		//until both arrays are empty
+	 * 	 while (MN[i] == -1)
 	 * 		i++;
-	 * 	 while(N[j] == -1)
+	 * 	 while (N[j] == -1)
 	 * 		j++;
 	 * 	 
-	 * 	 if(MN[i]<N[j]){
+	 * 	 if (MN[i]<N[j]) {
 	 * 		FINAL[k]=MN[i]
 	 * 		k++; i++;
 	 * 	 }
-	 * 	 else{
+	 * 	 else {
 	 * 		FINAL[k]=N[j]
 	 * 		k++; j++;
 	 * 	 }
@@ -52,12 +52,12 @@ public class E01_merge_twoArraysIntoOneArray {
 	 * j = index of first POSITIVE element in N[]	//index of '5' in N[]
 	 * k = 0
 	 * 
-	 * for(k=0 to m+n) {
+	 * for (k=0 to m+n) {
 	 * 	 //put smallest element of these two into MN[k]
-	 * 	 if(MN[i] < N[j])
+	 * 	 if (MN[i] < N[j])
 	 * 		MN[k] = MN[i];
 	 * 		i++;
-	 * 	 if(MN[i] > N[j])
+	 * 	 if (MN[i] > N[j])
 	 * 		MN[k] = MN[j];
 	 * 		j++;
 	 * }

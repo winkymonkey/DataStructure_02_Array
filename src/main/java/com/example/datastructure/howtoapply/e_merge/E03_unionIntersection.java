@@ -22,11 +22,11 @@ public class E03_unionIntersection {
 	 * UNION[] = new int[A.length+B.length]		//to store result of union
 	 * INTER[] = new int[A.length+B.length]		//to store result of intersection
 	 * 
-	 * while(i<A.length && j<B.length) {
-	 *    if(A[i] < B[j]) {
+	 * while (i<A.length && j<B.length) {
+	 *    if (A[i] < B[j]) {
 	 *       UNION[k1++] = A[i++];
 	 *    }
-	 *    else if(A[i] > B[j]) {
+	 *    else if (A[i] > B[j]) {
 	 *       UNION[k1++] = B[j++];
 	 *    }
 	 *    else {
@@ -37,10 +37,10 @@ public class E03_unionIntersection {
 	 *    }
 	 * }
 	 * 
-	 * while(i < A.length) {
+	 * while (i < A.length) {
 	 *    UNION[k1++] = A[i++];
 	 * }
-	 * while(j < B.length) {
+	 * while (j < B.length) {
 	 *    UNION[k1++] = A[j++];
 	 * }
 	 * 

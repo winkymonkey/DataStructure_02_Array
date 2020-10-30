@@ -27,9 +27,9 @@ public class B01_BubbleSort {
 	 */
 	private void bubbleSort(int[] A) {
 		int temp;
-		for(int i=0; i<A.length; i++) {
-			for(int j=1; j<A.length-i; i++) {
-				if(A[j-1] > A[j]) {
+		for (int i=0; i<A.length; i++) {
+			for (int j=1; j<A.length-i; i++) {
+				if (A[j-1] > A[j]) {
 					//swap
 					temp = A[j-1];  
                     A[j-1] = A[j];  

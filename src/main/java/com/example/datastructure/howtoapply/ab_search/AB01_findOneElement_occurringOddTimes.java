@@ -15,23 +15,24 @@ package com.example.datastructure.howtoapply.ab_search;
 
 public class AB01_findOneElement_occurringOddTimes {
 	/*
-	 * -------------------
-	 * ---USING HASHING---
-	 * -------------------
+	 * -----------------
+	 * ---USE HASHING---
+	 * -----------------
 	 * Take one HASHMAP
 	 * for (i=0 to n-1) {
-	 * 	 if(HASHMAP.containsKey(A[i])) {
-	 * 		occurrence = HASHMAP.get(A[i]);
-	 * 		HASHMAP.put(A[i], occurrence++)
-	 * 	 }
-	 * 	 else {
-	 * 		HASHMAP.put(A[i], 1)
-	 * 	 }
+	 * 	  if (HASHMAP.containsKey(A[i])) {
+	 *       occurrence = HASHMAP.get(A[i]);
+	 *       HASHMAP.put(A[i], occurrence++)
+	 * 	  }
+	 * 	  else {
+	 *       HASHMAP.put(A[i], 1)
+	 * 	  }
 	 * }
 	 * Traverse HASHMAP to find which KEY's VALUE is a odd number
 	 * 
 	 * TIME --- O(n)
 	 * SPACE -- O(n)
+	 * 
 	 * 
 	 * 
 	 * 

@@ -21,8 +21,8 @@ public class G07B_minimumJumpsToReachEnd_dynamicProg {
 		//			0  1  2  3  4  5  6  7  8  9  10
 		
 		table = new int[A.length][A.length];
-		for(int i=0; i<A.length; i++) {
-			for(int j=0; j<A.length; j++) {
+		for (int i=0; i<A.length; i++) {
+			for (int j=0; j<A.length; j++) {
 				table[i][j] = -1;
 			}
 		}
@@ -32,7 +32,7 @@ public class G07B_minimumJumpsToReachEnd_dynamicProg {
 	}
 	
 	private static int minJumps(int A[], int low, int high) {
-		if(table[low][high] == -1) {			
+		if (table[low][high] == -1) {			
 			if (high == low)
 				return 0;
 			
@@ -40,10 +40,10 @@ public class G07B_minimumJumpsToReachEnd_dynamicProg {
 				return -1;
 	
 			int min = Integer.MAX_VALUE;
-			for(int i=low+1; i<=high && i<=low+A[low]; i++) {
+			for (int i=low+1; i<=high && i<=low+A[low]; i++) {
 				int jumps = minJumps(A, i, high);
 				table[low][high] = jumps+1;
-				if(jumps < min) {
+				if (jumps < min) {
 					min = jumps;
 				}
 			}

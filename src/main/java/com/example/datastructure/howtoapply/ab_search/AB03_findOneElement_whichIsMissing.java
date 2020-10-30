@@ -24,8 +24,9 @@ public class AB03_findOneElement_whichIsMissing {
 	 * Sort the input array
 	 * Traverse the array and check for missing
 	 * 
-	 * TIME -- O(nLogn)
+	 * TIME --- O(nLogn)
 	 * SPACE -- O(1)
+	 * 
 	 * 
 	 * 
 	 * 
@@ -36,8 +37,9 @@ public class AB03_findOneElement_whichIsMissing {
 	 * SUM2 = sum of first (n-1) natural numbers
 	 * ELEMENT = (SUM2-SUM1) = missing element
 	 * 
-	 * TIME -- O(n)
+	 * TIME --- O(n)
 	 * SPACE -- O(1)
+	 * 
 	 * 
 	 * 
 	 * 
@@ -48,7 +50,7 @@ public class AB03_findOneElement_whichIsMissing {
 	 * X2 = XOR of first (n-1) natural numbers
 	 * X1^X2 = missing element 
 	 * 
-	 * TIME -- O(n)
+	 * TIME --- O(n)
 	 * SPACE -- O(1)
 	 * 
 	 */

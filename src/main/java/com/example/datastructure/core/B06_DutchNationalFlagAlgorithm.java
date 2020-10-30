@@ -23,8 +23,8 @@ public class B06_DutchNationalFlagAlgorithm {
 	 * 
 	 * The unknown section is shrunk while maintaining these conditions:
 	 * 	L=1, H=N
-	 * 	while(L<=H){
-	 * 		if(A[L]==0)
+	 * 	while (L<=H) {
+	 * 		if (A[L]==0)
 	 * 			L++
 	 * 		else
 	 * 			swap A[L], A[H]
@@ -52,14 +52,14 @@ public class B06_DutchNationalFlagAlgorithm {
 	 * L = 1
 	 * M = 1
 	 * H = N
-	 * while(M<=H) {
-	 *    if(A[M]==0)
+	 * while (M<=H) {
+	 *    if (A[M] == 0)
 	 *       swap A[L], A[M]
 	 *       L++
 	 *       M++
-	 *    if(A[M]==1)
+	 *    if (A[M] == 1)
 	 *       M++
-	 *    if(A[M]==2)
+	 *    if (A[M] == 2)
 	 *       swap A[M], A[H]
 	 *       H--
 	 * }

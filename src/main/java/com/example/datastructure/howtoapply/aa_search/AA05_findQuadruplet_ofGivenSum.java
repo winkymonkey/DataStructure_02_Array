@@ -19,7 +19,7 @@ public class AA05_findQuadruplet_ofGivenSum {
 	 *    for (j=i+1 to n-2)
 	 *       for (k=j+1 to n-1)
 	 *          for (m=k+1 to n)
-	 *             if ( A[i] + A[j] + A[k] + A[m] == SUM )
+	 *             if (A[i] + A[j] + A[k] + A[m] == SUM)
 	 *                return true
 	 * 
 	 * TIME --- O(n^4)
@@ -38,11 +38,11 @@ public class AA05_findQuadruplet_ofGivenSum {
 	 *       l = j+1;
 	 *       r = n-1;
 	 *       while (l < r) {
-	 *          if ( A[i] + A[j] + A[l] + A[r] == SUM )
+	 *          if (A[i] + A[j] + A[l] + A[r] == SUM)
 	 *             return true
-	 *          else if ( A[i] + A[j] + A[l] + A[r] < SUM )
+	 *          else if (A[i] + A[j] + A[l] + A[r] < SUM)
 	 *             l++
-	 *          else if ( A[i] + A[j] + A[l] + A[r] > SUM )
+	 *          else if (A[i] + A[j] + A[l] + A[r] > SUM)
 	 *             r--
 	 *       }
 	 *    }

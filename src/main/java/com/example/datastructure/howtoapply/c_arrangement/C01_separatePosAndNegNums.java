@@ -27,8 +27,8 @@ public class C01_separatePosAndNegNums {
 	 * 
 	 * PIVOT = 0;
 	 * k = -1;
-	 * for(i=0 to length) {
-	 *    if(A[i] < PIVOT) {
+	 * for (i=0 to length) {
+	 *    if (A[i] < PIVOT) {
 	 *       k++;
 	 *       swap A[i] and A[k];
 	 *    }
@@ -50,9 +50,9 @@ public class C01_separatePosAndNegNums {
 	 * Then right-shift all the numbers left to it
 	 * Then place the KEY in the opened slot
 	 * 
-	 * for(i=0 to length) {
+	 * for (i=0 to length) {
 	 *    KEY = A[i]
-	 *    if(A[i] is negative) {
+	 *    if (A[i] is negative) {
 	 *       right-shift all positive numbers sitting at left of A[i]
 	 *       place the KEY in the opened slot
 	 *    }
@@ -115,10 +115,10 @@ public class C01_separatePosAndNegNums {
 		int i = left; 					// Initial index of 1st subarray
 		int j = mid+1; 					// Initial index of 2nd subarray
 
-		while(i<=mid && A[i]<0)			//after traversal --- Ln = A[left] to A[i-1]
+		while (i<=mid && A[i]<0)			//after traversal --- Ln = A[left] to A[i-1]
 			i++;						//after traversal --- Lp = A[i] to A[mid]
 
-		while(j<=right && A[j]<0)		//after traversal --- Rn = A[mid+1] to A[j-1]
+		while (j<=right && A[j]<0)		//after traversal --- Rn = A[mid+1] to A[j-1]
 			j++;						//after traversal --- Rp = A[j] to A[right]
 
 		reverse(A, i, mid);				//reverse Lp (A[i] to A[mid])

@@ -29,11 +29,11 @@ public class B02_InsertionSort {
 	 * .....
 	 */
 	private void insertionSort(int[] A) {
-		for(int i=1; i<A.length; i++) {		//Traverse from start+1 to end
+		for (int i=1; i<A.length; i++) {		//Traverse from start+1 to end
 			int KEY = A[i];
 			int k = i-1;
 			
-			while(k>=0 && A[k]>KEY) {	//if current element > KEY
+			while (k>=0 && A[k]>KEY) {	//if current element > KEY
 				A[k+1] = A[k];			//right shift the elements
 				k--;
 			}

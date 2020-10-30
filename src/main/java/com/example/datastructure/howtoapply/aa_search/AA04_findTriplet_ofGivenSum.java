@@ -18,7 +18,7 @@ public class AA04_findTriplet_ofGivenSum {
 	 * for (i=0 to n-2)
 	 *    for (j=i+1 to n-1)
 	 *       for (k=j+1 to n)
-	 *          if ( A[i] + A[j] + A[k] == SUM )
+	 *          if (A[i] + A[j] + A[k] == SUM)
 	 *             return true
 	 * 
 	 * TIME --- O(n^3)
@@ -36,11 +36,11 @@ public class AA04_findTriplet_ofGivenSum {
 	 *    l = i+1;
 	 *    r = n-1;
 	 *    while (l < r) {						//apply sliding door technique from (i+1) to (end)
-	 *       if ( A[i]+A[l]+A[r] == SUM )
+	 *       if (A[i]+A[l]+A[r] == SUM)
 	 *          return true
-	 *       else if ( A[i]+A[l]+A[r] < SUM )
+	 *       else if (A[i]+A[l]+A[r] < SUM)
 	 *          l++
-	 *       else if ( A[i]+A[l]+A[r] > SUM ) 
+	 *       else if (A[i]+A[l]+A[r] > SUM) 
 	 *          r--
 	 * 	  }
 	 * }

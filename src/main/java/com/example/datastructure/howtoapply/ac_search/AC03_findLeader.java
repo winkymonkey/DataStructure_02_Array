@@ -21,11 +21,11 @@ public class AC03_findLeader {
 	 * 
 	 * MAX = A[n-1];
 	 * print MAX;
-	 * for(i=n-2 to 0) {			//scans from 2nd last element
-	 * 	 if(A[i] > MAX) {
-	 * 		MAX = A[i];
-	 * 		print MAX;
-	 * 	 }
+	 * for (i=n-2 to 0) {			//scans from 2nd last element
+	 * 	  if (A[i] > MAX) {
+	 * 	     MAX = A[i];
+	 *       print MAX;
+	 * 	  }
 	 * }
 	 * 
 	 * TIME --- O(n)

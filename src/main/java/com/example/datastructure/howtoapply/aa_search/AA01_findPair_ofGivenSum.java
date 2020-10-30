@@ -17,7 +17,7 @@ public class AA01_findPair_ofGivenSum {
 	 * --------------------
 	 * for (i=0 to n-2)
 	 *    for (j=i+1 to n-1)
-	 *       if ( A[i] + A[j] == SUM )
+	 *       if (A[i] + A[j] == SUM)
 	 *          return true
 	 * 
 	 * TIME --- O(n^2)
@@ -34,11 +34,11 @@ public class AA01_findPair_ofGivenSum {
 	 * l = 0
 	 * r = n-1
 	 * while (l < r) {
-	 * 	  if ( A[l]+A[r] == SUM )
+	 * 	  if (A[l]+A[r] == SUM)
 	 *       return true;
-	 * 	  else if ( A[l]+A[r] < SUM )
+	 * 	  else if (A[l]+A[r] < SUM)
 	 *       l++
-	 * 	  else if ( A[l]+A[r] > SUM )
+	 * 	  else if (A[l]+A[r] > SUM)
 	 *       r--
 	 * }
 	 * 

@@ -27,13 +27,13 @@ public class AA02_findPair_whoseSumIsClosestToZero {
 	 * l = 0
 	 * r = n-1
 	 * while (l < r) {
-	 *    if ( Math.abs(A[l]+A[r]) < Math.abs(min_sum) ) {
+	 *    if (Math.abs(A[l]+A[r]) < Math.abs(min_sum)) {
 	 *       min_sum = A[l]+A[r]
 	 *       min_l = l
 	 *       min_r = r
 	 *    }
 	 *    
-	 *    if ( A[l]+A[r] < 0 )
+	 *    if (A[l]+A[r] < 0)
 	 *       l++
 	 *    else
 	 *       r--
