@@ -58,9 +58,9 @@ public class AB04_findOneElement_whichIsRepetitive {
 	 * 
 	 * 
 	 * 
-	 * -------------------
-	 * ---USING HASHING---
-	 * -------------------
+	 * -----------------
+	 * ---USE HASHING---
+	 * -----------------
 	 * Use a hash table to store elements visited.
 	 * If a seen element appears again, we return it.
 	 * 

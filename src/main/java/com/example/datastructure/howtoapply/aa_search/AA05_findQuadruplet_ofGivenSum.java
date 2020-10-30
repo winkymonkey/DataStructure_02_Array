@@ -76,9 +76,9 @@ public class AA05_findQuadruplet_ofGivenSum {
 	 * 
 	 * 
 	 * 
-	 * -------------
-	 * ---HASHING---
-	 * -------------
+	 * -----------------
+	 * ---USE HASHING---
+	 * -----------------
 	 * Store sums of all pairs in a HashTable [KEY=A[i]+A[j], value=new Pair(i,j)]
 	 * Traverse through all pairs again and search for 'SUM-KEY' in the HashTable
 	 * If found, then confirm that these two are not made up with any common element from A[]
