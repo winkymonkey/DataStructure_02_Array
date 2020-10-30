@@ -64,8 +64,7 @@ public class AC02_findMajority {
 	 * 	  }
 	 * }
 	 * 
-	 * TIME --- O(n^2) 			[if it's BST]
-	 * TIME --- O(n Log n)		[if it's Self Balancing Binary Tree]
+	 * TIME --- O(n^2) [if use BST]		O(nLogn) [if use Self Balancing Binary Tree]
 	 * SPACE -- O(n)
 	 * 
 	 * 
@@ -76,8 +75,8 @@ public class AC02_findMajority {
 	 * This is a two-step (two traversal) process
 	 *  -- Step1 -- 
 	 *   This step gives the element that MAYBE the majority element in the array.
-	 *   If there is a majority element in an array, then this step will definitely return majority element.
-	 *   Otherwise, this step will return candidate for majority element.
+	 *   If there is a majority element --> this step will definitely return majority element.
+	 *   Otherwise --> this step will return candidate for majority element.
 	 *  
 	 *  -- Step2 --
 	 *   Check if the element obtained from the above step is majority element.
@@ -85,7 +84,7 @@ public class AC02_findMajority {
 	 * 
 	 * ---------
 	 * ALGORITHM
-	 * - Maintain 'a count of majority element'(count) & 'a majority index'(majIndex)
+	 * - Maintain 'a count of majority element'(count=1) & 'a majority index'(majIndex=0)
 	 *  
 	 * - Traverse the array from i=1
 	 *   - If the next element is same then count++, else count--
