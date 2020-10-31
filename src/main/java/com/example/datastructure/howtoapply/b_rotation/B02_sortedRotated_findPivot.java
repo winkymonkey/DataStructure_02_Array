@@ -31,15 +31,15 @@ public class B02_sortedRotated_findPivot {
 	 * ----------------------------
 	 * FUNC (start, end) {
 	 *    mid = (start+end)/2
-	 *    if (A[mid] > A[mid+1]) {		//it means A[mid] is pivot
-	 *       return
+	 *    if (A[mid] > A[mid+1]) {			//it means A[mid] is pivot
+	 *       return mid
 	 *    }
 	 *    
 	 *    if (A[start] <= A[mid]) {
-	 *       FUNC(mid+1, end)				//look for pivot in second half of the array
+	 *       return FUNC(mid+1, end)				//look for pivot in second half of the array
 	 *    }
 	 *    else {
-	 *       FUNC(start, mid-1)				//look for pivot in first half of the array
+	 *       return FUNC(start, mid-1)				//look for pivot in first half of the array
 	 *    }
 	 * }
 	 * 

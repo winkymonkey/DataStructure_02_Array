@@ -1,7 +1,7 @@
 package com.example.datastructure.core;
 
 
-public class A00_ArraysUtilClass {
+public class A01_ArraysUtilClass {
 	/**
 	 * ------------------------------------------
 	 * sort(int A[])											//full sorting		[Quick Sort]	similar methods are available for byte/short/char/int/long/float/double/Object
