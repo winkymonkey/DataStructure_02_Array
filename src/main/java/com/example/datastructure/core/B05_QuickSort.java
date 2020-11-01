@@ -60,28 +60,30 @@ public class B05_QuickSort {
 	 * --------- 
 	 * When the partition process picks the middle element as pivot.
 	 * Hence the array is divided into two equal halves.
-	 *     T(n) = [time taken to sort 1st part] + [time taken to sort 2nd part] + [partitioning process]
-	 *          = T(n/2) + T(n/2) + O(n)
-	 *          = 2.T(n/2) + O(n)
-	 *          = O(n log n)
+	 * 
+	 * T(n) = [time taken to sort 1st part] + [time taken to sort 2nd part] + [partitioning process]
+	 *      = T(n/2) + T(n/2) + O(n)
+	 *      = 2.T(n/2) + O(n)
+	 *      = O(nLogn)
+	 * 
 	 * ----------
 	 * WORST CASE
 	 * ----------
-	 * When the partition process picks greatest or smallest element as pivot.
-	 * It also happens when all elements are same.
-	 * Hence one partition contains 0 elements, and another partition contains (n-1) elements 
-	 *     T(n) = [time taken to sort 1st part] + [time taken to sort 2nd part] + [partitioning process]
-	 *          = T(0) + T(n-1) + O(n)
-	 *          = T(n-1) + O(n)
-	 *          = T(n-1) + c.n
-	 *          = T(n-2) + c(n-1) + c.n
-	 *          = T(n-3) + c(n-2) + c(n-1) + c.n
-	 *          = ......
-	 *          = ......
-	 *          = 0 + c.1 + c.2 + c.3 + .......+c.n
-	 *          = c(1+2+3+.....n)
-	 *          = c(n*(n+1)/2)
-	 *          = O(n^2)
+	 * When the partition process picks greatest OR smallest element as pivot OR when all elements are same.
+	 * Hence one partition contains 0 elements and another partition contains (n-1) elements 
+	 * 
+	 * T(n) = [time taken to sort 1st part] + [time taken to sort 2nd part] + [partitioning process]
+	 *      = T(0) + T(n-1) + O(n)
+	 *      = T(n-1) + O(n)
+	 *      = T(n-1) + c.n
+	 *      = T(n-2) + c(n-1) + c.n
+	 *      = T(n-3) + c(n-2) + c(n-1) + c.n
+	 *      = ......
+	 *      = ......
+	 *      = 0 + c.1 + c.2 + c.3 + .......+ c.n
+	 *      = c(1+2+3+.....n)
+	 *      = c(n*(n+1)/2)
+	 *      = O(n^2)
 	 * 
 	 * 
 	 * 
@@ -93,7 +95,7 @@ public class B05_QuickSort {
 	 * --------- 
 	 * in this case, the array is divided into two equal halves
 	 *    hence the recursion tree is balanced 
-	 * 	  hence total space is 'height of the tree' which is O(log n)
+	 * 	  hence total space is 'height of the tree' which is O(Logn)
 	 * 
 	 * ----------
 	 * WORST CASE

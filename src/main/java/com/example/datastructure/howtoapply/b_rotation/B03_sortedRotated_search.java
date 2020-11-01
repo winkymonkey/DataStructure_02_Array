@@ -29,7 +29,7 @@ public class B03_sortedRotated_search {
 	 * ----------------------------
 	 * ---BINARY SEARCH APPROACH---
 	 * ----------------------------
-	 * Find pivot in O(log n) time
+	 * Find pivot in O(Logn) time
 	 * if (A[0]<KEY && KEY<pivot) {
 	 *    binary search in left segment		//KEY is present in left segment 
 	 * }
@@ -37,7 +37,7 @@ public class B03_sortedRotated_search {
 	 *    binary search in left segment		//KEY is present in right segment
 	 * }
 	 * 
-	 * TIME --- O(log n) + O(log n) + O(log n) = O(log n)
+	 * TIME --- O(Logn) + O(Logn) + O(Logn) = O(Logn)
 	 * SPACE -- O(1)
 	 * 
 	 */

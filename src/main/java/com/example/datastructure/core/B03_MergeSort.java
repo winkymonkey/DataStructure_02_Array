@@ -101,8 +101,8 @@ public class B03_MergeSort {
 	 * To reach from size 1 to size n, number of crossings = log n      ----------------------(2)
 	 * 
 	 * Hence total work = (work done at each level) * (no of levels)
-	 *                  = O(n) * O(log n)
-	 *                  = O(n * log n)
+	 *                  = O(n) * O(Logn)
+	 *                  = O(nLogn)
 	 * 
 	 * --------------
 	 * Mathematically
@@ -110,7 +110,7 @@ public class B03_MergeSort {
 	 * Recurrence relation
 	 * T(n) = T(n/2) + T(n/2) + O(n)
 	 *      = 2.T(n/2) + O(n)
-	 *      = O(n * log n)				---using Master's Theorem
+	 *      = O(nLogn)				---using Master's Theorem
 	 * 
 	 * 
 	 * 
@@ -119,7 +119,7 @@ public class B03_MergeSort {
 	 * 		SPACE COMPLEXITY
 	 * --------------------------
 	 * size of the stack + an array of size 'n'
-	 * = O(log n) + O(n)
+	 * = O(Logn) + O(n)
 	 * = O(n)
 	 * 
 	 */

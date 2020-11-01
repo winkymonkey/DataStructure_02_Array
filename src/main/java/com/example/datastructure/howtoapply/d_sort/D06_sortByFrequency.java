@@ -92,7 +92,7 @@ public class D06_sortByFrequency {
 	 * HashMap's key is the 'array element' & value is the 'frequency'.
 	 * Sort the HashMap according to values.
 	 * 
-	 * TIME --- O(logn)
+	 * TIME --- O(Logn)
 	 * SPACE -- O(n)
 	 * 
 	 * 
@@ -113,8 +113,8 @@ public class D06_sortByFrequency {
 	 * Now construct a 2D array to store original_index & count.
 	 * Sort the 2D array according to 'count'
 	 * 
-	 * TIME --- O(log n)
-	 * SPACE -- O(log n)
+	 * TIME --- O(Logn)
+	 * SPACE -- O(Logn)
 	 * 
 	 */
 }

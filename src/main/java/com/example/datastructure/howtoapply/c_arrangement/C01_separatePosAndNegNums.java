@@ -115,7 +115,7 @@ public class C01_separatePosAndNegNums {
 		int i = left; 					// Initial index of 1st subarray
 		int j = mid+1; 					// Initial index of 2nd subarray
 
-		while (i<=mid && A[i]<0)			//after traversal --- Ln = A[left] to A[i-1]
+		while (i<=mid && A[i]<0)		//after traversal --- Ln = A[left] to A[i-1]
 			i++;						//after traversal --- Lp = A[i] to A[mid]
 
 		while (j<=right && A[j]<0)		//after traversal --- Rn = A[mid+1] to A[j-1]

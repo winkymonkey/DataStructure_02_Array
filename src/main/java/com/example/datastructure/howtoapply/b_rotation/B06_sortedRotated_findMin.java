@@ -8,7 +8,7 @@ package com.example.datastructure.howtoapply.b_rotation;
 
 public class B06_sortedRotated_findMin {
 	/*
-	 * Find pivot in log(n) time
+	 * Find pivot in Logn time
 	 * The next element of Pivot is the smallest one
 	 */
 }

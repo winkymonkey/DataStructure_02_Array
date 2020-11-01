@@ -23,7 +23,7 @@ public class A05_BinarySearch_iterative_withDuplicates {
 		while (right - left > 1) {
 			int mid = (left + right) / 2;
 			
-			if (KEY <= A[mid])			//in both 'greaterThan' & 'equals' cases we do the same
+			if (KEY <= A[mid])			//if Key <= A[mid] modify right
 				right = mid;
 			else
 				left = mid;
@@ -35,7 +35,7 @@ public class A05_BinarySearch_iterative_withDuplicates {
 		while (right - left > 1) {
 			int mid = (left + right) / 2;
 			
-			if (KEY >= A[mid])			//in both 'greaterThan' & 'equals' cases we do the same
+			if (KEY >= A[mid])			//if Key >= A[mid] modify left
 				left = mid;
 			else
 				right = mid;

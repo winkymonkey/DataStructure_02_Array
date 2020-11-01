@@ -4,11 +4,10 @@ import java.util.Arrays;
 
 
 public class B02_InsertionSort {
-	private static B02_InsertionSort obj = new B02_InsertionSort();
 	
 	public static void main(String[] args) {
 		int A[] = {38, 27, 43, 3, 9, 82, 10};
-		obj.insertionSort(A);
+		insertionSort(A);
 	}
 	
 	
@@ -28,7 +27,7 @@ public class B02_InsertionSort {
 	 * .....
 	 * .....
 	 */
-	private void insertionSort(int[] A) {
+	private static void insertionSort(int[] A) {
 		for (int i=1; i<A.length; i++) {		//Traverse from start+1 to end
 			int KEY = A[i];
 			int k = i-1;
@@ -47,27 +46,53 @@ public class B02_InsertionSort {
 	 * --------------------------
 	 * 		TIME COMPLEXITY
 	 * --------------------------
-	 * We have seen that for input size of 'n', we do (n-1) comparisons and (n-1) movements for each element.
-	 * And the above comparison & movement logic are applied for all (n-1) elements of the array.
+	 * ---------
+	 * BEST CASE
+	 * ---------
+	 * 				(No of comparisons) + (No of movements) = (total)
+	 * when i=2, 			1			+		0			=	1
+	 * when i=3, 			1			+		0			=	1
+	 * when i=4, 			1			+		0			=	1
+	 * when i=5, 			1			+		0			=	1
+	 * 
+	 * Total time taken = 1+1+1+.....(n-1) times
+	 * 					= (n-1)
+	 * 					= O(n)
+	 * 
+	 * ----------
+	 * WORST CASE
+	 * ----------
+	 * 				(No of comparisons) + (No of movements) = (total)
+	 * when i=2, 			1			+		1			=	2*1
+	 * when i=3, 			2			+		2			=	2*2
+	 * when i=4, 			3			+		3			=	2*3
+	 * when i=5, 			4			+		4			=	2*4
+	 * 
+	 * Total time taken = 2*(1+2+3+.....(n-1))
+	 * 					= 2*(n*(n-1))/2
+	 * 					= O(n^2)
+	 * 
+	 * -----------------------
+	 * IMPROVE WORST CASE TIME
+	 * -----------------------
+	 * For input size of 'n', we do (n-1) comparisons and (n-1) movements for each element
+	 * And this comparison & movement logic is applicable for all (n-1) elements of the array
 	 * We can try to improve the complexity by changing the comparison and movement logic
 	 * 
-	 * |--------------------------------------------------------------------------|----------------------|
-	 * |                                for each element                          |  for (n-1) elements  |
-	 * |--------------------------------------------------------------------------|----------------------|
-	 * |                          |  COMPARISON  |   MOVEMENT   |      TOTAL      |        TOTAL         |
-	 * |--------------------------|--------------|--------------|-----------------|----------------------|
-	 * | REGULAR                  |     O(n)     |     O(n)     | = O(n)+O(n)     |  = (n-1) * O(n)      |
-	 * |                          |              |              | = O(n)          |  = O(n^2)            |
-	 * |--------------------------|--------------|--------------|-----------------|----------------------|
-	 * | COMPARISON               |   O(log n)   |     O(n)     | = O(log n)+O(n) |  = (n-1)*O(log n)    |
-	 * | (using binary search to  |              |              | = O(n)          |  = O(n^2)            |
-	 * | reduce comparison time)  |              |              |                 |                      |
-	 * |--------------------------|--------------|--------------|-----------------|----------------------|
-	 * | MOVEMENT                 |     O(n)     |     O(1)     | = O(n)+O(1)     |  = (n-1)*O(n)        |
-	 * | (using double linked list|              |              | = O(n)          |  = O(n^2)            |
-	 * | to reduce movement time  |              |              |                 |                      |
-	 * |--------------------------|--------------|--------------|-----------------|----------------------|
-	 * 
+	 * |-------------------------------------------------------------------|----------------------|
+	 * |                                for each element                   |                      |
+	 * |-------------------------------------------------------------------|  for (n-1) elements  |
+	 * |                            COMPARISON + MOVEMENT  =   TOTAL       |                      |
+	 * |--------------------------|----------------------------------------|----------------------|
+	 * | REGULAR                  |   O(n)    +   O(n)     = O(n)+O(n)     |  = (n-1) * O(n)      |
+	 * |                          |                        = O(n)          |  = O(n^2)            |
+	 * |--------------------------|----------------------------------------|----------------------|
+	 * | OPTIMIZE COMPARISON      |  O(Logn)  +   O(n)     = O(Logn)+O(n)  |  = (n-1)*O(log n)    |
+	 * | using binary search      |                        = O(n)          |  = O(n^2)            |
+	 * |--------------------------|----------------------------------------|----------------------|
+	 * | OPTIMIZE MOVEMENT        |   O(n)    +   O(1)     = O(n)+O(1)     |  = (n-1)*O(n)        |
+	 * | using double linked list |                        = O(n)          |  = O(n^2)            |
+	 * |--------------------------|----------------------------------------|----------------------|
 	 * So we can see that whatever we do, we are unable to improve complexity of Insertion sort
 	 * 
 	 * 

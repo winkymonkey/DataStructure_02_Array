@@ -23,7 +23,13 @@ public class C02_alternatePosAndNegNums {
 	 * -------------------------
 	 * Positive & Negative numbers are distributed around 0
 	 * So let us do "Partition Process Quick Sort" based on 'KEY'=0
+	 * After the sort, all negative numbers will be left aligned, All positive numbers will be right aligned
+	 * Now start from the 1st negative number and 1st positive number, and swap every alternate negative number with next positive number.
 	 * 
+	 * TIME --- O(n)
+	 * SPACE -- O(1)
+	 * 
+	 * ------------
 	 * PIVOT = 0;
 	 * k = -1;
 	 * for (i=0 to length) {
@@ -31,20 +37,16 @@ public class C02_alternatePosAndNegNums {
 	 *       k++;
 	 *       swap A[i] and A[k];
 	 *    }
-	 *    i++;
 	 * }
 	 * 
-	 * All negative numbers will be left aligned, All positive numbers will be right aligned
-	 * Now 'k' is pointing to the last negative number
-	 * NEG = 0; 		//first negative number
-	 * POS = k+1;		//first positive number
+	 * NEG = 0; 		//1st negative number
+	 * POS = k+1;		//1st positive number (i.e. 'k' is pointing to the last negative number)
 	 * 
-	 * Increment the NEG by 2 and POS by 1 and swap
-	 * (i.e. swap every alternate negative number with next positive number)
-	 * 
-	 * 
-	 * TIME --- O(n)
-	 * SPACE -- O(1)
+	 * while (POS<n && NEG<POS && A[NEG]<0) {
+	 *    //swap A[NEG] and A[POS]
+	 *    NEG +=2
+	 *    POS++
+	 * }
 	 * 
 	 */
 }
