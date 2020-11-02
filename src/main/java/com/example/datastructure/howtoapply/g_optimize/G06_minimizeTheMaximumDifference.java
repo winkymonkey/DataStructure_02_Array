@@ -76,7 +76,7 @@ public class G06_minimizeTheMaximumDifference {
 			big = temp;
 		}
 		
-		// Traverse middle elements
+		// Traverse middle elements (except first & last)
 		for (int i=1; i<n-1; i++) {
 			int subtract = A[i] - k;
 			int add = A[i] + k;

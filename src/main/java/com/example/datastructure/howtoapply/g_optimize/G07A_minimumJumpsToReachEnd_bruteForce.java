@@ -12,13 +12,13 @@ public class G07A_minimumJumpsToReachEnd_bruteForce {
 	 * 
 	 *                    min(0,4)
 	 *                    /
-	 *               ___min(1,4)___
+	 *               ___min(1,4)___                 -->take minimum of 'returned value from all function calls' at this level
 	 *              /     \        \
-	 *         min(2,4)  min(3,4)  min(4,4)
+	 *         min(2,4)  min(3,4)  min(4,4)         -->take minimum of 'returned value from all function calls' at this level
 	 *         /    \         \
-	 *    min(3,4) min(4,4)  min(4,4)
+	 *    min(3,4) min(4,4)  min(4,4)               -->take minimum of 'returned value from all function calls' at this level
 	 *      /
-	 * min(4,4)
+	 * min(4,4)                                     -->take minimum of 'returned value from all function calls' at this level
 	 * 
 	 * 
 	 * TIME --- O(n^n)		//There are maximum 'n' possible ways to move from a element. For n elements it will be n^n.
