@@ -1,7 +1,7 @@
 package com.example.datastructure.howtoapply.ac_search;
 
 
-public class AC02_findMajorityCode1 {
+public class AC02B_findMajorityCode {
 	
 	public static void main(String[] args) {
 		int A[] = {3, 3, 4, 2, 4, 4, 2, 4, 4};
