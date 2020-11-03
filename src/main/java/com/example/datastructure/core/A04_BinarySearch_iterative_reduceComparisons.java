@@ -21,9 +21,9 @@ public class A04_BinarySearch_iterative_reduceComparisons {
 				right = mid;
 		}
 		
-		if(KEY == A[left])
+		if (KEY == A[left])
 			return left;
-		if(KEY == A[right])
+		if (KEY == A[right])
 			return right;
 		else
 			return -1;

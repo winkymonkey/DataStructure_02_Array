@@ -10,7 +10,7 @@ public class A05_BinarySearch_iterative_withDuplicates {
 		int leftIindex = searchLeftIndex(A, 0, A.length-1, KEY);
 		int rightIindex = searchRightIndex(A, 0, A.length-1, KEY);
 		
-		if(KEY == A[leftIindex] && KEY == A[rightIindex]) {
+		if (KEY == A[leftIindex] && KEY == A[rightIindex]) {
 			System.out.println(leftIindex);
 			System.out.println(rightIindex);
 		}

@@ -12,12 +12,12 @@ public class A02_BinarySearch_recursive {
 	}
 	
 	private static int search(int A[], int left, int right, int KEY) {
-		if(left <= right) {
+		if (left <= right) {
 			int mid = (left+right)/2;
 			
-			if(KEY == A[mid])
+			if (KEY == A[mid])
 				return mid;
-			else if(KEY < A[mid])
+			else if (KEY < A[mid])
 				return search(A, left, mid-1, KEY);
 			else
 				return search(A, mid+1, right, KEY);
