@@ -7,8 +7,8 @@ package com.example.datastructure.howtoapply.aa_search;
  * An Array of integers is given (both +ve and -ve)
  * You need to find the two elements such that their sum is closest to zero.
  * *****************************************************************************
- * I/P: {1, 60, -10, 70, -80, 85, -72}
- * O/P: -72 and 70
+ * Input:  {1, 60, -10, 70, -80, 85, -72}
+ * Output: -72 and 70
  * 
  * *****************************************************************************
  */

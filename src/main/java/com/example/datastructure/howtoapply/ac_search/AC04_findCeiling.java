@@ -8,12 +8,12 @@ package com.example.datastructure.howtoapply.ac_search;
  * 		the ceiling of X is the smallest element in array >= X
  * 		the floor of X is the greatest element in array <= X
  * *****************************************************************************
- * I/P: {1, 2, 8, 10, 10, 12, 19}
+ * Input:  {1, 2, 8, 10, 10, 12, 19}
  * 
- * O/P: For X = 0:		FLOOR--n/a	CEILING--1
- * O/P: For X = 1:		FLOOR--1	CEILING--1
- * O/P: For X = 5:		FLOOR--2	CEILING--8
- * O/P: For X = 20:		FLOOR--19	CEILING--n/a
+ * Output: For X = 0:		FLOOR--n/a	CEILING--1
+ * Output: For X = 1:		FLOOR--1	CEILING--1
+ * Output: For X = 5:		FLOOR--2	CEILING--8
+ * Output: For X = 20:		FLOOR--19	CEILING--n/a
  * 
  * *****************************************************************************
  */

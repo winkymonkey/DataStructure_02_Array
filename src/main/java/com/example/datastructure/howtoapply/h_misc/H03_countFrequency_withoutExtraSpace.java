@@ -9,21 +9,22 @@ package com.example.datastructure.howtoapply.h_misc;
  * Count frequency of all elements that are present and print the missing elements.
  * 
  * *****************************************************************************
- * I/P: {2, 3, 3, 2, 5}
- * O/P: 1 -> 0
- * 		2 -> 2
- * 		3 -> 2
- * 		4 -> 0
- * 		5 -> 1
+ * Input:  {2, 3, 3, 2, 5}
+ * Output: 1 -> 0
+ * 		   2 -> 2
+ * 	       3 -> 2
+ *         4 -> 0
+ *         5 -> 1
  * 
- * I/P: {4, 4, 4, 4}
- * O/P: 1 -> 0
- * 		2 -> 0
- * 		3 -> 0
- * 		4 -> 4
+ * Input:  {4, 4, 4, 4}
+ * Output: 1 -> 0
+ * 	       2 -> 0
+ * 	       3 -> 0
+ * 	       4 -> 4
  * 
  * *****************************************************************************
  */
+
 public class H03_countFrequency_withoutExtraSpace {
 	
 	public static void main(String[] args) {

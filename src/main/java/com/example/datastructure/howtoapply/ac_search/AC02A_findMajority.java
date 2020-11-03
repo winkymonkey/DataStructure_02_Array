@@ -7,11 +7,11 @@ package com.example.datastructure.howtoapply.ac_search;
  * An element that appears more than n/2 times in an array A[] of size n is called Majority Element.
  * Write a function which takes an array and prints the majority element(if exists)
  * *****************************************************************************
- * I/P: {3, 3, 4, 2, 4, 4, 2, 4, 4}
- * O/P: 4
+ * Input:  {3, 3, 4, 2, 4, 4, 2, 4, 4}
+ * Output: 4
  * 
- * I/P: {3, 3, 4, 2, 4, 4, 2, 4}
- * O/P: No Majority Element
+ * Input:  {3, 3, 4, 2, 4, 4, 2, 4}
+ * Output: No Majority Element
  * 
  * *****************************************************************************
  */

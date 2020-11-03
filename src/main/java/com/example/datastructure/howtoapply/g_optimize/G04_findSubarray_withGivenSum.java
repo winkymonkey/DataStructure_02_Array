@@ -4,17 +4,18 @@ package com.example.datastructure.howtoapply.g_optimize;
  * *****************************************************************************
  * Find subarray with given sum | Set 1 (Nonnegative Numbers)
  * *****************************************************************************
- * I/P: A[] = {1, 4, 20, 3, 10, 5}, 	SUM = 33
- * O/P: Sum found between indexes 2 and 4
+ * Input:  A[] = {1, 4, 20, 3, 10, 5} 		SUM = 33
+ * Output: Sum found between indexes 2 and 4
  * 
- * I/P: A[] = {1, 4, 0, 0, 3, 10, 5}, 	SUM = 7
- * O/P: Sum found between indexes 1 and 4
+ * Input:  A[] = {1, 4, 0, 0, 3, 10, 5} 	SUM = 7
+ * Output: Sum found between indexes 1 and 4
  * 
- * I/P: A[] = {1, 4},	SUM = 0
- * O/P: No subarray found
+ * Input:  A[] = {1, 4}						SUM = 0
+ * Output: No subarray found
  * 
  * *****************************************************************************
  */
+
 public class G04_findSubarray_withGivenSum {
 	/*
 	 * A[] --> 1, 4, 20, 3, 10, 5		SUM=33

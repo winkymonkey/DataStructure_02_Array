@@ -10,8 +10,8 @@ package com.example.datastructure.howtoapply.ab_search;
  * One of them is missing from the integer list 
  * Find the missing integer
  * *****************************************************************************
- * I/P: [1, 2, 4, 6, 3, 7, 8]
- * O/P: 5
+ * Input:  [1, 2, 4, 6, 3, 7, 8]
+ * Output: 5
  * 
  * *****************************************************************************
  */

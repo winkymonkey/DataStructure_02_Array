@@ -7,8 +7,8 @@ package com.example.datastructure.howtoapply.ac_search;
  * An element is leader if it is greater than all the elements to its right side. 
  * Note that the rightmost element is always a leader. 
  * *****************************************************************************
- * I/P: {16, 17, 4, 3, 5, 2}
- * O/P: 17, 5, 2
+ * Input:  {16, 17, 4, 3, 5, 2}
+ * Output: 17, 5, 2
  * 
  * *****************************************************************************
  */

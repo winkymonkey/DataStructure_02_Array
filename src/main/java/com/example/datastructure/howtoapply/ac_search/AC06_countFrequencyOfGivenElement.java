@@ -6,11 +6,11 @@ package com.example.datastructure.howtoapply.ac_search;
  * *****************************************************************************
  * Find how many times a given element X occurs in a sorted array
  * *****************************************************************************
- * I/P: A[]={1, 1, 2, 2, 2, 2, 3,}		X=2
- * O/P: 4								//X(=2) occurs 4 times
+ * Input:  A[]={1, 1, 2, 2, 2, 2, 3,}		X=2
+ * Output: 4								//X(=2) occurs 4 times
  * 
- * I/P: {1, 1, 2, 2, 2, 2, 3,}		X=4
- * O/P: -1							//X(=4) does not occur
+ * Input:  {1, 1, 2, 2, 2, 2, 3,}		X=4
+ * Output: -1							//X(=4) does not occur
  * 
  * *****************************************************************************
  */

@@ -8,14 +8,14 @@ package com.example.datastructure.howtoapply.d_sort;
  * (i.e. element having minimum difference comes first and so on)
  * Note : If two or more elements are at equal distance, arrange them in same sequence as in the given array.
  * ******************************************************************************************
- * I/P: A[] = {10, 5, 3, 9, 2}		x = 7
- * O/P: A[] = {5, 9, 10, 3, 2}
+ * Input:  A[] = {10, 5, 3, 9, 2}		x = 7
+ * Output: A[] = {5, 9, 10, 3, 2}
  * 
- * I/P: A[] = {1, 2, 3, 4, 5} 		x = 6
- * O/P: A[] = {5, 4, 3, 2, 1}
+ * Input:  A[] = {1, 2, 3, 4, 5} 		x = 6
+ * Output: A[] = {5, 4, 3, 2, 1}
  * 
- * I/P: A[] = {2, 6, 8, 3}			x = 5
- * O/P: A[] = {6, 3, 2, 8}
+ * Input:  A[] = {2, 6, 8, 3}			x = 5
+ * Output: A[] = {6, 3, 2, 8}
  * 
  * ******************************************************************************************
  */

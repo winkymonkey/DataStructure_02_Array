@@ -9,11 +9,11 @@ package com.example.datastructure.howtoapply.ab_search;
  * The array has only one repetitive element.
  * Find the repetitive element.
  * *****************************************************************************
- * I/P: {1, 3, 2, 3, 4}
- * O/P: 3
+ * Input:  {1, 3, 2, 3, 4}
+ * Output: 3
  * 
- * I/P: {1, 5, 1, 2, 3, 4}
- * O/P: 1
+ * Input:  {1, 5, 1, 2, 3, 4}
+ * Output: 1
  * 
  * *****************************************************************************
  */

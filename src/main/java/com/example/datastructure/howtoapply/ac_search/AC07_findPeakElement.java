@@ -7,23 +7,23 @@ package com.example.datastructure.howtoapply.ac_search;
  * In an array, an element is a peak if it's NOT smaller than its neighbors.
  * NOTE: for corner elements, we need to consider only one neighbor.
  * *****************************************************************************
- * I/P: {5, 10, 20, 15}
- * O/P: 20
+ * Input:  {5, 10, 20, 15}
+ * Output: 20
  * 
- * I/P: {10, 20, 15, 2, 23, 90, 67}
- * O/P: 20, 90
+ * Input:  {10, 20, 15, 2, 23, 90, 67}
+ * Output: 20, 90
  * 
- * I/P: {10, 20, 15, 2, 23, 90, 67}
- * O/P: 20, 90
+ * Input:  {10, 20, 15, 2, 23, 90, 67}
+ * Output: 20, 90
  * 
- * I/P: {10, 20, 30, 40, 50}
- * O/P: 50
+ * Input:  {10, 20, 30, 40, 50}
+ * Output: 50
  * 
- * I/P: {100, 80, 60, 50, 20}
- * O/P: 100
+ * Input:  {100, 80, 60, 50, 20}
+ * Output: 100
  * 
- * I/P: {10, 10, 10, 10, 10}
- * O/P: all 10s
+ * Input:  {10, 10, 10, 10, 10}
+ * Output: all 10s
  * 
  * *****************************************************************************
  */

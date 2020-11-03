@@ -10,8 +10,8 @@ package com.example.datastructure.howtoapply.c_arrangement;
  * If there are more positive numbers, they appear at the end of the array. 
  * If there are more negative numbers, they too appear in the end of the array.
  * ******************************************************************************************
- * I/P: A[] = [-1, 2, -3, 4, 5, 6, -7, 8, 9]
- * O/P: A[] = [9, -7, 8, -3, 5, -1, 2, 4, 6]
+ * Input:  A[] = [-1, 2, -3, 4, 5, 6, -7, 8, 9]
+ * Output: A[] = [9, -7, 8, -3, 5, -1, 2, 4, 6]
  * 
  * ******************************************************************************************
  */

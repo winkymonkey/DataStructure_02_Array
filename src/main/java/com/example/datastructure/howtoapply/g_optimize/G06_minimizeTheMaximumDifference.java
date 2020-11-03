@@ -11,39 +11,39 @@ import java.util.Arrays;
  * The task is to minimize the difference between the heights of the longest & shortest tower after modifications, 
  * and output this difference.
  * *****************************************************************************
- * I/P: A[]={1, 15, 10}
- * 		k = 6
- * O/P: Maximum difference is 5			//after change--{6, 9, 4}
+ * Input:  A[]={1, 15, 10}
+ * 		   k = 6
+ * Output: Maximum difference is 5			//after change--{6, 9, 4}
  * 
  * 
- * I/P: A[] = {1, 5, 15, 10} 
- * 		k = 3
- * O/P: Maximum difference is 8			//after change--{4, 8, 12, 7}
+ * Input:  A[] = {1, 5, 15, 10} 
+ * 		   k = 3
+ * Output: Maximum difference is 8			//after change--{4, 8, 12, 7}
  * 
  * 
- * I/P: A[] = {1, 15, 10}
- * 		k = 6
- * O/P: Maximum difference is 5			//after change--{6, 9, 4}
+ * Input:  A[] = {1, 15, 10}
+ * 		   k = 6
+ * Output: Maximum difference is 5			//after change--{6, 9, 4}
  * 
  * 
- * I/P: A[] = {4, 6}
- * 		k = 10
- * O/P: Maximum difference is 2			//after change--{14, 16} OR {-6, -4}
+ * Input:  A[] = {4, 6}
+ * 		   k = 10
+ * Output: Maximum difference is 2			//after change--{14, 16} OR {-6, -4}
  * 
  * 
- * I/P: A[] = {6, 10}
- * 		k = 3
- * O/P: Maximum difference is 5			//after change--{9, 7}
+ * Input:  A[] = {6, 10}
+ * 		   k = 3
+ * Output: Maximum difference is 5			//after change--{9, 7}
  * 
  * 
- * I/P: A[] = {1, 10, 14, 14, 14, 15}
- * 		k = 6
- * O/P: Maximum difference is 5			//after change--{7, 4, 8, 8, 8, 9}
+ * Input:  A[] = {1, 10, 14, 14, 14, 15}
+ * 		   k = 6
+ * Output: Maximum difference is 5			//after change--{7, 4, 8, 8, 8, 9}
  * 
  * 
- * I/P: A[] = {1, 2, 3}
- * 		k = 2
- * O/P: Maximum difference is 2			//after change--{3, 4, 5}
+ * Input:  A[] = {1, 2, 3}
+ * 		   k = 2
+ * Output: Maximum difference is 2			//after change--{3, 4, 5}
  * 
  * *****************************************************************************
  */

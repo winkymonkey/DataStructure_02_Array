@@ -8,20 +8,20 @@ package com.example.datastructure.howtoapply.ac_search;
  * The array might also contain duplicates.
  * You may assume that both X and Y are different and present in A[].
  * *****************************************************************************
- * I/P: A[]={1, 2}		 	X=1, Y=2
- * O/P: 1
+ * Input:  A[]={1, 2}		 	X=1, Y=2
+ * Output: 1
  * 
- * I/P: A[]={3, 4, 5}		X=3, Y=5
- * O/P: 2
+ * Input:  A[]={3, 4, 5}		X=3, Y=5
+ * Output: 2
  * 
- * I/P: A[] = {3, 5, 4, 2, 6, 5, 6, 6, 5, 4, 8, 3}		X=3, Y=6
- * O/P: 4
+ * Input:  A[] = {3, 5, 4, 2, 6, 5, 6, 6, 5, 4, 8, 3}		X=3, Y=6
+ * Output: 4
  * 
- * I/P: A[] = {2, 5, 3, 5, 4, 4, 2, 3}					X=3, Y=2
- * O/P: 1
+ * Input:  A[] = {2, 5, 3, 5, 4, 4, 2, 3}					X=3, Y=2
+ * Output: 1
  * 
- * I/P: A[] = {3, 5, 4, 2, 6, 3, 0, 0, 5, 4, 8, 3}		X=3, Y=6
- * O/P: 1
+ * Input:  A[] = {3, 5, 4, 2, 6, 3, 0, 0, 5, 4, 8, 3}		X=3, Y=6
+ * Output: 1
  * 
  * *****************************************************************************
  */

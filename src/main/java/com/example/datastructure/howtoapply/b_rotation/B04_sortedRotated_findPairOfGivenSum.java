@@ -4,11 +4,11 @@ package com.example.datastructure.howtoapply.b_rotation;
  * *****************************************************************************
  * Given a sorted and rotated array, find if there is a pair with a given sum
  * *****************************************************************************
- * I/P: {11, 15, 6, 8, 9, 10}		SUM=16
- * O/P: true
+ * Input:  {11, 15, 6, 8, 9, 10}		SUM=16
+ * Output: true
  * 
- * I/P: {11, 15, 26, 38, 9, 10} 	SUM=45
- * O/P: false
+ * Input:  {11, 15, 26, 38, 9, 10} 		SUM=45
+ * Output: false
  * 
  * *****************************************************************************
  */
