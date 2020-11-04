@@ -36,10 +36,13 @@ public class AA01_findPair_ofGivenSum {
 	 * while (l < r) {
 	 * 	  if (A[l]+A[r] == SUM)
 	 *       return true;
-	 * 	  else if (A[l]+A[r] < SUM)
+	 * 	  
+	 *    else if (A[l]+A[r] < SUM)
 	 *       l++
-	 * 	  else if (A[l]+A[r] > SUM)
+	 * 	  
+	 *    else if (A[l]+A[r] > SUM)
 	 *       r--
+	 *    
 	 * }
 	 * 
 	 * TIME --- O(nLogn) + O(n) = O(nLogn)
