@@ -1,7 +1,7 @@
-package com.example.datastructure.howtoapply.c_search;
+package com.example.datastructure.howtoapply.k_misc;
 
 
-public class C08C_findTheSpecialPairCode {
+public class K05C_findTheSpecialPairCode {
 	public static void main(String[] args) {
 		int X[] = { 0, 1, 2, 3, 10, 19, 18 };
 		int Y[] = { 11, 15, 9 };

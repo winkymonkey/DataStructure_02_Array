@@ -13,7 +13,7 @@ package com.example.datastructure.howtoapply.c_search;
  * *****************************************************************************
  */
 
-public class C09_findFirstRepeatingElement {
+public class C08_findFirstRepeatingElement {
 	/*
 	 * -------------
 	 * ---SORTING---

@@ -1,9 +1,9 @@
-package com.example.datastructure.howtoapply.c_search;
+package com.example.datastructure.howtoapply.k_misc;
 
 import java.util.Arrays;
 
 
-public class C08B_findTheSpecialPairCode {
+public class K05B_findTheSpecialPairCode {
 	
 	public static void main(String args[]) {
 		int X[] = { 10, 19, 18 };

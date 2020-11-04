@@ -1,4 +1,4 @@
-package com.example.datastructure.howtoapply.c_search;
+package com.example.datastructure.howtoapply.k_misc;
 
 /**
  * *****************************************************************************
@@ -19,7 +19,7 @@ package com.example.datastructure.howtoapply.c_search;
  * *****************************************************************************
  */
 
-public class C08A_findTheSpecialPair {
+public class K05A_findTheSpecialPair {
 	/*
 	 * --------------------
 	 * ---NAIVE APPROACH---

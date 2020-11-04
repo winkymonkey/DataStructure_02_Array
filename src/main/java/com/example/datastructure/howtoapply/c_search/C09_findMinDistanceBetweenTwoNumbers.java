@@ -26,7 +26,7 @@ package com.example.datastructure.howtoapply.c_search;
  * *****************************************************************************
  */
 
-public class C10_findMinDistanceBetweenTwoNumbers {
+public class C09_findMinDistanceBetweenTwoNumbers {
 	/*
 	 * Traverse the array
 	 * If A[i] matches with either X or Y and different from A[p], then update the 'min_dist', update p as i
