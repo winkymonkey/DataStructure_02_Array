@@ -4,8 +4,8 @@ package com.example.datastructure.howtoapply.h_statistics;
  * *****************************************************************************
  * Median of two sorted arrays of different sizes
  * *****************************************************************************
- * Input:  A[]={900}
- * 		   B[]={5, 8, 10, 20}
+ * Input:  A[] = {900}
+ * 		   B[] = {5, 8, 10, 20}
  * 
  * Output: 10
  * 

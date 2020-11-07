@@ -11,7 +11,7 @@ import java.util.Arrays;
  * The task is to minimize the difference between the heights of the longest & shortest tower after modifications, 
  * and output this difference.
  * *****************************************************************************
- * Input:  A[]={1, 15, 10}
+ * Input:  A[] = {1, 15, 10}
  * 		   k = 6
  * Output: Maximum difference is 5			//after change--{6, 9, 4}
  * 
