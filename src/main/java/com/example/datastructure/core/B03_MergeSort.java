@@ -74,6 +74,10 @@ public class B03_MergeSort {
 	 * --------------------------
 	 * 		TIME COMPLEXITY
 	 * --------------------------
+	 * 
+	 * -------------
+	 * Theoretically
+	 * ------------- 
 	 *                      size n
 	 *                     .
 	 *                    .
@@ -89,20 +93,12 @@ public class B03_MergeSort {
 	 *  size 1   size 1
 	 * 
 	 * 
-	 * -------------
-	 * Theoretically
-	 * ------------- 
-	 * In merge() method at each level we need to make 'n' comparisons and 'n' movements
-	 * Hence time taken by merge() is O(n)								----------------------(1)
+	 * At each level, merge() method makes 'n' comparisons and 'n' movements at max
+	 * ==> At each level merge() method takes O(n) time at max
 	 * 
-	 * To reach from size 1 to size 2, number of crossings = 1 = log 1
-	 * To reach from size 1 to size 4, number of crossings = 2 = log 4
-	 * To reach from size 1 to size 8, number of crossings = 3 = log 8
-	 * To reach from size 1 to size n, number of crossings = log n      ----------------------(2)
-	 * 
-	 * Hence total work = (work done at each level) * (no of levels)
-	 *                  = O(n) * O(Logn)
-	 *                  = O(nLogn)
+	 * ==> Total work = (time taken at each level) * (no of levels)
+	 *                = O(n) * O(Logn)
+	 *                = O(nLogn)
 	 * 
 	 * --------------
 	 * Mathematically
