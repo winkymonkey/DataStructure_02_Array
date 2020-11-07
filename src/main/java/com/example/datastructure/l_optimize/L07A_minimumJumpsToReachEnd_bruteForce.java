@@ -1,7 +1,7 @@
-package com.example.datastructure.k_optimize;
+package com.example.datastructure.l_optimize;
 
 
-public class K07A_minimumJumpsToReachEnd_bruteForce {
+public class L07A_minimumJumpsToReachEnd_bruteForce {
 	/*
 	 * Start from the first element and recursively call for all the elements reachable from first element.
 	 * The minimum number of jumps to reach end from first can be calculated using 

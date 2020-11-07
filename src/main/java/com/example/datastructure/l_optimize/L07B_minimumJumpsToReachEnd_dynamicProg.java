@@ -1,7 +1,7 @@
-package com.example.datastructure.k_optimize;
+package com.example.datastructure.l_optimize;
 
 
-public class K07B_minimumJumpsToReachEnd_dynamicProg {
+public class L07B_minimumJumpsToReachEnd_dynamicProg {
 	/*
 	 * While observing the execution of the previous brute force method, it can be seen that there are overlapping subproblems.
 	 * For example, minJumps(3,4) is invoked twice

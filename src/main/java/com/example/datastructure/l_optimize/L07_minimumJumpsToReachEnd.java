@@ -1,4 +1,4 @@
-package com.example.datastructure.k_optimize;
+package com.example.datastructure.l_optimize;
 
 /**
  * *****************************************************************************
@@ -20,6 +20,6 @@ package com.example.datastructure.k_optimize;
  * *****************************************************************************
  */
 
-public class K07_minimumJumpsToReachEnd {
+public class L07_minimumJumpsToReachEnd {
 	//TODO
 }

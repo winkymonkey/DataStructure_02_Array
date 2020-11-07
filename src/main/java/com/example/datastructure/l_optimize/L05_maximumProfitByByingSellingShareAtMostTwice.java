@@ -1,4 +1,4 @@
-package com.example.datastructure.k_optimize;
+package com.example.datastructure.l_optimize;
 
 /**
  * *****************************************************************************
@@ -32,7 +32,7 @@ package com.example.datastructure.k_optimize;
  * *****************************************************************************
  */
 
-public class K05_maximumProfitByByingSellingShareAtMostTwice {
+public class L05_maximumProfitByByingSellingShareAtMostTwice {
 	/*
 	 * profit1 = 0, profit2 = 0
 	 * 
