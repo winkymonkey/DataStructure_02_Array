@@ -2,6 +2,9 @@ package com.example.datastructure.j_statistics;
 
 
 public class J01_findSecondLargestElement {
+	/*
+	 * Use below OR use maxHeap
+	 */
 	
 	public static void main(String[] args) {
 		int A[] = { 38, 27, 43, 3, 9, 82, 10 };

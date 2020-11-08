@@ -2,6 +2,9 @@ package com.example.datastructure.j_statistics;
 
 
 public class J02_findSecondSmallestElement {
+	/*
+	 * Use below OR use minHeap
+	 */
 	
 	public static void main(String[] args) {
 		int A[] = { 38, 27, 43, 3, 9, 82, 10 };
