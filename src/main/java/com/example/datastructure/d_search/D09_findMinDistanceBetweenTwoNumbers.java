@@ -28,9 +28,17 @@ package com.example.datastructure.d_search;
 
 public class D09_findMinDistanceBetweenTwoNumbers {
 	/*
-	 * Traverse the array
-	 * If A[i] matches with either X or Y and different from A[p], then update the 'min_dist', update p as i
-	 * If A[i] matches with either X or Y and same from A[p], update p as i
+	 * So the basic approach is to check only consecutive pairs of X and Y.
+	 * 
+	 * For every element x or y, check the index of the previous occurrence of X or Y 
+	 * 	and if the previous occurring element is not similar to current element update the minimum distance.
+	 * 
+	 * But a question arises what if an X is preceded by another X and that is preceded by a Y, 
+	 * 	then how to get the minimum distance between pairs.
+	 * 
+	 * By analyzing closely it can be seen that every X followed by a Y or vice versa can only be the closest pair (minimum distance) so ignore all other pairs.
+	 * 
+	 * 
 	 * 
 	 * -----------
 	 * p = -1
