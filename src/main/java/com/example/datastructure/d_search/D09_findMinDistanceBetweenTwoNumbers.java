@@ -41,22 +41,22 @@ public class D09_findMinDistanceBetweenTwoNumbers {
 	 * 
 	 * 
 	 * -----------
-	 * p = -1
+	 * prev = -1
 	 * min_dist = INT_MAX
 	 * 
-	 * for (i=0 to n-1) {
-	 * 	  if (A[i] == X or Y) {
-	 *       if (p!=-1 && A[i]!=A[p]) {
-	 *          min_dist = min(min_dist, i-p)
-	 *       }
-	 *       p = i
+	 * for (i=0 to n) {
+	 * 	  if (A[i] == X || A[i] == Y) {
+	 *       if (prev!=-1 && A[i]!=A[prev])
+	 *          min_dist = min(min_dist, i-prev)
+	 *       
+	 *       prev = i
 	 * 	  }
 	 * }
 	 * 
 	 * if (min_dist==INT_MAX)
-	 *    //print "not found"
+	 *    print "not found"
 	 * else
-	 *    //print min_dist
+	 *    print min_dist
 	 * 
 	 * TIME --- O(n)
 	 * SPACE -- O(1)
