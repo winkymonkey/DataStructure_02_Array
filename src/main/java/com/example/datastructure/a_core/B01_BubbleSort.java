@@ -4,11 +4,10 @@ import java.util.Arrays;
 
 
 public class B01_BubbleSort {
-	private static B01_BubbleSort obj = new B01_BubbleSort();
 	
 	public static void main(String[] args) {
 		int A[] = {38, 27, 43, 3, 9, 82, 10};
-		obj.bubbleSort(A);
+		bubbleSort(A);
 	}
 	
 	
@@ -25,7 +24,7 @@ public class B01_BubbleSort {
 	 * .....
 	 * .....
 	 */
-	private void bubbleSort(int[] A) {
+	private static void bubbleSort(int[] A) {
 		int temp;
 		for (int i=0; i<A.length; i++) {
 			for (int j=1; j<A.length-i; i++) {
@@ -39,4 +38,5 @@ public class B01_BubbleSort {
 		}
 		System.out.println(Arrays.toString(A));
 	}
+	
 }

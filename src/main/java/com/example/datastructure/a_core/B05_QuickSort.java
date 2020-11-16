@@ -4,19 +4,18 @@ import java.util.Arrays;
 
 
 public class B05_QuickSort {
-	private static B05_QuickSort obj = new B05_QuickSort();	
 	
 	public static void main(String[] args) {
 		int A[] = {38, 27, 43, 3, 9, 82, 10};
 		int left = 0;
 		int right = A.length-1;
 		
-		obj.quickSort(A, left, right);
+		quickSort(A, left, right);
 		System.out.println(Arrays.toString(A));
 	}
 	
 	
-	private void quickSort(int[] A, int left, int right) {
+	private static void quickSort(int[] A, int left, int right) {
 		if (left < right) {
 			int pi = partition(A, left, right);	//pi is partitioning index, A[pi] is now at right place
 			quickSort(A, left, pi-1);			//Call quickSort for first part
@@ -25,7 +24,7 @@ public class B05_QuickSort {
 	}
 	
 	
-	private int partition(int A[], int left, int right) {
+	private static int partition(int A[], int left, int right) {
 		int pivot = A[right];
 		int k = left-1; 					//index of smaller element
 		

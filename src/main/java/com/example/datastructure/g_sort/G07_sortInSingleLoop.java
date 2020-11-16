@@ -9,15 +9,14 @@ import java.util.Arrays;
  */
 
 public class G07_sortInSingleLoop {
-	private static G07_sortInSingleLoop obj = new G07_sortInSingleLoop();
 	
 	public static void main(String[] args) {
 		int A[] = {38, 27, 43, 3, 9, 82, 10};
-		obj.sort(A);
+		sort(A);
 	}
 	
 	
-	private void sort(int A[]) {
+	private static void sort(int A[]) {
 		for (int i=0, j=i+1; i<A.length && j<A.length; ) {
 			if (A[i] > A[j]) {
 				int temp = A[i];
@@ -31,7 +30,6 @@ public class G07_sortInSingleLoop {
 				j++;
 			}
 		}
-		
 		System.out.println(Arrays.toString(A));
 	}
 }

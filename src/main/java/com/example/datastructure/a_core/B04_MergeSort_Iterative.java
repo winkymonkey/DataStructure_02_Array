@@ -4,11 +4,10 @@ import java.util.Arrays;
 
 
 public class B04_MergeSort_Iterative {
-	private static B04_MergeSort_Iterative obj = new B04_MergeSort_Iterative();
 	
 	public static void main(String[] args) {
 		int A[] = {38, 27, 43, 3, 9, 82, 10};
-		obj.mergeSort(A);
+		mergeSort(A);
 	}
 	
 	
@@ -19,7 +18,7 @@ public class B04_MergeSort_Iterative {
 	 *  - .......
 	 *  - .......
 	 */
-	private void mergeSort(int[] A) {
+	private static void mergeSort(int[] A) {
 		for (int size=1; size<=A.length-1; size=2*size) {		//current size of subarrays to be merged
 			
 			for (int left=0; left<A.length-1; left+=2*size) {		//starting index of different subarrays to be merged
@@ -38,12 +37,12 @@ public class B04_MergeSort_Iterative {
 	
 	
 	//Utility function to find minimum of two integers
-	private int findMin(int x, int y) {
+	private static int findMin(int x, int y) {
 		return (x<y)? x :y;
 	}
 	
 	
-	void merge(int arr[], int left, int mid, int right) {
+	private static void merge(int arr[], int left, int mid, int right) {
 	    int n1 = mid - left + 1;
 	    int n2 = right - mid;
 	 

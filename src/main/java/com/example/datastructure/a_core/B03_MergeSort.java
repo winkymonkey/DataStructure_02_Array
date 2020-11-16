@@ -4,19 +4,18 @@ import java.util.Arrays;
 
 
 public class B03_MergeSort {
-	private static B03_MergeSort obj = new B03_MergeSort();
 	
 	public static void main(String[] args) {
 		int A[] = {38, 27, 43, 3, 9, 82, 10};
 		int left = 0;
 		int right = A.length-1;
 		
-		obj.mergeSort(A, left, right);
+		mergeSort(A, left, right);
 		System.out.println(Arrays.toString(A));
 	}
 	
 	
-	private void mergeSort(int[] arr, int left, int right) {
+	private static void mergeSort(int[] arr, int left, int right) {
 		if (left < right) {
 			int mid = (left+right)/2;
 			mergeSort(arr, left, mid);		//Call mergeSort for first half
@@ -26,7 +25,7 @@ public class B03_MergeSort {
 	}
 	
 	
-	private void merge(int[] arr, int left, int mid, int right) {
+	private static void merge(int[] arr, int left, int mid, int right) {
 		int n1 = mid-left+1;		//no of elements in left-sorted-half
 		int n2 = right-mid; 		//no of elements in right-sorted-half
 		
