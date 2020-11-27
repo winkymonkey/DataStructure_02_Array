@@ -8,14 +8,16 @@ public class A03_BinarySearch_iterative {
 		//			0  1  2  3   4
 		int KEY = 10;
 		
-		int index = search(A, 0, A.length-1, KEY);
+		int l = 0;
+		int r = A.length-1;
+		int index = search(A, l, r, KEY);
 		System.out.println(index);
 	}
 	
 	
 	private static int search(int A[], int l, int r, int KEY) {
 		while (l <= r) {
-			int mid = (l + r) / 2;
+			int mid = (l+r)/2;
 			
 			if (KEY == A[mid])
 				return mid;

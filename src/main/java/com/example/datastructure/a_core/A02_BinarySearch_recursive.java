@@ -8,7 +8,9 @@ public class A02_BinarySearch_recursive {
 		//	   	    0  1  2  3   4
 		int KEY = 10;
 		
-		int index = search(A, 0, A.length-1, KEY);
+		int l = 0;
+		int r = A.length-1;
+		int index = search(A, l, r, KEY);
 		System.out.println(index);
 	}
 	
