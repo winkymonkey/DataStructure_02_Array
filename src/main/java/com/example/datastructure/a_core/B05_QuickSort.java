@@ -6,16 +6,17 @@ import java.util.Arrays;
 public class B05_QuickSort {
 	
 	public static void main(String[] args) {
-		int A[] = {38, 27, 43, 3, 9, 82, 10};
+		int A[] = { 38, 27, 43, 3, 9, 82, 10 };
+		//			0   1   2   3  4  5   6
+		
 		int left = 0;
 		int right = A.length-1;
-		
 		quickSort(A, left, right);
 		System.out.println(Arrays.toString(A));
 	}
 	
 	
-	private static void quickSort(int[] A, int left, int right) {
+	private static void quickSort(int A[], int left, int right) {
 		if (left < right) {
 			int pi = partition(A, left, right);	//pi is partitioning index, A[pi] is now at right place
 			quickSort(A, left, pi-1);			//Call quickSort for first part
@@ -26,7 +27,7 @@ public class B05_QuickSort {
 	
 	private static int partition(int A[], int left, int right) {
 		int pivot = A[right];
-		int k = left-1; 					//index of smaller element
+		int k = left-1; 						//index of smaller element
 		
 		for (int i=left; i<right; i++) {
 			if (A[i] <= pivot) {				//if current element is smaller than or equal to pivot

@@ -6,31 +6,32 @@ import java.util.Arrays;
 public class B03_MergeSort {
 	
 	public static void main(String[] args) {
-		int A[] = {38, 27, 43, 3, 9, 82, 10};
+		int A[] = { 38, 27, 43, 3, 9, 82, 10 };
+		//			0   1   2   3  4  5   6
+		
 		int left = 0;
 		int right = A.length-1;
-		
 		mergeSort(A, left, right);
 		System.out.println(Arrays.toString(A));
 	}
 	
 	
-	private static void mergeSort(int[] arr, int left, int right) {
+	private static void mergeSort(int arr[], int left, int right) {
 		if (left < right) {
 			int mid = (left+right)/2;
-			mergeSort(arr, left, mid);		//Call mergeSort for first half
-			mergeSort(arr, mid+1, right);	//Call mergeSort for second half
-			merge(arr, left, mid, right);	//Merge the sorted halves (CORE OF MERGE SORT)
+			mergeSort(arr, left, mid);			//Call mergeSort for first half
+			mergeSort(arr, mid+1, right);		//Call mergeSort for second half
+			merge(arr, left, mid, right);		//Merge the sorted halves (CORE OF MERGE SORT)
 		}
 	}
 	
 	
-	private static void merge(int[] arr, int left, int mid, int right) {
-		int n1 = mid-left+1;		//no of elements in left-sorted-half
-		int n2 = right-mid; 		//no of elements in right-sorted-half
+	private static void merge(int arr[], int left, int mid, int right) {
+		int n1 = mid-left+1;			//no of elements in left-sorted-half
+		int n2 = right-mid; 			//no of elements in right-sorted-half
 		
-		int L[] = new int[n1];		//create L[] for left-sorted-half
-		int R[] = new int[n2];		//create R[] for right-sorted-half
+		int L[] = new int[n1];			//create L[] for left-sorted-half
+		int R[] = new int[n2];			//create R[] for right-sorted-half
 		
 		for (int x=0; x<n1; x++)
 			L[x] = arr[left+x];			//copy left-sorted-half to L[]
@@ -38,9 +39,9 @@ public class B03_MergeSort {
 			R[z] = arr[(mid+1)+z];		//copy right-sorted-half to R[]
 		
 		//smallest from each of L[] and R[] is placed in original array
-		int i=0;				//to traverse L[]
-		int j=0;				//to traverse R[]
-		int k = left;			//to track merged array
+		int i = 0;						//to traverse L[]
+		int j = 0;						//to traverse R[]
+		int k = left;					//to track merged array
         while (i < n1 && j < n2) {
 			if (L[i] <= R[j]) {
 				arr[k] = L[i];
@@ -92,7 +93,7 @@ public class B03_MergeSort {
 	 *  size 1   size 1
 	 * 
 	 * 
-	 * At each level, merge() method makes 'n' comparisons and 'n' movements at max
+	 * At each level, merge() method makes maximum 'n' comparisons and 'n' movements
 	 * ==> At each level merge() method takes O(n) time at max
 	 * 
 	 * ==> Total work = (time taken at each level) * (no of levels)

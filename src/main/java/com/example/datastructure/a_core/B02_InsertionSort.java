@@ -6,39 +6,41 @@ import java.util.Arrays;
 public class B02_InsertionSort {
 	
 	public static void main(String[] args) {
-		int A[] = {38, 27, 43, 3, 9, 82, 10};
+		int A[] = { 38, 27, 43, 3, 9, 82, 10 };
+		//			0   1   2   3  4  5   6
+		
 		insertionSort(A);
+		System.out.println(Arrays.toString(A));
 	}
 	
 	
 	/**
-	 * Traverse from start+1 to end
-	 *  - declare current element as KEY
-	 *  - right shift all smaller elements before it to create a slot for KEY
+	 * Traverse from 1 to end
+	 *  - save current element in KEY
+	 *  - right shift all greater elements before it to create a slot for KEY		//this works fine because when we start shifting the elements, all elements before the current element is already sorted.
 	 *  - place KEY at the slot
-	 * Traverse from start+2 to end
+	 * Traverse from 2 to end
 	 *  - repeat
 	 *  - repeat
 	 *  - repeat
-	 * Traverse from start+3 to end
+	 * Traverse from 3 to end
 	 *  - repeat
 	 *  - repeat
 	 *  - repeat
 	 * .....
 	 * .....
 	 */
-	private static void insertionSort(int[] A) {
+	private static void insertionSort(int A[]) {
 		for (int i=1; i<A.length; i++) {		//Traverse from start+1 to end
 			int KEY = A[i];
 			int k = i-1;
 			
-			while (k>=0 && A[k]>KEY) {	//if current element > KEY
-				A[k+1] = A[k];			//right shift the elements
+			while (k>=0 && A[k]>KEY) {
+				A[k+1] = A[k];					//right shift the elements
 				k--;
 			}
-			A[k+1] = KEY;				//place KEY at the slot
+			A[k+1] = KEY;						//place KEY at the slot
 		}
-		System.out.println(Arrays.toString(A));
 	}
 	
 	
