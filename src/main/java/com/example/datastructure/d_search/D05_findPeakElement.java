@@ -13,9 +13,6 @@ package com.example.datastructure.d_search;
  * Input:  {10, 20, 15, 2, 23, 90, 67}
  * Output: 20, 90
  * 
- * Input:  {10, 20, 15, 2, 23, 90, 67}
- * Output: 20, 90
- * 
  * Input:  {10, 20, 30, 40, 50}
  * Output: 50
  * 
@@ -28,7 +25,7 @@ package com.example.datastructure.d_search;
  * *****************************************************************************
  */
 
-public class D06_findPeakElement {
+public class D05_findPeakElement {
 	/*
 	 * --------------------
 	 * ---NAIVE APPROACH---
@@ -49,13 +46,14 @@ public class D06_findPeakElement {
 	 * Start from A[mid]
 	 * 
 	 * if (A[mid] >= neighbors)
+	 * 	  print A[mid]
 	 * 	  return;
 	 * if (A[mid] < left neighbor)
-	 * 	  //there is always a peak in left half
-	 * 	  //hence recursively call the function for left half
+	 * 	  there is always a peak in left half
+	 * 	  hence recursively call the function for left half
 	 * if (A[mid] < right neighbor)
-	 * 	  //there is always a peak in right half
-	 * 	  //hence recursively call the function for right half
+	 * 	  there is always a peak in right half
+	 * 	  hence recursively call the function for right half
 	 * 
 	 * TIME --- O(Log n)
 	 * SPACE -- O(Log n)

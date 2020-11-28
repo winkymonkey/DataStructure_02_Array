@@ -37,9 +37,9 @@ public class D07_findFirstRepeatingElement {
 	 * -------------
 	 * Traverse the given array from right to left
 	 * for each element, if it already exists in Hash, save its index in MIN
-	 * otherwise, simply add it in HASH
+	 * otherwise, add it in HASH
 	 * 
-	 * after traversal MIN has the index is last found duplicate element
+	 * after traversal MIN has the index is last found duplicate element which is nothing but first duplicate element in array
 	 * print A[MIN]
 	 * 
 	 */

@@ -13,7 +13,7 @@ package com.example.datastructure.d_search;
  * *****************************************************************************
  */
 
-public class D05_findEquilibriumIndex {
+public class D06_findEquilibriumIndex {
 	/*
 	 * ---------------
 	 * ---USING SUM---
