@@ -26,6 +26,7 @@ public class E02_sortedRotated_findPivot {
 	 * 
 	 * 
 	 * 
+	 * 
 	 * ----------------------------
 	 * ---BINARY SEARCH APPROACH---
 	 * ----------------------------
@@ -35,11 +36,11 @@ public class E02_sortedRotated_findPivot {
 	 *       return mid
 	 *    }
 	 *    
-	 *    if (A[start] <= A[mid]) {
-	 *       return FUNC(mid+1, end)				//look for pivot in second half of the array
+	 *    if (A[mid] >= A[start]) {
+	 *       return FUNC(mid+1, end)		//look for pivot in second half of the array
 	 *    }
 	 *    else {
-	 *       return FUNC(start, mid-1)				//look for pivot in first half of the array
+	 *       return FUNC(start, mid-1)		//look for pivot in first half of the array
 	 *    }
 	 * }
 	 * 

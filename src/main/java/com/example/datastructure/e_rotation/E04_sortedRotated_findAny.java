@@ -14,7 +14,7 @@ package com.example.datastructure.e_rotation;
  * *************************************************************************
  */
 
-public class E03_sortedRotated_search {
+public class E04_sortedRotated_findAny {
 	/*
 	 * ----------------------------
 	 * ---LINEAR SEARCH APPROACH---

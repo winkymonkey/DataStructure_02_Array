@@ -6,7 +6,7 @@ package com.example.datastructure.e_rotation;
  * *****************************************************************************
  */
 
-public class E06_sortedRotated_findMin {
+public class E03_sortedRotated_findMin {
 	/*
 	 * Find pivot in Logn time
 	 * The next element of Pivot is the smallest one

@@ -3,10 +3,8 @@ package com.example.datastructure.d_search;
  * *****************************************************************************
  * Find the minimum distance between two numbers
  * *****************************************************************************
- * Given an unsorted array A[] and two numbers X and Y.
- * Find the minimum distance between X and Y in A[].
- * The array might also contain duplicates.
- * You may assume that both X and Y are different and present in A[].
+ * Given an unsorted array A[] and two distinct numbers X and Y, find the minimum distance between X and Y
+ * The array might also contain duplicates
  * *****************************************************************************
  * Input:  A[] = {1, 2}		 	X=1, Y=2
  * Output: 1

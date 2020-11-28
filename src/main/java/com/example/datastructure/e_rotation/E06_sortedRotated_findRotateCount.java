@@ -10,9 +10,9 @@ package com.example.datastructure.e_rotation;
  * *****************************************************************************
  */
 
-public class E05_sortedRotated_findRotateCount {
+public class E06_sortedRotated_findRotateCount {
 	/*
-	 * Find the pivot element in O(Logn) time
+	 * Find the Pivot element in O(Logn) time
 	 * Next element of the Pivot is the smallest one (let it be k)
 	 * So answer is (A/length - k)
 	 * 

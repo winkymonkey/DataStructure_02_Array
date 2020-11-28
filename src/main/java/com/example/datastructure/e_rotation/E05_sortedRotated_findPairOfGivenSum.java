@@ -13,12 +13,17 @@ package com.example.datastructure.e_rotation;
  * *****************************************************************************
  */
 
-public class E04_sortedRotated_findPairOfGivenSum {
+public class E05_sortedRotated_findPairOfGivenSum {
 	/*
-	 * Given an array A[] and a number SUM, check for pair in A[] having sum as SUM
-	 * -- we already solved this problem using sort & then sliding door technique
-	 * -- we can extend this solution for rotated array as well
-	 * -- but here the low and high pointer will progress in circular fashion
+	 * We already know how to solve such problems (using sliding door technique) if it's a regular sorted array
+	 * We can extend that solution here
+	 * 
+	 * Find the pivot element in O(Logn) time ---> It is the Largest
+	 * The number next to largest ---> It is the Smallest
+	 * 
+	 * Now consider Smallest as Left and Largest as Right
+	 * Now apply sliding door technique
+	 * But here the indexes are incremented and decremented in rotational manner using modular arithmetic
 	 * 
 	 * TIME --- O(n)
 	 * SPACE -- O(1)
