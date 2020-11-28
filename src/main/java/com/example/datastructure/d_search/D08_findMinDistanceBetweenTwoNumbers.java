@@ -26,11 +26,11 @@ package com.example.datastructure.d_search;
  * *****************************************************************************
  */
 
-public class D09_findMinDistanceBetweenTwoNumbers {
+public class D08_findMinDistanceBetweenTwoNumbers {
 	/*
 	 * So the basic approach is to check only consecutive pairs of X and Y.
 	 * 
-	 * For every element x or y, check the index of the previous occurrence of X or Y 
+	 * For every element X or Y, check the index of the previous occurrence of X or Y 
 	 * 	and if the previous occurring element is not similar to current element update the minimum distance.
 	 * 
 	 * But a question arises what if an X is preceded by another X and that is preceded by a Y, 
@@ -44,8 +44,8 @@ public class D09_findMinDistanceBetweenTwoNumbers {
 	 * 
 	 * for (i=0 to n) {
 	 * 	  if (A[i] == X || A[i] == Y) {
-	 *       if (prev!=-1 && A[i]!=A[prev])
-	 *          min_dist = min(min_dist, i-prev)
+	 *       if (prev!=-1 && A[i]!=A[prev])				//one of them is 3, another one is 6
+	 *          min_dist = MIN(min_dist, i-prev)
 	 *       
 	 *       prev = i
 	 * 	  }
