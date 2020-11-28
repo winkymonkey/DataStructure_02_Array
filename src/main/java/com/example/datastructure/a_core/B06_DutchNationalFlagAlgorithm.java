@@ -15,21 +15,33 @@ public class B06_DutchNationalFlagAlgorithm {
 	 * ----------------------------
 	 * ---TWO COLORS (zero, one)---
 	 * ----------------------------
-	 * In each step we try to push all ZEROS to left and all ONES to right.
-	 * The algorithm maintains three sections (possibly empty) in A[]
-	 * 		A[1...L-1] are all ZEROS
-	 * 		A[L.....H] are all UNKNOWN
-	 * 		A[H+1...N] are all ONES
+	 * With `0′ and `1′, the array is divided into three sections:
+	 * 		A[1.......L-1] are all 0s
+	 * 		A[L.......H] are all UNKNOWN
+	 * 		A[H+1.....N] are all 2s
 	 * 
-	 * The unknown section is shrunk while maintaining these conditions:
-	 * 	L=1, H=N
-	 * 	while (L<=H) {
-	 * 		if (A[L]==0)
-	 * 			L++
-	 * 		else
-	 * 			swap A[L], A[H]
-	 * 			H--
-	 * 	}
+	 * 
+	 * Let us take L=1, H=N
+	 * It means that initially the full array is UNKNOWN
+	 * 
+	 * 
+	 * Our objective is to examine the `L′ element and
+	 * 	- if `L′ is 0 --> all good, L++
+	 *  - if `L′ is 1 --> swap it with `H′, H--
+	 * 
+	 * 
+	 * Thus in each step we are trying to push all 0s to left, all 1s to right
+	 * Thus in each step the UNKNOWN section shrinks
+	 * 
+	 * ---------
+	 * L=1, H=N
+	 * while (L<=H) {
+	 *    if (A[L]==0)
+	 *       L++
+	 *    else
+	 *       swap A[L], A[H]
+	 *       H--
+	 * }
 	 * TIME --- O(n)
 	 * SPACE -- O(1)
 	 * 
@@ -39,14 +51,25 @@ public class B06_DutchNationalFlagAlgorithm {
 	 * -----------------------------------
 	 * ---THREE COLORS (zero, one, two)---
 	 * -----------------------------------
-	 * In each step we try to push all ZEROS to left, all ONES to middle and all TWOS to right.
-	 * The algorithm maintains three sections (possibly empty) in A[]
-	 * 		A[1...L-1] are all ZEROS (red)
-	 * 		A[L...M-1] are all ONES (white)
-	 * 		A[M.....H] are all UNKNOWN
-	 * 		A[H+1...N] are all TWOS (blue)
+	 * With `0′, `1′ and `2′, the array is divided into four sections:
+	 * 		A[1.......L-1] are all 0s
+	 * 		A[L.......M-1] are all 1s
+	 * 		A[M.......H] are all UNKNOWN
+	 * 		A[H+1.....N] are all 2s
 	 * 
-	 * The objective is to shrink the unknown section as the program propagates
+	 * 
+	 * Let us take L=1, M=1, H=N
+	 * It means that initially the full array is UNKNOWN
+	 * 
+	 * 
+	 * Our objective is to examine the `M′ element and
+	 * 	- if `M′ is 0 --> swap it with `L′, L++, M++
+	 *  - if `M′ is 1 --> all good, M++
+	 *  - if `M′ is 2 --> swap it with `H′, H--
+	 * 
+	 * 
+	 * Thus in each step we are trying to push all 0s to left, all 1s to middle, all 2s to right
+	 * Thus in each step the UNKNOWN section shrinks
 	 * 
 	 * ---------
 	 * L = 1
