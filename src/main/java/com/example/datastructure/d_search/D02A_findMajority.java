@@ -4,8 +4,7 @@ package com.example.datastructure.d_search;
  * *****************************************************************************
  * Majority Element
  * *****************************************************************************
- * An element that appears more than n/2 times in an array A[] of size n is called Majority Element.
- * Write a function which takes an array and prints the majority element(if exists)
+ * An element that appears more than n/2 times in A[] of size n is called Majority Element
  * *****************************************************************************
  * Input:  {3, 3, 4, 2, 4, 4, 2, 4, 4}
  * Output: 4
@@ -37,6 +36,7 @@ public class D02A_findMajority {
 	 * 
 	 * 
 	 * 
+	 * 
 	 * -----------------
 	 * ---USE SORTING---
 	 * -----------------
@@ -45,6 +45,7 @@ public class D02A_findMajority {
 	 * 
 	 * TIME --- O(nLogn)
 	 * SPACE -- O(1)
+	 * 
 	 * 
 	 * 
 	 * 
@@ -69,30 +70,36 @@ public class D02A_findMajority {
 	 * 
 	 * 
 	 * 
+	 * 
 	 * ----------------------------
 	 * --MOORE'S VOTING ALGORITHM--
 	 * ----------------------------
+	 * {3, 3, 4, 2, 4, 4, 2, 4, 4}
+	 * 
 	 * This is a two-step (two traversal) process
-	 *  -- Step1 -- 
+	 * -- Step1 -- 
 	 *   This step gives the element that MAYBE the majority element in the array.
 	 *   If there is a majority element --> this step will definitely return majority element.
 	 *   Otherwise --> this step will return candidate for majority element.
 	 *  
-	 *  -- Step2 --
+	 * -- Step2 --
 	 *   Check if the element obtained from the above step is majority element.
 	 *   This step is necessary as there might be no majority element.
 	 * 
 	 * ---------
 	 * ALGORITHM
-	 * - Maintain 'a count of majority element'(count=1) & 'a majority index'(majIndex=0)
+	 * ---------
+	 * count = 1		//the count of majority element
+	 * majIndex = 0		//the majority index
 	 *  
-	 * - Traverse the array from i=1
-	 *   - If the next element is same then count++, else count--
-	 *   - If the count reaches 0 then make 'majIndex = i' and 'count = 1'
+	 * Traverse the array from i=1 till end
+	 *   - If A[i] is same as A[majIndex] ---> then 'count++', else 'count--'
+	 *   - If the count reaches 0 then update 'majIndex = i' and 'count = 1'
 	 *   - Finally A[majIndex] is considered as a candidate
 	 *  
-	 * - Again traverse the array from start and find the count of majority element found
-	 *   - If 'count > length/2' then declare the candidate as majority element
+	 * Again traverse the array from i=0 till end
+	 *   - find the occurrences of the candidate
+	 *   - If 'occurrence > length/2' then declare the candidate as majority element
 	 *   - Else declare that no majority element is found
 	 * 
 	 * TIME --- O(n)

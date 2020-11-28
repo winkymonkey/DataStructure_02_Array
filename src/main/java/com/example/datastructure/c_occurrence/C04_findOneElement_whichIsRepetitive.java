@@ -4,10 +4,10 @@ package com.example.datastructure.c_occurrence;
  * *****************************************************************************
  * Find the only repetitive element between 1 to n-1
  * *****************************************************************************
- * We are given an array A[] of size n.
- * Array elements are numbers which are from 1 to (n-1) in random order.
- * The array has only one repetitive element.
- * Find the repetitive element.
+ * We are given an array A[] of size n
+ * Array elements are numbers which are from 1 to (n-1) in random order
+ * The array has only one repetitive element
+ * Find the repetitive element
  * *****************************************************************************
  * Input:  {1, 3, 2, 3, 4}
  * Output: 3

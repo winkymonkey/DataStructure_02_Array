@@ -19,25 +19,17 @@ public class C02_findTwoElements_occurringOddTimes {
 	 * ---USING BITWISE XOR---
 	 * -----------------------
 	 * X = XOR of all elements
-	 * As only P and Q appears odd number of times, XOR among all other elements results 0 
+	 *   = P ^ Q				//all paired numbers results to 0... Only alone numbers will remain
 	 * 
-	 * Hence [X = P ^ Q]
-	 *   -- if X is zero that means all elements are in pairs only
-	 *   -- if X is non-zero that means a few elements are not in pairs
+	 * Now find out the 'rightmost-set-bit' in X 							//set_bit_num = X & ~(X-1) 
+	 *   -- P ^ Q can produce 1 in a bit position, only if P and Q contain different bits at that position
 	 * 
-	 * Now we want to find out the rightmost 'set-bit'(1) in X 			['set_bit_num = X & ~(X-1)'] 
-	 *   -- as a XOR between two binary numbers can produce 1 in any bit position ONLY IF two bits are different at that position
-	 *   -- the rightmost 'set-bit' signifies --> at that bit position P and Q have opposite value
-	 * 
-	 * So we have to divide elements in two groups in such a way that
-	 *   -- groupA has those elements who's corresponding bit is 1
-	 *   -- groupB has those elements who's corresponding bit is 0
+	 * Now divide all numbers in array in two groups in such a way that
+	 *   -- groupA contains the numbers whose corresponding bit is 1		//A[i] & set_bit_num > 0
+	 *   -- groupB contains the numbers whose corresponding bit is 0		//A[i] & set_bit_num < 0
 	 *   
-	 * To achieve it, we can traverse the array and perform 'A[i] & set_bit_num'	[A[i] & set_bit_num]
-	 *   -- if the result > 0 that means --> A[i] has corresponding bit as 1
-	 *   -- if the result < 0 that means --> A[i] has corresponding bit as 0
-	 * 
-	 * 
+	 *   -- take XOR of all numbers in groupA --> it is P		//XOR of all elements (except P) in groupA result to 0 
+	 *   -- take XOR of all numbers in groupB --> it is Q		//XOR of all elements (except Q) in groupB result to 0
 	 * 
 	 * --------------
 	 * X = 0

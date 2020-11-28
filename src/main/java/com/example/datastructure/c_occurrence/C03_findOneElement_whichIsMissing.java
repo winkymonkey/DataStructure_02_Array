@@ -10,7 +10,7 @@ package com.example.datastructure.c_occurrence;
  * One of them is missing from the integer list 
  * Find the missing integer
  * *****************************************************************************
- * Input:  [1, 2, 4, 6, 3, 7, 8]
+ * Input:  {1, 2, 4, 6, 3, 7, 8}
  * Output: 5
  * 
  * *****************************************************************************

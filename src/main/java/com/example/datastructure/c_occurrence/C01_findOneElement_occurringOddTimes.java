@@ -7,7 +7,7 @@ package com.example.datastructure.c_occurrence;
  * Input:  {1, 2, 3, 2, 3, 1, 3}
  * Output: 3
  * 
- * Input:  {5, 7, 2, 7, 5, 2, 5}
+ * Input:  {5, 7, 2, 7, 5, 2,} 
  * Output: 5
  * 
  * *****************************************************************************

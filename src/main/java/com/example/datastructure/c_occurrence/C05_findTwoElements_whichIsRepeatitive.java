@@ -5,7 +5,7 @@ package com.example.datastructure.c_occurrence;
  * Find the two repeating elements in a given array
  * *****************************************************************************
  * Input:  {4, 2, 4, 5, 2, 3, 1}
- * Output: {4 2}
+ * Output: 4 and 2
  * 
  * *****************************************************************************
  */

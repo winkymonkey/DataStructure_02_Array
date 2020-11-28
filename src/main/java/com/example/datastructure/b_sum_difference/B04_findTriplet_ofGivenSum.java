@@ -4,8 +4,8 @@ package com.example.datastructure.b_sum_difference;
  * *****************************************************************************
  * Find a triplet that sum to a given value
  * *****************************************************************************
- * Input:  A[] = {12, 3, 4, 1, 6, 9}		SUM = 24
- * Output: YES								//12,3,9
+ * Input:  {12, 3, 4, 1, 6, 9}		SUM = 24
+ * Output: YES						//12,3,9
  * 
  * *****************************************************************************
  */
@@ -32,7 +32,7 @@ public class B04_findTriplet_ofGivenSum {
 	 * -----------------------------------
 	 * Sort the array		{1, 3, 4, 6, 9, 12}
 	 * 
-	 * for (i=0 to n-2) {						//fix the first element of the possible triplet, A[i]
+	 * for (i=0 to n-2) {						//fix the first element A[i] of the possible triplet
 	 *    l = i+1;
 	 *    r = n-1;
 	 *    while (l < r) {						//apply sliding door technique from (i+1) to (end)

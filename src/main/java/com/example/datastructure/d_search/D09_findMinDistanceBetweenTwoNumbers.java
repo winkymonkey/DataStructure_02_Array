@@ -38,8 +38,6 @@ public class D09_findMinDistanceBetweenTwoNumbers {
 	 * 
 	 * By analyzing closely it can be seen that every X followed by a Y or vice versa can only be the closest pair (minimum distance) so ignore all other pairs.
 	 * 
-	 * 
-	 * 
 	 * -----------
 	 * prev = -1
 	 * min_dist = INT_MAX

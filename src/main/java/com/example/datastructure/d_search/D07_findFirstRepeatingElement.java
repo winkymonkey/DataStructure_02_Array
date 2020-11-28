@@ -4,16 +4,16 @@ package com.example.datastructure.d_search;
  * *****************************************************************************
  * Find the first repeating element in an array of integers
  * *****************************************************************************
- * Input:  A[] = {10, 5, 3, 4, 3, 5, 6}
+ * Input:  {10, 5, 3, 4, 3, 5, 6}
  * Output: 5
  * 
- * Input:  A[] = {6, 10, 5, 4, 9, 120, 4, 6, 10}
+ * Input:  {6, 10, 5, 4, 9, 120, 4, 6, 10}
  * Output: 6
  * 
  * *****************************************************************************
  */
 
-public class D08_findFirstRepeatingElement {
+public class D07_findFirstRepeatingElement {
 	/*
 	 * -------------
 	 * ---SORTING---

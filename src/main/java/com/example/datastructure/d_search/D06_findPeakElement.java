@@ -28,7 +28,7 @@ package com.example.datastructure.d_search;
  * *****************************************************************************
  */
 
-public class D07_findPeakElement {
+public class D06_findPeakElement {
 	/*
 	 * --------------------
 	 * ---NAIVE APPROACH---
@@ -38,6 +38,7 @@ public class D07_findPeakElement {
 	 * 
 	 * TIME --- O(n)
 	 * SPACE -- O(1)
+	 * 
 	 * 
 	 * 
 	 * 

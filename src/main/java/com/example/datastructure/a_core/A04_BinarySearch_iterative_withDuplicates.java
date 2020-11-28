@@ -1,6 +1,11 @@
 package com.example.datastructure.a_core;
 
-
+/**
+ * ************************************************************************************
+ * This problem can be extended as
+ * Find how many times a given element X occurs in a sorted array
+ * ************************************************************************************
+ */
 public class A04_BinarySearch_iterative_withDuplicates {
 	
 	public static void main(String[] args) {

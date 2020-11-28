@@ -8,10 +8,10 @@ package com.example.datastructure.d_search;
  * Given a key ELEM, we need to find the index value of ELEM
  * If ELEM occurs multiple times, return the first occurrence of ELEM
  * *****************************************************************************
- * Input:  {4, 5, 6, 7, 6}				K=1		ELEM=6
- * Output: 2							//ELEM=6 occurs at index=2
+ * Input:  4, 5, 6, 7, 6					K=1		ELEM=6
+ * Output: 2								//ELEM=6 occurs at index=2
  * 
- * Input:  {40, 50, 40, 50, 60, 80, 60}		K=20	ELEM=80
+ * Input:  40, 50, 40, 50, 60, 80, 60		K=20	ELEM=80
  * Output: 5								//ELEM=80 occurs at index=5
  * 
  * *****************************************************************************
