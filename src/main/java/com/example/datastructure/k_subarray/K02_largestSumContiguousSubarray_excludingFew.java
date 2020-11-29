@@ -1,4 +1,4 @@
-package com.example.datastructure.k_optimize_subarray;
+package com.example.datastructure.k_subarray;
 
 /**
  * *****************************************************************************
@@ -26,15 +26,16 @@ public class K02_largestSumContiguousSubarray_excludingFew {
 	 * In this problem,
 	 * 	 We will reset sum=0; when sum<0 OR A[i] exists in B[]
 	 * 
+	 * ----------
 	 * MAX = 0;
 	 * sum = 0;
 	 * for (i=0 to length) {
-	 * 	 sum = sum + A[i]
-	 *   if (sum < 0 || A[i] belongs to B[])	----> //only modification is in this line
-	 *   	sum = 0;
-	 *   
-	 *   if (sum > MAX)
-	 *   	MAX = sum;
+	 * 	  sum = sum + A[i]
+	 *    
+	 *    if (sum < 0 || A[i] belongs to B[])	----> //only modification is in this line
+	 *       sum = 0;
+	 *    
+	 *    MAX = max(MAX, sum)
 	 * }
 	 * return MAX;
 	 * 

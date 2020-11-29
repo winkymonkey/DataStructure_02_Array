@@ -1,13 +1,13 @@
-package com.example.datastructure.k_optimize_subarray;
+package com.example.datastructure.k_subarray;
 
 /**
  * *****************************************************************************
  * Find the subarray with least average
  * *****************************************************************************
- * Input:  A[] = {3, 7, 90, 20, 10, 50, 40}			k = 3
+ * Input:  A[] = {3, 7, 90, 20, 10, 50, 40}				k = 3
  * Output: between indexes 3 and 5	-- {20,10,50}
  * 
- * Input:  A[] = {3, 7, 5, 20, -10, 0, 12}			k = 2
+ * Input:  A[] = {3, 7, 5, 20, -10, 0, 12}				k = 2
  * Output: between indexes 4 and 5	-- {-10,0}
  * 
  * *****************************************************************************
@@ -16,7 +16,7 @@ package com.example.datastructure.k_optimize_subarray;
 public class K03_findSubarray_withLeastAverage {
 	/*
 	 * result_index = 0
-	 * curr_sum = 0;
+	 * sum = 0;
 	 * for (i=0 to k)
 	 * 	  sum += A[i];
 	 * 
@@ -29,6 +29,8 @@ public class K03_findSubarray_withLeastAverage {
 	 *       res_index = (i+1)-k;
 	 * 	  }
 	 * }
+	 * 
+	 * The range is 'res_index' and '(res_index + k - 1)'
 	 * 
 	 */
 }

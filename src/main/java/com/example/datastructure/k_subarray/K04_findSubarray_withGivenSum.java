@@ -1,4 +1,4 @@
-package com.example.datastructure.k_optimize_subarray;
+package com.example.datastructure.k_subarray;
 
 /**
  * *****************************************************************************
