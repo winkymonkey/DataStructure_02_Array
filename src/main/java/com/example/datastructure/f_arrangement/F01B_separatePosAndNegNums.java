@@ -21,27 +21,28 @@ public class F01B_separatePosAndNegNums {
 	}
 	
 	private static void merge(int A[], int left, int mid, int right) {
-		int i = left; 					// Initial index of 1st subarray
-		int j = mid+1; 					// Initial index of 2nd subarray
+		int x = left; 					// Initial index of left subarray
+		int y = mid+1; 					// Initial index of right subarray
 
-		while (i<=mid && A[i]<0)		//after traversal --- Ln = A[left] to A[i-1]
-			i++;						//after traversal --- Lp = A[i] to A[mid]
+		while (x<=mid && A[x]<0)		//after traversal --- Ln = A[left] to A[x-1]
+			x++;						//after traversal --- Lp = A[x] to A[mid]
 
-		while (j<=right && A[j]<0)		//after traversal --- Rn = A[mid+1] to A[j-1]
-			j++;						//after traversal --- Rp = A[j] to A[right]
+		while (y<=right && A[y]<0)		//after traversal --- Rn = A[mid+1] to A[y-1]
+			y++;						//after traversal --- Rp = A[y] to A[right]
 
-		reverse(A, i, mid);				//reverse Lp (A[i] to A[mid])
-		reverse(A, mid+1, j-1);			//reverse Rn (A[mid+1] to A[j-1])
-		reverse(A, i, j-1);				//reverse Lp'Rn' (A[i] to A[j-1]
+		reverse(A, x, mid);				//reverse Lp (A[i] to A[mid])
+		reverse(A, mid+1, y-1);			//reverse Rn (A[mid+1] to A[j-1])
+		reverse(A, x, y-1);				//reverse Lp'Rn' (A[i] to A[j-1]
 	}
 	
 	private static void reverse(int A[], int left, int right) {
-		if (left < right) {
+		while (left < right) {
 			int temp = A[left];
 			A[left] = A[right];
 			A[right] = temp;
 			
-			reverse(A, ++left, --right);
+			left++;
+			right--;
 		}
 	}
 	

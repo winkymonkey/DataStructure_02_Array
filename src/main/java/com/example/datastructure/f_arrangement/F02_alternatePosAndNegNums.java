@@ -18,13 +18,9 @@ package com.example.datastructure.f_arrangement;
 
 public class F02_alternatePosAndNegNums {
 	/*
-	 * -------------------------
-	 * ---MODIFIED QUICK SORT---
-	 * -------------------------
-	 * Positive & Negative numbers are distributed around 0
-	 * So let us do "Partition Process Quick Sort" based on 'KEY'=0
-	 * After the sort, all negative numbers will be left aligned, All positive numbers will be right aligned
-	 * Now start from the 1st negative number and 1st positive number, and swap every alternate negative number with next positive number.
+	 * Separate positive and negative numbers
+	 * So all negative numbers will be left aligned, All positive numbers will be right aligned
+	 * Now start from the 1st negative number and 1st positive number and swap every alternate negative number with next positive number.
 	 * 
 	 * TIME --- O(n)
 	 * SPACE -- O(1)

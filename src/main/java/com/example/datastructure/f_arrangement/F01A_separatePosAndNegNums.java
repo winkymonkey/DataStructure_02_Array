@@ -7,7 +7,6 @@ package com.example.datastructure.f_arrangement;
  * Given an array of POS and NEG numbers, arrange them such that all NEG numbers appear before all the POS numbers.
  * 		Constraint - NO additional data structure
  * 		Constraint - Maintain the order of appearance
- * 
  * *******************************************************************************************************
  * Input:  [12 11 -13 -5 6 -7 5 -3 -6]
  * Output: [-13 -5 -7 -3 -6 12 11 6 5]
@@ -17,20 +16,11 @@ package com.example.datastructure.f_arrangement;
 
 public class F01A_separatePosAndNegNums {
 	/*
-	 * -------------------------
-	 * ---MODIFIED QUICK SORT---
-	 * -------------------------
+	 * --------------------------------------------
+	 * ---MODIFIED QUICK SORT---(NOT ACCEPTABLE)---
+	 * --------------------------------------------
 	 * Use the "Partition process of the QuickSort" assuming the 'PIVOT = 0'
 	 * Hence all negative numbers will be left aligned, all positive numbers will be right aligned
-	 * 
-	 * PIVOT = 0;
-	 * k = -1;
-	 * for (i=0 to length) {
-	 *    if (A[i] < PIVOT) {
-	 *       k++;
-	 *       swap A[i] and A[k];
-	 *    }
-	 * }
 	 * 
 	 * TIME --- O(n)
 	 * SPACE -- O(1)
@@ -62,9 +52,9 @@ public class F01A_separatePosAndNegNums {
 	 * 
 	 * 
 	 * 
-	 * -------------------------
-	 * ---MODIFIED MERGE SORT---
-	 * -------------------------
+	 * --------------------------------------------
+	 * ---MODIFIED MERGE SORT---(NOT ACCEPTABLE)---
+	 * --------------------------------------------
 	 * Use the "Merge process of the MergeSort" keeping the below points in mind
 	 * While merging two sorted halves, merge it in such a way that:
 	 *  - negative parts of both the subarrays are copied first
@@ -90,7 +80,7 @@ public class F01A_separatePosAndNegNums {
 	 * -> [Ln Rn  Lp  Rp]		//Reverse [Lp’ Rn’]
 	 * 
 	 * TIME --- O(nLogn)
-	 * SPACE -- O(Logn)	for recursive calls
+	 * SPACE -- O(1)
 	 * 
 	 */
 }

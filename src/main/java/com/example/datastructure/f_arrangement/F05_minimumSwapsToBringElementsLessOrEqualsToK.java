@@ -10,16 +10,14 @@ package com.example.datastructure.f_arrangement;
  * NOTE:
  * It is not asked to bring all such elements at the beginning of the array.
  * Those elements can be brought together anywhere within the array (i.e. can be brought together at start/middle/end/anywhere)
- *  
  * *******************************************************************************************************
- * Input:  A[] = {2, 1, 5, 6, 3}	K=3
- * Output: 1
- * after swaps-> {2, 1, 3, 6, 5}	//5,3 swapped
+ * Input:  {2, 1, 5, 6, 3}				K=3
+ * Output: 1							//5,3 swapped	{2, 1, 3, 6, 5}
+ * 														 <  <  <
  * 
- * Input:  A[] = {2, 7, 9, 5, 8, 7, 4}		K=5
- * Output: 2
- * after swaps-> {9, 7, 2, 5, 4, 7, 8}		//2,9 swapped 8,4 swapped
- * 
+ * Input:  {2, 7, 9, 5, 8, 7, 4}		K=5
+ * Output: 2							//2,9 swapped 8,4 swapped	{9, 7, 2, 5, 4, 7, 8}
+ * 																	       <  <  <
  * *******************************************************************************************************
  */
 
@@ -28,32 +26,34 @@ public class F05_minimumSwapsToBringElementsLessOrEqualsToK {
 	 * --------------------------------
 	 * --Two Pointer & Sliding Window--
 	 * --------------------------------
-	 * Find count of all elements which are less than or equals to 'K'
-	 * Let’s say the count is 'count'
+	 * Traverse the array and find count of all elements which are less than or equals to 'K'
 	 * 
-	 * For window of length 'count', each time keep track of how many elements in this range are greater than 'K'
-	 * Let’s say the total count is 'bad'
+	 * Traverse the array again by maintaining a window of length 'count'
+	 *  - in each step, keep track of how many elements in this range are greater than 'K'. Let it be called as 'BAD'
+	 *  - it is nothing but the number of swaps required for this range
+	 *  - so after each step, we must compare the current value of 'BAD' and the minimum of 'BAD' tracked till now
 	 * 
-	 * Repeat step 2, for every window of length 'count' and take minimum of count 'bad' among them
-	 * This will be the final answer
+	 * Example:
+	 *  <        <        <  <        <  <  <  <     <           --- which are less than K
+	 * {2, 7, 9, 5, 8, 7, 4, 2, 6, 7, 1, 3, 5, 6, 9, 2, 6, 7}
+	 *  0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17
+	 *  |                       |								5 elements are greater than K in this range. So 5 swaps are required in this range.
+	 *     |                       |							6 elements are greater than K in this range. So 6 swaps are required in this range.
+	 *        |                       |							5 elements are greater than K in this range. So 5 swaps are required in this range.
+	 *           |                       |						4 elements are greater than K in this range. So 4 swaps are required in this range.
+	 *              |                       |					4 elements are greater than K in this range. So 4 swaps are required in this range.
+	 *                 |                       |				3 elements are greater than K in this range. So 3 swaps are required in this range.
+	 *                    |                       |				3 elements are greater than K in this range. So 3 swaps are required in this range.
+	 *                       |                       |			3 elements are greater than K in this range. So 3 swaps are required in this range.
+	 *                          |                       |		4 elements are greater than K in this range. So 4 swaps are required in this range.
+	 *                             |                       |	4 elements are greater than K in this range. So 4 swaps are required in this range.
+	 * 
+	 * 															So minimum of all above is --- 3 swaps
 	 * 
 	 */
 	
-	
 	public static void main(String args[]) {
-		//         <        <        <  <        <  <  <  <     <           which are less than K
 		int A[] = {2, 7, 9, 5, 8, 7, 4, 2, 6, 7, 1, 3, 5, 6, 9, 2, 6, 7};
-		//		   0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17
-		//         |                       |								5 elements are greater than K in the given range
-		//            |                       |								6 elements are greater than K in the given range
-		//               |                       |							5 elements are greater than K in the given range
-		//                  |                       |						4 elements are greater than K in the given range
-		//                     |                       |					4 elements are greater than K in the given range
-		//                        |                       |					3 elements are greater than K in the given range
-		//                           |                       |				3 elements are greater than K in the given range
-		//                              |                       |			3 elements are greater than K in the given range
-		//                                 |                       |		4 elements are greater than K in the given range
-		//                                    |                       |		4 elements are greater than K in the given range
 		
 		int K = 5;
 		minSwaps(A, K);

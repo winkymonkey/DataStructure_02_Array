@@ -18,9 +18,12 @@ package com.example.datastructure.g_sort;
 
 public class G03_sortAlternatively {
 	/*
-	 * Sort input array using a O(nLogn) algorithm
-	 * Maintain two pointers, one from beginning and one from end in sorted array
-	 * Alternatively print elements pointed by two pointers and move them toward each other
+	 * Sort input array in a O(nLogn) time
+	 * Traverse the sorted array using two pointers called "START" (pointing at 0th index) and "END" (pointing at nth index)
+	 *  - print A[END]
+	 *  - print A[start]
+	 *  - START++
+	 *  - END--
 	 * 
 	 */
 }

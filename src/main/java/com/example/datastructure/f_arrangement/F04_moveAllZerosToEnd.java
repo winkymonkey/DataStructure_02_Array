@@ -5,7 +5,6 @@ package com.example.datastructure.f_arrangement;
  * Move all zeroes to end of array
  * *******************************************************************************************************
  * Given an array of random numbers, Push all the zero’s of a given array to the end of the array
- * 
  * *******************************************************************************************************
  * Input:  {1, 2, 0, 4, 3, 0, 5, 0}
  * Output: {1, 2, 4, 3, 5, 0, 0, 0}
@@ -19,7 +18,7 @@ package com.example.datastructure.f_arrangement;
 public class F04_moveAllZerosToEnd {
 	/*
 	 * count = 0
-	 * for (int i=0 to n) {
+	 * for (i=0 to n) {
 	 *    if (A[i] != 0) {
 	 *       A[count] = A[i]
 	 *       count++

@@ -4,8 +4,7 @@ package com.example.datastructure.f_arrangement;
  * *******************************************************************************************************
  * Reorder an array according to given indexes
  * *******************************************************************************************************
- * Given two integer arrays of same size, “arr[]” and “index[]”, reorder elements in “arr[]” according to given index array.
- * It is not allowed to given array arr’s length.
+ * Given two integer arrays of same size, "A[]" and "index[]", reorder elements in "A[]" according to given index array.
  * *******************************************************************************************************
  * Input:	A[]     = [10, 11, 12];
  * 			index[] = [1, 0, 2];
@@ -31,6 +30,7 @@ public class F07_reorderAccordingToGivenIndex {
 	 * 
 	 * TIME --- O(n^2)
 	 * SPACE -- O(1)
+	 * 
 	 * 
 	 * 
 	 * 

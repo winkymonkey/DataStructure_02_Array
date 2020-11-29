@@ -8,10 +8,9 @@ package com.example.datastructure.f_arrangement;
  * All elements may not be present in the array.
  * If the element is not present then there will be -1 present in the array.
  * Rearrange the array such that A[i] = i and if i is not present, display -1 at that place.
- * 
  * *******************************************************************************************************
  * Input:  {-1, -1, 6, 1, 9, 3, 2, -1, 4, -1}
- *          0   1  2  3  4  5  6   7  8   9
+ *          0   1   2  3  4  5  6   7  8   9
  *        
  * Output: {-1, 1, 2, 3, 4, -1, 6, -1, -1, 9}
  * 
