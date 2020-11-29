@@ -3,7 +3,7 @@ package com.example.datastructure.m_misc;
 import java.util.Arrays;
 
 
-public class M05B_findTheSpecialPairCode {
+public class M05B_findTheSpecialPair {
 	
 	public static void main(String args[]) {
 		int X[] = { 10, 19, 18 };

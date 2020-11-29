@@ -1,7 +1,7 @@
 package com.example.datastructure.d_search;
 
 
-public class D02B_findMajorityCode {
+public class D02B_findMajority {
 	
 	public static void main(String[] args) {
 		int A[] = { 3, 3, 4, 2, 4, 4, 2, 4, 4 };
