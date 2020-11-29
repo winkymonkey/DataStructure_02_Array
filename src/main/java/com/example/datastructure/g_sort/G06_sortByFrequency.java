@@ -41,7 +41,7 @@ public class G06_sortByFrequency {
 	 * Final Array
 	 * {8, 8, 8, 2, 2, 5, 5, 6}
 	 * 
-	 * TIME --- O(nLogn)+O(n)+O(nLogn) = O(n)			[sorting + construct 2D array + sort 2D array]
+	 * TIME --- O(nLogn)+O(n)+O(nLogn) = O(nLogn)			[sorting + construct 2D array + sort 2D array]
 	 * SPACE -- O(n)
 	 * 
 	 * 
@@ -50,7 +50,7 @@ public class G06_sortByFrequency {
 	 * ---------------------------------------------
 	 * ---USE SORTING (KEEPING ORDER OF ELEMENTS)---
 	 * ---------------------------------------------
-	 * The above approach doesn’t make sure order of elements if the frequency is the same
+	 * The above approach doesn’t ensure the order of elements, if the frequency is the same
 	 * To handle this, we should use indexes.
 	 * (i.e. if two counts are same then we should first print the element with a lower index).
 	 * 
@@ -79,7 +79,7 @@ public class G06_sortByFrequency {
 	 * Final Array
 	 * {8, 8, 8, 2, 2, 5, 5, 6}
 	 * 
-	 * TIME --- O(nLogn)+O(n)+O(nLogn) = O(n)			[sorting + construct 2D array + sort 2D array]
+	 * TIME --- O(nLogn)+O(n)+O(nLogn) = O(nLogn)			[sorting + construct 2D array + sort 2D array]
 	 * SPACE -- O(n)
 	 * 
 	 * 
@@ -92,7 +92,7 @@ public class G06_sortByFrequency {
 	 * HashMap's key is the 'array element' & value is the 'frequency'.
 	 * Sort the HashMap according to values.
 	 * 
-	 * TIME --- O(Logn)
+	 * TIME --- O(nLogn)
 	 * SPACE -- O(n)
 	 * 
 	 * 

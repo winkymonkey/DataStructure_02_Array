@@ -13,17 +13,17 @@ package com.example.datastructure.h_merge;
  * *****************************************************************************
  */
 
-public class H02_merge_twoArraysIntoTwoArrays {
+public class H02A_merge_twoArraysIntoTwoArrays {
 	/*
-	 * A[] --- pointer i
-	 * B[] --- pointer j
+	 * A[] = {1, 5, 9, 10, 15, 20}
+	 * B[] = {2, 3, 8, 13}
 	 * 
 	 * while (A[n-1] < B[0]) {
-	 * 		t1 = A[n-1];				//{1, 5, 9, 10, 15, 20},	t1=20
-	 * 		t2 = B[0];					//{2, 3, 8, 13},			t2=2
-	 * 		
-	 *		//place t1 in B[] using insertion sort
-	 *		//place t2 in A[] using insertion sort
+	 * 	  a = A[n-1];				//a = 20
+	 *    b = B[0];					//b = 2
+	 *    
+	 *    //put b in correct index of A[] by shifting existing elements at right
+	 *	  //put a in correct index of B[] by shifting existing elements at left
 	 * }
 	 * 
 	 */
