@@ -48,7 +48,7 @@ import java.util.Arrays;
  * *****************************************************************************
  */
 
-public class L06_minimizeTheMaximumDifference {
+public class L02_minimizeTheMaximumDifference {
 	
 	public static void main(String[] args) {
 		int arr[] = {1, 5, 15, 10};
@@ -62,9 +62,8 @@ public class L06_minimizeTheMaximumDifference {
 		if (n == 1)
 			return 0;
 		
-		Arrays.sort(A);
-		
-		int ans = A[n-1] - A[0];
+		Arrays.sort(A);							//1, 5, 10, 15
+		int initialDiff = A[n-1] - A[0];
 		
 		// Handle corner elements
 		int small = A[0] + k;
@@ -76,24 +75,24 @@ public class L06_minimizeTheMaximumDifference {
 			big = temp;
 		}
 		
-		// Traverse middle elements (except first & last)
-		for (int i=1; i<n-1; i++) {
-			int subtract = A[i] - k;
-			int add = A[i] + k;
+		for (int i=1; i<n-1; i++) {				//Traverse middle elements (except first & last)
+			int minus = A[i] - k;
+			int plus = A[i] + k;
 
-			// If 'small' is still smaller than 'A[i]-k' OR 'big' is still bigger than 'A[i]+k' --- nothing to do
-			if (small <= subtract || add <= big) 
+			// If 'small' is still smaller than 'minus' OR 'big' is still bigger than 'plus'
+			// it doesn't matter whether we increase or decrease current element
+			if (small <= minus || plus <= big) 
 				continue;
 
-			// If the difference between ('big' & 'A[i]-k') is lesser then the difference between ('A[i]+k' and 'small')
-			// then declare 'A[i]-k' as the new 'small'
-			// otherwise declare 'A[i]+k' as the new 'big'
-			if (big - subtract <= add - small)
-				small = subtract;
+			int diffAfterPlus = plus - small;
+			int diffAfterMinus = big - minus;
+			
+			if (diffAfterMinus <= diffAfterPlus)
+				small = minus;					//don't go for plus, rather go for minus, and update 'minus' as the new 'small'
 			else
-				big = add;
+				big = plus;						//don't go for minus, rather go for plus, and update 'plus' as the new 'big'
 		}
 		
-		return Math.min(ans, big-small);
+		return Math.min(initialDiff, big-small);
 	}
 }

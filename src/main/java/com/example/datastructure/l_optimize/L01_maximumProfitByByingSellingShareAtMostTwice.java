@@ -11,31 +11,25 @@ package com.example.datastructure.l_optimize;
  * 
  * *****************************************************************************
  * Input:   price[] = {10, 22, 5, 75, 65, 80}
- * Output:  87
- * 			[buy at 10, sell at 22], [buy at 5, sell at 80]
+ * Output:  87										//[buy at 10, sell at 22], [buy at 5, sell at 80]
  * 
  * 
  * Input:   price[] = {2, 30, 15, 10, 8, 25, 80}
- * Output:  100
- * 			[buy at price 2, sell at 30], [buy at 8, sell at 80]
+ * Output:  100										//[buy at price 2, sell at 30], [buy at 8, sell at 80]
  * 
  * 
  * Input:   price[] = {100, 30, 15, 10, 8, 25, 80}
- * Output:  72
- * 			[buy at price 8, sell at 80]
+ * Output:  72										//[buy at price 8, sell at 80]
  * 
  * 
  * Input:   price[] = {90, 80, 70, 60, 50}
- * Output:  0
- * 			[Not possible to earn]
+ * Output:  0										//[Not possible to earn]
  * 
  * *****************************************************************************
  */
 
-public class L05_maximumProfitByByingSellingShareAtMostTwice {
+public class L01_maximumProfitByByingSellingShareAtMostTwice {
 	/*
-	 * profit1 = 0, profit2 = 0
-	 * 
 	 * min = 0
 	 * for (i=0 to n) {
 	 *    if (A[i] > A[i+1])
@@ -52,11 +46,11 @@ public class L05_maximumProfitByByingSellingShareAtMostTwice {
 	 *       break;
 	 * }
 	 * 
-	 * profit = max-min
+	 * profit1 = max - min
 	 * 
-	 * store highest of (profit, profit1, profit2) in profit1, and second highest of (profit, profit1, profit2) in profit2
-	 * 
-	 * repeat the same process twice as a max of two transaction is allowed
+	 * Until we reach the end of the array, repeat the above process to calculate profit2, profit3, ..... 
+	 * Now choose the highest two values from (profit1, profit2, profit3, .....)
+	 * The answer is the sum of those two values
 	 * 
 	 */
 }

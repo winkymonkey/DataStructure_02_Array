@@ -1,7 +1,7 @@
 package com.example.datastructure.l_optimize;
 
 
-public class L07A_minimumJumpsToReachEnd_bruteForce {
+public class L03A_minimumJumpsToReachEnd_bruteForce {
 	/*
 	 * Start from the first element and recursively call for all the elements reachable from first element.
 	 * The minimum number of jumps to reach end from first can be calculated using 
@@ -21,7 +21,7 @@ public class L07A_minimumJumpsToReachEnd_bruteForce {
 	 * min(4,4)                                     -->take minimum of 'returned value from all function calls' at this level
 	 * 
 	 * 
-	 * TIME --- O(n^n)		//There are maximum 'n' possible ways to move from a element. For n elements it will be n^n.
+	 * TIME --- O(n^n)		//There are 'n' possible ways to move from an element. For n elements it will be n^n.
 	 * SPACE -- O(1)
 	 * 
 	 */
@@ -29,9 +29,12 @@ public class L07A_minimumJumpsToReachEnd_bruteForce {
 	public static void main(String args[]) {
 		int A[] = { 1, 3, 6, 3, 2, 3, 6, 8, 9, 5, 3, 5, 2, 4, 7, 3, 3, 5, 7, 4, 4, 1, 2, 4, 2, 3, 6 };
 		//			0  1  2  3  4  5  6  7  8  9  10
-		int n = A.length;
-		System.out.println(minJumps(A, 0, n-1));
+		
+		int low = 0;
+		int high = A.length-1;
+		System.out.println(minJumps(A, low, high));
 	}
+	
 	
 	private static int minJumps(int A[], int low, int high) {
 		if (high == low)
@@ -43,10 +46,9 @@ public class L07A_minimumJumpsToReachEnd_bruteForce {
 		int min = Integer.MAX_VALUE;
 		for (int i=low+1; i<=high && i<=low+A[low]; i++) {
 			int jumps = minJumps(A, i, high);
-			if (jumps < min) {
-				min = jumps;
-			}
+			min = Math.min(jumps, min);
 		}
 		return min+1;
 	}
+	
 }

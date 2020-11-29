@@ -1,7 +1,7 @@
 package com.example.datastructure.l_optimize;
 
 
-public class L07C_minimumJumpsToReachEnd_linearTimeSolution {
+public class L03C_minimumJumpsToReachEnd_linearTimeSolution {
 	
 	public static void main(String[] args) {
 		int A[] = new int[] { 1, 3, 6, 3, 2, 3, 6, 8, 9, 5, 3, 5, 2, 4, 7, 3, 3, 5, 7, 4, 4, 1, 2, 4, 2, 3, 6 };

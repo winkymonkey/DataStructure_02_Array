@@ -1,13 +1,13 @@
 package com.example.datastructure.l_optimize;
 
 
-public class L07B_minimumJumpsToReachEnd_dynamicProg {
+public class L03B_minimumJumpsToReachEnd_dynamicProg {
 	/*
 	 * While observing the execution of the previous brute force method, it can be seen that there are overlapping subproblems.
 	 * For example, minJumps(3,4) is invoked twice
 	 * After observation, we can also say that this problem has both the properties -- Overlapping subproblems, Optimal substructure
 	 * 
-	 * So we will now apply Dynamic Programming (tabulation method, bottom up)
+	 * So we will now apply Dynamic Programming (memoization aka top-down)
 	 * 
 	 * TIME --- O(n^2)
 	 * SPACE -- O(n)
@@ -43,9 +43,7 @@ public class L07B_minimumJumpsToReachEnd_dynamicProg {
 			for (int i=low+1; i<=high && i<=low+A[low]; i++) {
 				int jumps = minJumps(A, i, high);
 				table[low][high] = jumps+1;
-				if (jumps < min) {
-					min = jumps;
-				}
+				min = Math.min(jumps, min);
 			}
 			return min+1;
 		}

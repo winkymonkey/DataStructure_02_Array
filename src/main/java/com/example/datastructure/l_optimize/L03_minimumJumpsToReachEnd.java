@@ -20,6 +20,6 @@ package com.example.datastructure.l_optimize;
  * *****************************************************************************
  */
 
-public class L07_minimumJumpsToReachEnd {
+public class L03_minimumJumpsToReachEnd {
 	//TODO
 }
