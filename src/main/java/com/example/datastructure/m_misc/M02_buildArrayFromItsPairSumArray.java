@@ -6,10 +6,9 @@ package com.example.datastructure.m_misc;
  * *****************************************************************************
  * A pair-sum array for an array is the array that contains sum of all pairs in ordered form.
  *  - for an array --------- {6,8,3,4}
- *  - pair sum array is ---- {14,9,10,11,12,7}
+ *  - pair sum array ------- {14,9,10,11,12,7}
  * 
- * Given a pair-sum array and size of the original array (N), construct the original array.
- * 
+ * Given a pair-sum array and size of the original array (n), construct the original array.
  * *****************************************************************************
  * Input:  {14, 9, 10, 11, 12, 7}					n = 4
  * Output: {6, 8, 3, 4}
@@ -20,7 +19,7 @@ package com.example.datastructure.m_misc;
  * *****************************************************************************
  */
 
-public class M02_constructArrayFromItsPairSumArray {
+public class M02_buildArrayFromItsPairSumArray {
 	/*
 	 * Let us take an example of 
 	 * A[] =    {6, 8, 3, 4}		n=4
@@ -31,14 +30,16 @@ public class M02_constructArrayFromItsPairSumArray {
 	 * 
 	 * 
 	 * We can make a simple observation and say that
-	 * 		A[0] = PAIR[0] + PAIR[1] - PAIR[n-1]
+	 * 		A[0] = (PAIR[0] + PAIR[1] - PAIR[n-1]) / 2
+	 *           = 14 + 9 - 11 / 2
+	 *           = 6
 	 * 
-	 * Once we have evaluated A[0], we can evaluate other elements by subtracting A[0]
-	 * E.g,		A[1] = PAIR[0] - A[0]
-	 * 			A[2] = PAIR[1] - A[0]
-	 * 			A[3] = PAIR[2] - A[0]
-	 * 			.....
-	 * 			.....
+	 * Once we have evaluated A[0], we can evaluate other elements as below
+	 * 		A[1] = PAIR[0] - A[0]
+	 * 		A[2] = PAIR[1] - A[0]
+	 * 		A[3] = PAIR[2] - A[0]
+	 * 		.....
+	 * 		.....
 	 * 
 	 * -----------
 	 * A[0] = (PAIR[0] + PAIR[1] - PAIR[n-1]) / 2;

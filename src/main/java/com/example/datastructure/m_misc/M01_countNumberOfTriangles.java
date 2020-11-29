@@ -32,9 +32,11 @@ public class M01_countNumberOfTriangles {
 		findNumberOfTriangles(A);
 	}
 	
-	static void findNumberOfTriangles(int A[]) {
+	
+	private static void findNumberOfTriangles(int A[]) {
 		int n = A.length;
 		int count = 0;
+		
 		Arrays.sort(A);
 
 		for (int i=0; i<n-2; ++i) {
@@ -42,17 +44,18 @@ public class M01_countNumberOfTriangles {
 				int k = i+2;
 				
 				// Find the rightmost element which is smaller than the sum of two fixed elements A[i] and A[j]
-				while (k<n && A[i]+A[j]>A[k])
+				while (k<n && A[k] < A[i]+A[j])
 					++k;
 
-				// The two fixed elements are A[i] and A[j]
-				// All elements between A[j+1] to A[k-1] can form a triangle with A[i] and A[j]
-				// So total number of possible triangles that can be formed with the two fixed elements is (k-j-1)
-				// The 1 is subtracted from k because k is incremented one extra in above while loop.
+				// Two fixed elements are A[i] and A[j]
+				// The elements between 'j+1' to 'k-1' can form a triangle
+				// So total number of possible triangles that can be formed is = (k-1)-(j+1)+1 = (k-j-1)
+				// The 1 is subtracted because 'k' is incremented one extra in above while loop.
 				if (k > j)
 					count += k-j-1;
 			}
 		}
 		System.out.println(count);
 	}
+	
 }

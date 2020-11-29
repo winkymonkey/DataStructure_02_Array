@@ -5,10 +5,9 @@ package com.example.datastructure.m_misc;
  * Ugly Numbers
  * ************************************************************************
  * Ugly numbers are numbers whose only prime factors are 2, 3 or 5.
- * The sequence 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, … shows the first 11 ugly numbers.
+ * The sequence 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, ... shows the first 11 ugly numbers.
  * By convention, 1 is included.
  * Given a number n, the task is to find n’th Ugly number.
- * 
  * ************************************************************************
  * Input  : n = 7
  * Output : 8
@@ -25,7 +24,7 @@ package com.example.datastructure.m_misc;
  * ************************************************************************
  */
 
-public class M06_UglyNumber {
+public class M06_findNthUglyNumber {
 	/*
 	 * As every number can only be divided by 2, 3, 5 
 	 * we can look at the sequence is to split the sequence to three groups as below:
@@ -41,17 +40,16 @@ public class M06_UglyNumber {
 	 * 
 	 * -----------
 	 * UGLY[] = new int[n]
+	 * UGLY[0] = 1			//Initialize first ugly number
+	 * 
 	 * i2 = i3 = i5 = 0
 	 * 
 	 * mulitple_of_2 = 2
 	 * mulitple_of_3 = 3
 	 * mulitple_of_5 = 5
 	 * 
-	 * UGLY[0] = 1			//Initialize first ugly number
-	 * 
-	 * 
 	 * for (i = 1; i < 150; i++) {
-	 *    next_ugly_no = Min(mulitple_of_2, mulitple_of_3, mulitple_of_5)
+	 *    next_ugly_no = min(mulitple_of_2, mulitple_of_3, mulitple_of_5)
 	 *    
 	 *    UGLY[i] = next_ugly_no
 	 *    
