@@ -23,8 +23,10 @@ public class N02_SudokuGenerator {
 	 * ------------------------
 	 * ---EFFICIENT APPROACH---
 	 * ------------------------
-	 * We can improve the solution, if we understand a pattern in this game.
-	 * We can observe that the 3x3 matrices which are diagonally present are independent of other 3x3 adjacent matrices initially, as others are empty.
+	 * We can improve the solution, if we observe a pattern in this game.
+	 * Initially, when all cells are empty, the diagonally present 3x3 matrices are independent of other 3x3 adjacent matrices.
+	 * So if we fill them first, then for these only 'box check' is sufficient and thus 'column check','row check' can be skipped.
+	 * 
 	 *   3 8 5 - - - - - - 
 	 *   9 2 1 - - - - - - 
 	 *   6 4 7 - - - - - - 
@@ -34,8 +36,6 @@ public class N02_SudokuGenerator {
 	 *   - - - - - - 8 7 3 
 	 *   - - - - - - 9 6 2 
 	 *   - - - - - - 1 4 5 
-	 * 
-	 * So if we fill them first, then we will only have to do 'box check' and thus 'column check' and 'row check' not required.
 	 * 
 	 * ----------
 	 * Fill the diagonal 3x3 matrices

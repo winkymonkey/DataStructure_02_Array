@@ -19,6 +19,6 @@ package com.example.datastructure.n_game;
  * *****************************************************************************
  */
 
-public class N04_FindAllPossibleCharactersInBoardOfCharacters {
+public class N05_FindAllPossibleCharactersInBoardOfCharacters {
 				//GRAPH PROBLEM
 }

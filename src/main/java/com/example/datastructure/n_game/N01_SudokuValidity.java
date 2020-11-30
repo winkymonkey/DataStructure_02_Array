@@ -23,7 +23,7 @@ public class N01_SudokuValidity {
 		    {0, 0, 1, 0, 0, 8, 0, 0, 7},
 	    };
 		print_board(board);
-		valid_board(board);
+		isValidBoard(board);
 		
 		int [][] board2 = {						// An invalid board. The first row contains repeated values.
 		    {1, 4, 4, 0, 0, 0, 0, 0, 3},
@@ -37,23 +37,21 @@ public class N01_SudokuValidity {
 		    {0, 0, 1, 0, 0, 8, 0, 0, 7},
 	    };
 		print_board(board2);
-		valid_board(board2);
+		isValidBoard(board2);
 	}
 	
 	
 	
-	
-	//check if the board invalid.
-	public static void valid_board(int[][] board) {
+	public static void isValidBoard(int[][] board) {
 		for (int i = 0; i < 9; i++) {
-			int result1 = valid_row(i, board);
-			int result2 = valid_col(i, board);
+			int result1 = isValidRow(i, board);
+			int result2 = isValidCol(i, board);
 			if (result1 < 1 || result2 < 1) {
 				System.out.println("The board is invalid.");
 				return;
 			}
 		}
-		int result3 = valid_subsquares(board);
+		int result3 = isValidSubsquares(board);
 		if (result3 < 1)
 			System.out.println("The board is invalid.");
 		else
@@ -61,8 +59,7 @@ public class N01_SudokuValidity {
 	}
 	
 	
-	//check if a given row is valid
-	public static int valid_row(int row, int[][] board) {
+	public static int isValidRow(int row, int[][] board) {
 		int temp[] = board[row];
 		Set<Integer> set = new HashSet<Integer>();
 		for (int value : temp) {
@@ -79,8 +76,7 @@ public class N01_SudokuValidity {
 	}
 	
 	
-	//check if a given column is valid
-	public static int valid_col(int col, int[][] board) {
+	public static int isValidCol(int col, int[][] board) {
 		Set<Integer> set = new HashSet<Integer>();
 		for (int i = 0; i < 9; i++) {
 			if (board[i][col] < 0 || board[i][col] > 9) {	//checking for valid values (0 is valid as it denotes an empty cell)
@@ -96,8 +92,7 @@ public class N01_SudokuValidity {
 	}
 	
 	
-	//check if all the sub-squares are valid
-	public static int valid_subsquares(int[][] board) {
+	public static int isValidSubsquares(int[][] board) {
 		for (int row = 0; row < 9; row += 3) {
 			for (int col = 0; col < 9; col += 3) {
 				

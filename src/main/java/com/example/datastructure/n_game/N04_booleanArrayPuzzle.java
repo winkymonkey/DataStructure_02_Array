@@ -18,7 +18,8 @@ import java.util.Arrays;
  * ************************************************************************
  */
 
-public class N06_booleanArrayPuzzle {
+public class N04_booleanArrayPuzzle {
+	
 	public static void main(String[] args) {
 		int A[] = { 0, 1 };
 		//			0  1
@@ -35,4 +36,5 @@ public class N06_booleanArrayPuzzle {
 		B[1] = B[0];
 		System.out.println(Arrays.toString(B));
 	}
+	
 }

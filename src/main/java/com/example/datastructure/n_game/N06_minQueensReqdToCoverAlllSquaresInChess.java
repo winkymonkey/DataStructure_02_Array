@@ -6,6 +6,6 @@ package com.example.datastructure.n_game;
  * *****************************************************************************
  */
 
-public class N05_minQueensReqdToCoverAlllSquaresInChess {
+public class N06_minQueensReqdToCoverAlllSquaresInChess {
 
 }
